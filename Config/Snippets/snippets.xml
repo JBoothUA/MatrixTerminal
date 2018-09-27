@@ -51,7 +51,7 @@
 	<Snippet>
 		<Header>
 			<Title>Talk to Mario</Title>
-			<Description>most trivial snippet</Description>
+			<Description>hello world</Description>
 			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
@@ -70,7 +70,7 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 	<Snippet>
 		<Header>
 			<Title>Ping</Title>
-			<Description>ping command</Description>
+			<Description>ping command with variables</Description>
 			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
@@ -219,7 +219,7 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 	<Snippet>
 		<Header>
 			<Title>Go to the Thin Client</Title>
-			<Description>copies current dist folder to the thin client</Description>
+			<Description>copies current dist folder to the thin client and rebuilds the thin client</Description>
 			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
@@ -239,7 +239,7 @@ yarn --cwd D:\Repos\Galileo\CommonWebRoot\Source\CommonWebRootFrontend run build
 	<Snippet>
 		<Header>
 			<Title>Go to the Common Site</Title>
-			<Description>copies current dist folder to the common-site and rebuilds common-site</Description>
+			<Description>copies current dist folder to the common-site and rebuilds common site</Description>
 			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
@@ -267,9 +267,16 @@ yarn --cwd D:\Repos\Galileo\CommonSite\Source\CommonSiteFrontend run build
 				<ShellType>powershell</ShellType>
 			</ShellTypes>
 		</Header>
-		<Code>
+		<Declarations>
+			<Literal>
+				<ID>comment</ID>
+				<ToolTip>The commit comment.</ToolTip>
+				<Default>save point</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
 			<![CDATA[git add -A
-			git commit -m "save point"
+			git commit -m "$comment$"
 			git push			
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
