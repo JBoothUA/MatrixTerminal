@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ConsoleZSnippets>
-	<DownloadUrl>https://raw.githubusercontent.com/cbucher/console/master/Snippets/system.xml</DownloadUrl>
+	<DownloadUrl>https://github.com/JBoothUA/mario-shell/blob/master/Config/Snippets/snippets.xml</DownloadUrl>
+
 
 	<!-- Build -->
 	<Snippet>
 		<Header>
 			<Title>Build</Title>
 			<Description>yarn build</Description>
-			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -26,7 +27,7 @@
 		<Header>
 			<Title>Equip</Title>
 			<Description>yarn add package</Description>
-			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -52,7 +53,7 @@
 		<Header>
 			<Title>Talk to Mario</Title>
 			<Description>hello world</Description>
-			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>powershell</ShellType>
@@ -71,7 +72,7 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 		<Header>
 			<Title>Ping</Title>
 			<Description>ping command with variables</Description>
-			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -107,7 +108,7 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 		<Header>
 			<Title>Settings</Title>
 			<Description>edit the settings file</Description>
-			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -126,7 +127,7 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 		<Header>
 			<Title>Combos</Title>
 			<Description>edit the snippets file</Description>
-			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -145,7 +146,7 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 		<Header>
 			<Title>Save Config</Title>
 			<Description>backs up the config and snippets files</Description>
-			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -164,7 +165,7 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 		<Header>
 			<Title>Items</Title>
 			<Description>list the current tabs</Description>
-			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -184,7 +185,7 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 		<Header>
 			<Title>Super Move</Title>
 			<Description>opens all of the known tabs</Description>
-			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -220,7 +221,7 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 		<Header>
 			<Title>Go to the Thin Client</Title>
 			<Description>copies current dist folder to the thin client and rebuilds the thin client</Description>
-			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -240,7 +241,7 @@ yarn --cwd D:\Repos\Galileo\CommonWebRoot\Source\CommonWebRootFrontend run build
 		<Header>
 			<Title>Go to the Common Site</Title>
 			<Description>copies current dist folder to the common-site and rebuilds common site</Description>
-			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -260,7 +261,7 @@ yarn --cwd D:\Repos\Galileo\CommonSite\Source\CommonSiteFrontend run build
 		<Header>
 			<Title>Save Point</Title>
 			<Description>commits and pushes a save point</Description>
-			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
