@@ -213,4 +213,8 @@
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\Resource\Source\ResourceFrontend" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="255" g="128" b="255"/>
 		</tab>
+		<tab key="f9" title="Alarm" icon="D:\Images\Mario.ico" use_default_icon="0">
+			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\Alarm\Source\Alarm.UI" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<cursor style="0" r="255" g="255" b="255"/>
+		</tab>
 	</tabs></settings>

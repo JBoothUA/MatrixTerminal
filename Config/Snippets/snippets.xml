@@ -2,10 +2,55 @@
 <ConsoleZSnippets>
 	<DownloadUrl>https://raw.githubusercontent.com/cbucher/console/master/Snippets/system.xml</DownloadUrl>
 
-	<!-- Hello World -->
+	<!-- Build -->
 	<Snippet>
 		<Header>
-			<Title>Hello World</Title>
+			<Title>Build</Title>
+			<Description>yarn build</Description>
+			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[yarn run build			
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Equip -->
+	<Snippet>
+		<Header>
+			<Title>Equip</Title>
+			<Description>yarn add package</Description>
+			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>package_name</ID>
+				<ToolTip>The package name.</ToolTip>
+				<Default>@galileo/common-libraries</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[yarn add $package_name$@latest --save
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Talk to Mario -->
+	<Snippet>
+		<Header>
+			<Title>Talk to Mario</Title>
 			<Description>most trivial snippet</Description>
 			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
 			<Version>1.0</Version>
@@ -14,11 +59,13 @@
 			</ShellTypes>
 		</Header>
 		<Code>
-			<![CDATA[Write-Host 'Mario Shell!  The Lightsaber Shell!' -ForegroundColor red
+			<![CDATA[Write-Host 'Hello my name is Mario!' -ForegroundColor red
+Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
 
+	
 	<!-- Ping -->
 	<Snippet>
 		<Header>
@@ -54,10 +101,11 @@
 		</Code>
 	</Snippet>
 
-	<!-- Edit Settings -->
+	
+	<!-- Settings -->
 	<Snippet>
 		<Header>
-			<Title>Edit Settings</Title>
+			<Title>Settings</Title>
 			<Description>edit the settings file</Description>
 			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
 			<Version>1.0</Version>
@@ -72,10 +120,11 @@
 		</Code>
 	</Snippet>
 
-	<!-- Edit Snippets -->
+
+	<!-- Combos -->
 	<Snippet>
 		<Header>
-			<Title>Edit Snippets</Title>
+			<Title>Combos</Title>
 			<Description>edit the snippets file</Description>
 			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
 			<Version>1.0</Version>
@@ -90,10 +139,11 @@
 		</Code>
 	</Snippet>
 
-	<!-- Backup the Config -->
+
+	<!-- Save Config -->
 	<Snippet>
 		<Header>
-			<Title>Backup Config</Title>
+			<Title>Save Config</Title>
 			<Description>backs up the config and snippets files</Description>
 			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
 			<Version>1.0</Version>
@@ -103,15 +153,16 @@
 			</ShellTypes>
 		</Header>
 		<Code>
-			<![CDATA[copy -R -force C:\Users\jbooth1\AppData\Roaming\Console D:\Backup
+			<![CDATA[copy -R -force C:\Users\jbooth1\AppData\Roaming\Console\* C:\Users\jbooth1\Source\Repos\mario-shell\Config
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
 
-	<!-- List Tabs -->
+
+	<!-- Items -->
 	<Snippet>
 		<Header>
-			<Title>List Tabs</Title>
+			<Title>Items</Title>
 			<Description>list the current tabs</Description>
 			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
 			<Version>1.0</Version>
@@ -127,10 +178,11 @@
 		</Code>
 	</Snippet>
 
-	<!-- Open All Tabs -->
+
+	<!-- Super Move -->
 	<Snippet>
 		<Header>
-			<Title>Open All Tabs</Title>
+			<Title>Super Move</Title>
 			<Description>opens all of the known tabs</Description>
 			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
 			<Version>1.0</Version>
@@ -162,10 +214,11 @@
 		</Code>
 	</Snippet>
 
-	<!-- Copy dist to Thin Client -->
+
+	<!-- Go to the Thin Client -->
 	<Snippet>
 		<Header>
-			<Title>/dist -> Thin Client</Title>
+			<Title>Go to the Thin Client</Title>
 			<Description>copies current dist folder to the thin client</Description>
 			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
 			<Version>1.0</Version>
@@ -181,10 +234,11 @@ yarn --cwd D:\Repos\Galileo\CommonWebRoot\Source\CommonWebRootFrontend run build
 		</Code>
 	</Snippet>
 
-	<!-- Copy dist to Common-Site -->
+
+	<!-- Go to the Common Site -->
 	<Snippet>
 		<Header>
-			<Title>/dist -> Common-Site</Title>
+			<Title>Go to the Common Site</Title>
 			<Description>copies current dist folder to the common-site and rebuilds common-site</Description>
 			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
 			<Version>1.0</Version>
@@ -196,6 +250,27 @@ yarn --cwd D:\Repos\Galileo\CommonWebRoot\Source\CommonWebRootFrontend run build
 		<Code>
 			<![CDATA[copy -R -force ./dist/* D:\Repos\Galileo\CommonSite\Source\CommonSiteFrontend\node_modules\@galileo
 yarn --cwd D:\Repos\Galileo\CommonSite\Source\CommonSiteFrontend run build
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Save Point -->
+	<Snippet>
+		<Header>
+			<Title>Save Point</Title>
+			<Description>commits and pushes a save point</Description>
+			<Author Url="https://github.com/cbucher/console" Email="cbucher@users.sourceforge.net">cbucher</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[git add -A
+			git commit -m "save point"
+			git push			
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
