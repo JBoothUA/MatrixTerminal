@@ -9,7 +9,7 @@ Super Mario Git PowerShell with all the coolest configurations.
   <li>Set-ExecutionPolicy RemoteSigned</li>
   <li>Import-Module posh-git</li>
   <li>Add-PoshGitToProfile -AllHosts -Force</li>
-  <li>Pull down the mario-shell files -> C:\Users\{user}\AppData\Roaming\Console</li>
+  <li>Pull down the mario-shell config files -> C:\Users\{user}\AppData\Roaming\Console</li>
 </ol>
 
 Initial Setup Credit:
