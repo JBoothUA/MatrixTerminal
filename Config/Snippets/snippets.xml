@@ -22,6 +22,25 @@
 	</Snippet>
 
 
+	<!-- Scan -->
+	<Snippet>
+		<Header>
+			<Title>Scan</Title>
+			<Description>yarn run test-debug</Description>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[yarn run test-debug
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
 	<!-- Equip -->
 	<Snippet>
 		<Header>
@@ -216,10 +235,10 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 	</Snippet>
 
 
-	<!-- Go to the Thin Client -->
+	<!-- Attack the Thin Monster -->
 	<Snippet>
 		<Header>
-			<Title>Go to the Thin Client</Title>
+			<Title>Attack the Thin Monster</Title>
 			<Description>copies current dist folder to the thin client and rebuilds the thin client</Description>
 			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
@@ -236,10 +255,10 @@ yarn --cwd D:\Repos\Galileo\CommonWebRoot\Source\CommonWebRootFrontend run build
 	</Snippet>
 
 
-	<!-- Go to the Common Site -->
+	<!-- Attack the Common Monster -->
 	<Snippet>
 		<Header>
-			<Title>Go to the Common Site</Title>
+			<Title>Attack the Common Monster</Title>
 			<Description>copies current dist folder to the common-site and rebuilds common site</Description>
 			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
