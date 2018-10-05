@@ -6,8 +6,9 @@ Super Mario Git PowerShell with all the coolest configurations.
   <li>Choco Install ConsoleZ</li>
   <li>Install GitHub Desktop</li>
   <li>
-    You need a Git PowerShell (Posh-Git).
-    If GitHub Desktop did not set it up, you can install it.
+    You need a Git PowerShell (Posh-Git).<br />
+    C:\Users\{user}\AppData\Local\GitHub\GitHub.appref-ms --open-shell<br />
+    If GitHub Desktop did not set it up, you can install it to your shell.
     <ol>
       <li>Choco Install Posh-Git</li>
       <li>Set-ExecutionPolicy RemoteSigned</li>
