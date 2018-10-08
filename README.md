@@ -17,7 +17,7 @@
     </ol>
   </li>
   <li>Pull down the config files from this repo and move to -> C:\Users\{user}\AppData\Roaming\Console</li>
-  <li>Open the settings and snippets xml files and make adjustments</li>
+  <li>Open the settings and snippets xml files and make adjustments based on your folder structure</li>
 </ol>
 
 Initial Setup Credit:
