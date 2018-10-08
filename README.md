@@ -1,4 +1,5 @@
-# Super Mario Git PowerShell - Turns Angular-CLI into a Video Game
+# Super Mario Git PowerShell
+# Turns Angular-CLI into a Video Game
 
 <ol>
   <li>Install Chocolatey</li>
