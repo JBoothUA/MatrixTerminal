@@ -16,7 +16,7 @@ Super Mario Git PowerShell with all the coolest configurations.
       <li>Add-PoshGitToProfile -AllHosts -Force</li>
     </ol>
   </li>
-  <li>Pull down the mario-shell config files -> C:\Users\{user}\AppData\Roaming\Console</li>
+  <li>Pull down the config files from this repo and move to -> C:\Users\{user}\AppData\Roaming\Console</li>
   <li>Replace the given file paths with your repo paths in the settings and snippets xml files</li>
 </ol>
 
