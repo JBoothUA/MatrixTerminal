@@ -181,11 +181,11 @@
 		</actions></mouse>
 	<snippets dir=""/>
 	<tabs>
-		<tab key="t" title="Thin Client" icon="D:\Images\Mario.ico" use_default_icon="0">
+		<tab key="t" title="Web Root" icon="D:\Images\boo.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\CommonWebRoot\Source\CommonWebRootFrontend" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="128" g="0" b="255"/>
 		</tab>
-		<tab key="f2" title="Common-Site" icon="D:\Images\Mario.ico" use_default_icon="0">
+		<tab key="f2" title="Common Site" icon="D:\Images\goomba.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\CommonSite\Source\CommonSiteFrontend" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="0" g="128" b="255"/>
 		</tab>
