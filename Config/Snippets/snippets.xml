@@ -269,6 +269,13 @@ cd C:\Users\jbooth1\Source\Repos\mario-shell\Config
 			$posh.SendKeys('^{F8}')
 			Sleep 1
 			$posh.SendKeys('^{F9}')
+			Sleep 1
+			$posh.SendKeys('^{F10}')
+			Sleep 1
+			$posh.SendKeys('^{F11}')
+			Sleep 1
+			$posh.SendKeys('^{F12}')
+
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
