@@ -1,5 +1,5 @@
-# mario-shell
-Super Mario Git PowerShell with all the coolest configurations.
+# Super Mario Git PowerShell
+# Turns Angular-CLI into a Video Game
 
 <ol>
   <li>Install Chocolatey</li>
@@ -17,7 +17,7 @@ Super Mario Git PowerShell with all the coolest configurations.
     </ol>
   </li>
   <li>Pull down the config files from this repo and move to -> C:\Users\{user}\AppData\Roaming\Console</li>
-  <li>Open the settings and snippets xml files and make adjustments</li>
+  <li>Open the settings and snippets xml files and make adjustments based on your folder structure, etc</li>
 </ol>
 
 Initial Setup Credit:
