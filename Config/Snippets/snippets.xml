@@ -22,10 +22,10 @@
 	</Snippet>
 
 
-	<!-- Heal = test -->
+	<!-- Cure = test -->
 	<Snippet>
 		<Header>
-			<Title>Heal</Title>
+			<Title>Cure</Title>
 			<Description>test</Description>
 			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
