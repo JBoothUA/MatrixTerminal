@@ -124,10 +124,10 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 	</Snippet>
 
 	
-	<!-- Ping Luigi = ping -->
+	<!-- Ping Mario = ping -->
 	<Snippet>
 		<Header>
-			<Title>Ping Luigi</Title>
+			<Title>Ping Mario</Title>
 			<Description>ping command with variables</Description>
 			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
