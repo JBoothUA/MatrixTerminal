@@ -181,43 +181,43 @@
 		</actions></mouse>
 	<snippets dir=""/>
 	<tabs>
-		<tab key="t" title="Web Root" icon="D:\Images\boo.ico" use_default_icon="0">
+		<tab button="t" title="Web Root" icon="D:\Images\boo.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\CommonWebRoot\Source\CommonWebRootFrontend" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="128" g="0" b="255"/>
 		</tab>
-		<tab key="f2" title="Common Site" icon="D:\Images\goomba.ico" use_default_icon="0">
+		<tab button="f2" title="Common Site" icon="D:\Images\goomba.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\CommonSite\Source\CommonSiteFrontend" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="0" g="128" b="255"/>
 		</tab>
-		<tab key="f3" title="Common-Libraries" icon="D:\Images\Mario.ico" use_default_icon="0">
+		<tab button="f3" title="Common-Libraries" icon="D:\Images\RedYoshi.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\CommonLibraries\Source\CommonLibrariesFrontend" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="0" g="255" b="0"/>
 		</tab>
-		<tab key="f4" title="Common-Map" icon="D:\Images\1up.ico" use_default_icon="0">
+		<tab button="f4" title="Common-Map" icon="D:\Images\1up.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\CommonMap\Source\CommonMapFrontend" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="128" g="128" b="0"/>
 		</tab>
-		<tab key="f5" title="Common-Configuration" icon="D:\Images\Mario.ico" use_default_icon="0">
+		<tab button="f5" title="Common-Configuration" icon="D:\Images\Mario.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\CommonConfiguration\Source\CommonConfigurationFrontend" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="255" g="0" b="0"/>
 		</tab>
-		<tab key="f6" title="Common-FeatureFlag" icon="D:\Images\Mario.ico" use_default_icon="0">
+		<tab button="f6" title="Common-FeatureFlag" icon="D:\Images\Mario.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\CommonFeatureFlag\Source\CommonFeatureFlagFrontend" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="255" g="128" b="0"/>
 		</tab>
-		<tab key="f7" title="Common-Tenant" icon="D:\Images\Mario.ico" use_default_icon="0">
+		<tab button="f7" title="Common-Tenant" icon="D:\Images\Mario.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\CommonTenant\Source\CommonTenantFrontend" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="255" g="255" b="0"/>
 		</tab>
-		<tab key="f8" title="Incident" icon="D:\Images\Mario.ico" use_default_icon="0">
+		<tab button="f8" title="Incident" icon="D:\Images\Mario.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\Incident\Source\IncidentFrontend" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="255" g="0" b="128"/>
 		</tab>
-		<tab key="f9" title="Resource" icon="D:\Images\Mario.ico" use_default_icon="0">
+		<tab button="f9" title="Resource" icon="D:\Images\Mario.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\Resource\Source\ResourceFrontend" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="255" g="128" b="255"/>
 		</tab>
-		<tab key="f10" title="Alarm" icon="D:\Images\Mario.ico" use_default_icon="0">
+		<tab button="f10" title="Alarm" icon="D:\Images\Mario.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="D:\Repos\Galileo\Alarm\Source\Alarm.UI" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="255" g="255" b="255"/>
 		</tab>
