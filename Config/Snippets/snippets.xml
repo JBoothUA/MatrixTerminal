@@ -343,10 +343,10 @@ yarn --cwd D:\Repos\Galileo\CommonSite\Source\CommonSiteFrontend run build
 	</Snippet>
 
 
-	<!-- Next Quest = new branch -->
+	<!-- New Quest = new branch -->
 	<Snippet>
 		<Header>
-			<Title>Next Quest</Title>
+			<Title>New Quest</Title>
 			<Description>new branch</Description>
 			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
