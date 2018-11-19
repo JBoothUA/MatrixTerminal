@@ -2,7 +2,7 @@
 # Turns Angular-CLI into a Video Game
 
 <ol>
-  <li>Google for and install Chocolatey</li>
+  <li>Google Chocolatey and install Chocolatey</li>
   <li>Choco Install ConsoleZ</li>
   <li>Install GitHub Desktop</li>
   <li>
