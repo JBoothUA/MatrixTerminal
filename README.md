@@ -7,6 +7,7 @@
   <li>Install GitHub Desktop</li>
   <li>
     You need a Git PowerShell (Posh-Git).<br />
+    It should be located here:<br />
     C:\Users\{user}\AppData\Local\GitHub\GitHub.appref-ms --open-shell<br />
     If GitHub Desktop did not set it up, you can install it to your shell
     <ol>
