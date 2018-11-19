@@ -13,7 +13,7 @@
     <ol>
       <li>Choco Install Posh-Git</li>
       <li>Set-ExecutionPolicy RemoteSigned</li>
-      <li>Import-Module posh-git</li>
+      <li>Import-Module poshgit</li>
       <li>Add-PoshGitToProfile -AllHosts -Force</li>
     </ol>
   </li>
