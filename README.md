@@ -11,7 +11,7 @@
     C:\Users\{user}\AppData\Local\GitHub\GitHub.appref-ms --open-shell<br />
     If GitHub Desktop did not set it up, you can install it to your shell
     <ol>
-      <li>Choco Install Posh-Git</li>
+      <li>Choco Install poshgit</li>
       <li>Set-ExecutionPolicy RemoteSigned</li>
       <li>Import-Module poshgit</li>
       <li>Add-PoshGitToProfile -AllHosts -Force</li>
