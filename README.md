@@ -21,6 +21,8 @@
   <li>Open the settings and snippets xml files and make adjustments based on your folder structure, etc</li>
 </ol>
 
-Initial Setup Credit:
-<a target="_blank" href="https://haacked.com/archive/2015/10/29/git-shell/">Git Shell</a>
-
+Additional Troubleshooting:
+<a target="_blank" href="https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Powershell">Git Shell</a>
+<br />
+Inital Setup Credit:
+<a target="_blank" href="https://haacked.com/archive/2015/10/29/git-shell/">Git ConsoleZ</a>
