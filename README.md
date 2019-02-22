@@ -1,15 +1,16 @@
 # Super Mario Git PowerShell
 # Turns Angular-CLI into a Video Game
 
-https://github.com/cbucher/console/wiki/Downloads
+https://github.com/cbucher/console/wiki/Downloads<br />
+OR
 <ol>
   <li>Install Chocolatey: https://chocolatey.org/install</li>
   <li>Choco Install ConsoleZ</li>
+</ol>
+You also will need a Git PowerShell (Posh-Git).<br />
+<ol>
   <li>Install GitHub Desktop</li>
   <li>
-    You need a Git PowerShell (Posh-Git).<br />
-    It should be located here:<br />
-    C:\Users\{user}\AppData\Local\GitHub\GitHub.appref-ms --open-shell<br />
     If GitHub Desktop did not set it up, you can install it to your shell
     <ol>
       <li>Choco Install poshgit</li>
