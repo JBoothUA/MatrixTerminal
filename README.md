@@ -6,6 +6,8 @@ OR
 <ol>
   <li>Install Chocolatey: https://chocolatey.org/install</li>
   <li>Choco Install ConsoleZ</li>
+  <li>Pull down the config files from this repo and move to -> C:\Users\{user}\AppData\Roaming\Console</li>
+  <li>Open the settings and snippets xml files and make adjustments based on your folder structure, etc</li>
 </ol>
 You also will need a Git PowerShell (Posh-Git).<br />
 <ol>
@@ -19,8 +21,6 @@ You also will need a Git PowerShell (Posh-Git).<br />
       <li>Add-PoshGitToProfile -AllHosts -Force</li>
     </ol>
   </li>
-  <li>Pull down the config files from this repo and move to -> C:\Users\{user}\AppData\Roaming\Console</li>
-  <li>Open the settings and snippets xml files and make adjustments based on your folder structure, etc</li>
 </ol>
 
 Additional Troubleshooting:
