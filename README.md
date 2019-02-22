@@ -1,11 +1,16 @@
 # Super Mario Git PowerShell
 # Turns Angular-CLI into a Video Game
 
-https://github.com/cbucher/console/wiki/Downloads<br />
 OR
 <ol>
-  <li>Install Chocolatey: https://chocolatey.org/install</li>
-  <li>Choco Install ConsoleZ</li>
+  <li>
+    Download from: https://github.com/cbucher/console/wiki/Downloads
+    <ul>
+      <li>OR</li>
+      <li>Install Chocolatey: https://chocolatey.org/install</li>
+      <li>Choco Install ConsoleZ</li>
+    </ul>
+  </li>
   <li>Pull down the config files from this repo and move to -> C:\Users\{user}\AppData\Roaming\Console</li>
   <li>Open the settings and snippets xml files and make adjustments based on your folder structure, etc</li>
 </ol>
