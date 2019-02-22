@@ -1,7 +1,6 @@
 # Super Mario Git PowerShell
 # Turns Angular-CLI into a Video Game
 
-OR
 <ol>
   <li>
     Download from: https://github.com/cbucher/console/wiki/Downloads
