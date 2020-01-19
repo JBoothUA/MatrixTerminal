@@ -124,10 +124,10 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 	</Snippet>
 
 	
-	<!-- Ping Mario = ping -->
+	<!-- Mario Ping = ping -->
 	<Snippet>
 		<Header>
-			<Title>Ping Mario</Title>
+			<Title>Mario Ping</Title>
 			<Description>ping command with variables</Description>
 			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
@@ -173,7 +173,7 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 			</ShellTypes>
 		</Header>
 		<Code>
-			<![CDATA[C:\Users\jbooth1\AppData\Roaming\Console\console.xml
+			<![CDATA[C:\Users\jb\AppData\Roaming\Console\console.xml
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
@@ -192,7 +192,7 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 			</ShellTypes>
 		</Header>
 		<Code>
-			<![CDATA[C:\Users\jbooth1\AppData\Roaming\Console\Snippets\snippets.xml
+			<![CDATA[C:\Users\jb\AppData\Roaming\Console\Snippets\snippets.xml
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
@@ -211,8 +211,8 @@ Write-Host 'This is my Mario Shell!' -ForegroundColor magenta
 			</ShellTypes>
 		</Header>
 		<Code>
-			<![CDATA[copy -R -force C:\Users\jbooth1\AppData\Roaming\Console\* C:\Users\jbooth1\Source\Repos\mario-shell\Config
-cd C:\Users\jbooth1\Source\Repos\mario-shell\Config
+			<![CDATA[copy -R -force C:\Users\jb\AppData\Roaming\Console\* C:\Users\JB\Documents\GitHub\mario-shell\Config
+cd C:\Users\JB\Documents\GitHub\mario-shell\Config
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
@@ -253,7 +253,7 @@ cd C:\Users\jbooth1\Source\Repos\mario-shell\Config
 			</ShellTypes>
 		</Header>
 		<Code>
-			<![CDATA[[xml]$XmlDocument = Get-Content C:\Users\jbooth1\AppData\Roaming\Console\console.xml
+			<![CDATA[[xml]$XmlDocument = Get-Content C:\Users\jb\AppData\Roaming\Console\console.xml
 			$XmlDocument.settings.tabs.tab | Format-Table -AutoSize
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
