@@ -35,7 +35,7 @@
 			</ShellTypes>
 		</Header>
 		<Code>
-			<![CDATA[yarn run test-debug
+			<![CDATA[yarn run test
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
