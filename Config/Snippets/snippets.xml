@@ -155,6 +155,52 @@ iisreset
 	</Snippet>
 
 
+	<!-- Items = list all tabs -->
+	<Snippet>
+		<Header>
+			<Title>Items</Title>
+			<Description>list all of the tabs</Description>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[[xml]$XmlDocument = Get-Content C:\Users\jb\AppData\Roaming\Console\console.xml
+			$XmlDocument.settings.tabs.tab | Format-Table -AutoSize
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Equip = add package -->
+	<Snippet>
+		<Header>
+			<Title>Equip</Title>
+			<Description>add package</Description>
+			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>package_name</ID>
+				<ToolTip>The package name.</ToolTip>
+				<Default>@galileo/common-libraries</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[yarn add $package_name$@latest --save
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
 	<!-- Attack the Core Monster = Config to Core -->
 	<Snippet>
 		<Header>
@@ -209,52 +255,6 @@ yarn --cwd D:\Repos\Galileo\CommonSite\Source\CommonSiteFrontend run build
 		</Header>
 		<Code>
 			<![CDATA[yarn run test
-]]> <!-- return of line, the command is launched after clicking OK -->
-		</Code>
-	</Snippet>
-
-
-	<!-- Equip = add package -->
-	<Snippet>
-		<Header>
-			<Title>Equip</Title>
-			<Description>add package</Description>
-			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
-			<Version>1.0</Version>
-			<ShellTypes>
-				<ShellType>cmd</ShellType>
-				<ShellType>powershell</ShellType>
-			</ShellTypes>
-		</Header>
-		<Declarations>
-			<Literal>
-				<ID>package_name</ID>
-				<ToolTip>The package name.</ToolTip>
-				<Default>@galileo/common-libraries</Default>
-			</Literal>
-		</Declarations>
-		<Code Delimiter="$">
-			<![CDATA[yarn add $package_name$@latest --save
-]]> <!-- return of line, the command is launched after clicking OK -->
-		</Code>
-	</Snippet>
-
-
-	<!-- Items = list all tabs -->
-	<Snippet>
-		<Header>
-			<Title>Items</Title>
-			<Description>list all of the tabs</Description>
-			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
-			<Version>1.0</Version>
-			<ShellTypes>
-				<ShellType>cmd</ShellType>
-				<ShellType>powershell</ShellType>
-			</ShellTypes>
-		</Header>
-		<Code>
-			<![CDATA[[xml]$XmlDocument = Get-Content C:\Users\jb\AppData\Roaming\Console\console.xml
-			$XmlDocument.settings.tabs.tab | Format-Table -AutoSize
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
