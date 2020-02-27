@@ -42,9 +42,9 @@
 			</Literal>
 		</Declarations>
 		<Code Delimiter="$">
-			<![CDATA[iisreset
+			<![CDATA[iisreset /stop
 dotnet publish -c release -f $framework_version$
-iisreset
+iisreset /start
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
