@@ -1,5 +1,5 @@
 # Super Mario Git PowerShell
-# Turns Angular-CLI into a Video Game
+# Turns the Command Line into a Video Game
 
 <ol>
   <li>
