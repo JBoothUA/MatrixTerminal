@@ -124,11 +124,11 @@ iisreset /start
 	</Snippet>
 
 
-	<!-- Contact = marketing email -->
+	<!-- Contact = matrix tools mail -->
 	<Snippet>
 		<Header>
 			<Title>Contact</Title>
-			<Description>marketing email</Description>
+			<Description>matrix tools mail</Description>
 			<Author Url="http://www.jessebooth.codes" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
@@ -145,11 +145,11 @@ iisreset /start
 			<Literal>
 				<ID>details</ID>
 				<ToolTip>The contact details.</ToolTip>
-				<Default>Mario Shell ~ Contact</Default>
+				<Default>Mario Shell ~ Mail</Default>
 			</Literal>
 		</Declarations>
 		<Code Delimiter="$">
-			<![CDATA[curl https://www.matrix.tools/marketing/contact -d 'secretAnswer=7&email=$email$&details=$details$'
+			<![CDATA[curl https://www.matrix.tools/mail/nashvilleinktest -d 'name=Jesse&email=$email$&telephone=1&details=$details$&secretAnswer=7'
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
