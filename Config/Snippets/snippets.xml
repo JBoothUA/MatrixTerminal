@@ -34,17 +34,8 @@
 				<ShellType>powershell</ShellType>
 			</ShellTypes>
 		</Header>
-		<Declarations>
-			<Literal>
-				<ID>framework_version</ID>
-				<ToolTip>The .NET framework version.</ToolTip>
-				<Default>netcoreapp3.0</Default>
-			</Literal>
-		</Declarations>
 		<Code Delimiter="$">
-			<![CDATA[iisreset /stop
-dotnet publish -c release -f $framework_version$
-iisreset /start
+			<![CDATA[c:\users\dev\deploy.bat
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
