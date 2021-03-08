@@ -472,6 +472,7 @@ cd C:\Users\JB\Documents\GitHub\mario-shell\Config
 			git commit -m "$comment$"
 			git push
 			git checkout dev
+			git pull
 			git merge master
 			git push
 			git checkout master			
