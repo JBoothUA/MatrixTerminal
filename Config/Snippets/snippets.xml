@@ -16,7 +16,7 @@
 			</ShellTypes>
 		</Header>
 		<Code>
-			<![CDATA[yarn run build			
+			<![CDATA[npm run build
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
@@ -186,7 +186,7 @@
 			</Literal>
 		</Declarations>
 		<Code Delimiter="$">
-			<![CDATA[yarn add $package_name$@latest --save
+			<![CDATA[npm add $package_name$@latest --save
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
@@ -206,7 +206,7 @@
 		</Header>
 		<Code>
 			<![CDATA[copy -R -force ./dist/* D:\Repos\Galileo\CommonWebRoot\Source\CommonWebRootFrontend\node_modules\@galileo
-yarn --cwd D:\Repos\Galileo\CommonWebRoot\Source\CommonWebRootFrontend run build
+npm --cwd D:\Repos\Galileo\CommonWebRoot\Source\CommonWebRootFrontend run build
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
@@ -226,7 +226,7 @@ yarn --cwd D:\Repos\Galileo\CommonWebRoot\Source\CommonWebRootFrontend run build
 		</Header>
 		<Code>
 			<![CDATA[copy -R -force ./dist/* D:\Repos\Galileo\CommonSite\Source\CommonSiteFrontend\node_modules\@galileo
-yarn --cwd D:\Repos\Galileo\CommonSite\Source\CommonSiteFrontend run build
+npm --cwd D:\Repos\Galileo\CommonSite\Source\CommonSiteFrontend run build
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
@@ -245,7 +245,7 @@ yarn --cwd D:\Repos\Galileo\CommonSite\Source\CommonSiteFrontend run build
 			</ShellTypes>
 		</Header>
 		<Code>
-			<![CDATA[yarn run test
+			<![CDATA[npm run test
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
@@ -443,6 +443,38 @@ cd C:\Users\JB\Documents\GitHub\mario-shell\Config
 			<![CDATA[git add -A
 			git commit -m "$comment$"
 			git push			
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+        <!-- Sync Point = commit and push and sync with [dev] branch -->
+	<Snippet>
+		<Header>
+			<Title>Sync Point</Title>
+			<Description>commit and push</Description>
+			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>comment</ID>
+				<ToolTip>The commit comment.</ToolTip>
+				<Default>save point</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[git add -A
+			git commit -m "$comment$"
+			git push
+			git checkout dev
+			git merge master
+			git push
+			git checkout master			
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
