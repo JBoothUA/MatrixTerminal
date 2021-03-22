@@ -395,7 +395,7 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 			<Literal>
 				<ID>comment</ID>
 				<ToolTip>The commit comment.</ToolTip>
-				<Default>save point</Default>
+				<Default>Save Point</Default>
 			</Literal>
 		</Declarations>
 		<Code Delimiter="$">
@@ -423,7 +423,7 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 			<Literal>
 				<ID>comment</ID>
 				<ToolTip>The commit comment.</ToolTip>
-				<Default>save point</Default>
+				<Default>Sync Point</Default>
 			</Literal>
 		</Declarations>
 		<Code Delimiter="$">
