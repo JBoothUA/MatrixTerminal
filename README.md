@@ -7,7 +7,7 @@
     <ul>
       <li>OR</li>
       <li>Install Chocolatey: https://chocolatey.org/install</li>
-      <li>Choco Install ConsoleZ</li>
+      <li><b><u>Choco Install ConsoleZ</u></b></li>
     </ul>
   </li>
   <li>Pull down the config files from this repo and move to -> C:\Users\{user}\AppData\Roaming\Console</li>
