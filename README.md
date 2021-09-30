@@ -7,7 +7,7 @@
     <ul>
       <li>OR</li>
       <li>Install Chocolatey: https://chocolatey.org/install</li>
-      <li>Choco Install ConsoleZ</li>
+      <li><b><u>Choco Install ConsoleZ</u></b></li>
     </ul>
   </li>
   <li>Pull down the config files from this repo and move to -> C:\Users\{user}\AppData\Roaming\Console</li>
@@ -28,7 +28,7 @@ You also will need a Git PowerShell (Posh-Git).<br />
 </ol>
 
 Additional Troubleshooting:
-<a target="_blank" href="https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Powershell">Git Shell</a>
+<a target="_blank" href="https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell">Git Shell</a>
 <br />
 Inital Setup Credit:
 <a target="_blank" href="https://haacked.com/archive/2015/10/29/git-shell/">Git ConsoleZ</a>

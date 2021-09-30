@@ -28,6 +28,7 @@
 			<Title>Publish</Title>
 			<Description>publish</Description>
 			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+<<<<<<< HEAD
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -47,6 +48,8 @@
 			<Title>Deploy Script</Title>
 			<Description>master dev deployment script</Description>
 			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+=======
+>>>>>>> 513088c35ac3ec42c43b15385d90f8cd36202cd3
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
