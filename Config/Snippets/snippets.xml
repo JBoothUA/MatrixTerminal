@@ -8,7 +8,7 @@
 		<Header>
 			<Title>Build</Title>
 			<Description>build</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -22,12 +22,31 @@
 	</Snippet>
 
 
-	<!-- Deploy = publish -->
+	<!-- Publish = publish -->
 	<Snippet>
 		<Header>
-			<Title>Deploy</Title>
+			<Title>Publish</Title>
 			<Description>publish</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code Delimiter="$">
+			<![CDATA[dotnet publish -c release
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Deploy Script = master dev deployment script -->
+	<Snippet>
+		<Header>
+			<Title>Deploy Script</Title>
+			<Description>master dev deployment script</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -46,7 +65,7 @@
 		<Header>
 			<Title>Heal</Title>
 			<Description>test</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -65,7 +84,7 @@
 		<Header>
 			<Title>New Quest</Title>
 			<Description>new branch</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -92,7 +111,7 @@
 		<Header>
 			<Title>Map</Title>
 			<Description>gitk</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -111,7 +130,7 @@
 		<Header>
 			<Title>Explore</Title>
 			<Description>open explorer</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -130,7 +149,7 @@
 		<Header>
 			<Title>Connect</Title>
 			<Description>ping command with variables</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -166,7 +185,7 @@
 		<Header>
 			<Title>Contact</Title>
 			<Description>matrix tools email</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -197,7 +216,7 @@
 		<Header>
 			<Title>Equip</Title>
 			<Description>add package</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -223,7 +242,7 @@
 		<Header>
 			<Title>Items</Title>
 			<Description>list all of the tabs</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -243,7 +262,7 @@
 		<Header>
 			<Title>Clone</Title>
 			<Description>clone tab and run ng serve</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -265,7 +284,7 @@
 		<Header>
 			<Title>Special Move</Title>
 			<Description>opens all of the tabs</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -307,7 +326,7 @@
 		<Header>
 			<Title>Colors</Title>
 			<Description>hello world</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>powershell</ShellType>
@@ -326,7 +345,7 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 		<Header>
 			<Title>Combos</Title>
 			<Description>edit the snippets file</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -345,7 +364,7 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 		<Header>
 			<Title>Settings</Title>
 			<Description>edit the settings file</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -364,7 +383,7 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 		<Header>
 			<Title>Save Settings</Title>
 			<Description>backup config files</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -384,7 +403,7 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 		<Header>
 			<Title>Save Point</Title>
 			<Description>commit and push</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -412,7 +431,7 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 		<Header>
 			<Title>Sync Point</Title>
 			<Description>commit and push</Description>
-			<Author Url="https://www.jessebooth.info" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
