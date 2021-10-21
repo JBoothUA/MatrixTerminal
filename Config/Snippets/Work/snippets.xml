@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConsoleZSnippets>
+	<DownloadUrl>https://github.com/JBoothUA/mario-shell/blob/master/Config/Snippets/snippets.xml</DownloadUrl>
+
+
+	<!-- Build = build -->
+	<Snippet>
+		<Header>
+			<Title>Build</Title>
+			<Description>build</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[npm run build
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Heal = test -->
+	<Snippet>
+		<Header>
+			<Title>Heal</Title>
+			<Description>test</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>flags</ID>
+				<ToolTip>Command-line Flags.</ToolTip>
+				<Default>--code-coverage</Default>
+			</Literal>
+		</Declarations>
+		<Code>
+			<![CDATA[ng test fcid $flags$
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Repair the Library = test the library -->
+	<Snippet>
+		<Header>
+			<Title>Repair the Library</Title>
+			<Description>test the library</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>flags</ID>
+				<ToolTip>Command-line Flags.</ToolTip>
+				<Default>--code-coverage</Default>
+			</Literal>
+		</Declarations>
+		<Code>
+			<![CDATA[ng test fcid-ui-lib $flags$
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Repair the Map = test the map -->
+	<Snippet>
+		<Header>
+			<Title>Repair the Map</Title>
+			<Description>test the map</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>flags</ID>
+				<ToolTip>Command-line Flags.</ToolTip>
+				<Default>--code-coverage</Default>
+			</Literal>
+		</Declarations>
+		<Code>
+			<![CDATA[ng test fcid-map $flags$
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Attack = serve -->
+	<Snippet>
+		<Header>
+			<Title>Attack</Title>
+			<Description>serve</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[ng serve
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- New Quest = new branch -->
+	<Snippet>
+		<Header>
+			<Title>New Quest</Title>
+			<Description>new branch</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>branch_name</ID>
+				<ToolTip>The branch name.</ToolTip>
+				<Default>new-branch</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[git checkout -b $branch_name$
+			git push --set-upstream origin $branch_name$
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Map = gitk -->
+	<Snippet>
+		<Header>
+			<Title>Map</Title>
+			<Description>gitk</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[gitk
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Explore = open explorer -->
+	<Snippet>
+		<Header>
+			<Title>Explore</Title>
+			<Description>open explorer</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[explorer .
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Connect = ping -->
+	<Snippet>
+		<Header>
+			<Title>Connect</Title>
+			<Description>ping command with variables</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>target_name</ID>
+				<ToolTip>The target name.</ToolTip>
+				<Default>www.matrix.tools</Default>
+			</Literal>
+			<Literal>
+				<ID>count</ID>
+				<ToolTip>Number of echo requests to send.</ToolTip>
+				<Default>4</Default>
+			</Literal>
+			<Literal>
+				<ID>timeout</ID>
+				<ToolTip>Timeout in milliseconds to wait for each reply.</ToolTip>
+				<Default>500</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[ping.exe -4 -n "$count$" -w "$timeout$" "$target_name$"
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Contact = matrix tools email -->
+	<Snippet>
+		<Header>
+			<Title>Contact</Title>
+			<Description>matrix tools email</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>email</ID>
+				<ToolTip>The email address.</ToolTip>
+				<Default>matrixtoolsllc@gmail.com</Default>
+			</Literal>
+			<Literal>
+				<ID>details</ID>
+				<ToolTip>The contact details.</ToolTip>
+				<Default>Mario Shell ~ Mail</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[curl https://www.matrix.tools/api/email/matrixtools -d 'name=Jesse&email=$email$&telephone=1&details=$details$'
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Equip = add package -->
+	<Snippet>
+		<Header>
+			<Title>Equip</Title>
+			<Description>add package</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>package_name</ID>
+				<ToolTip>The package name.</ToolTip>
+				<Default>@galileo/common-libraries</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[npm add $package_name$@latest --save
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Items = list all tabs -->
+	<Snippet>
+		<Header>
+			<Title>Items</Title>
+			<Description>list all of the tabs</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[[xml]$XmlDocument = Get-Content C:\Users\JesseBooth\AppData\Roaming\Console\console.xml
+			$XmlDocument.settings.tabs.tab | Format-Table -AutoSize
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Clone = clone tab -->
+	<Snippet>
+		<Header>
+			<Title>Clone</Title>
+			<Description>clone tab and run ng serve</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[$posh = New-Object -ComObject WScript.Shell
+			$posh.SendKeys('^{Insert}')
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Special Move = open all tabs -->
+	<Snippet>
+		<Header>
+			<Title>Special Move</Title>
+			<Description>opens all of the tabs</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[$posh = New-Object -ComObject WScript.Shell
+			$posh.SendKeys('^t')
+			Sleep 1
+			$posh.SendKeys('^{F2}')
+			Sleep 1
+			$posh.SendKeys('^{F3}')
+			Sleep 1
+			$posh.SendKeys('^{F4}')
+			Sleep 1
+			$posh.SendKeys('^{F5}')
+			Sleep 1
+			$posh.SendKeys('^{F6}')
+			Sleep 1
+			$posh.SendKeys('^{F7}')
+			Sleep 1
+			$posh.SendKeys('^{F8}')
+			Sleep 1
+			$posh.SendKeys('^{F9}')
+			Sleep 1
+			$posh.SendKeys('^{F10}')
+			Sleep 1
+			$posh.SendKeys('^{F11}')
+			Sleep 1
+			$posh.SendKeys('^{F12}')
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Colors = hello world -->
+	<Snippet>
+		<Header>
+			<Title>Colors</Title>
+			<Description>hello world</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[Write-Host 'Hello my name is Mario and I work for Matrix Tools!' -ForegroundColor blue
+Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor magenta
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Combos = edit snippets file -->
+	<Snippet>
+		<Header>
+			<Title>Combos</Title>
+			<Description>edit the snippets file</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[C:\Users\JesseBooth\AppData\Roaming\Console\Snippets\snippets.xml
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Settings = edit settings file -->
+	<Snippet>
+		<Header>
+			<Title>Settings</Title>
+			<Description>edit the settings file</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[C:\Users\JesseBooth\AppData\Roaming\Console\console.xml
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Save Point = commit and push -->
+	<Snippet>
+		<Header>
+			<Title>Save Point</Title>
+			<Description>commit and push</Description>
+			<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>comment</ID>
+				<ToolTip>The commit comment.</ToolTip>
+				<Default>Save Point</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[git add -A
+			git commit -m "$comment$"
+			git push			
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+</ConsoleZSnippets>
