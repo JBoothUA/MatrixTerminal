@@ -345,7 +345,7 @@
 				<color id="15" r="255" g="255" b="255"/>
 		</colors>
 		</tab>
-		<tab title="Spencer Medical" icon="C:\ConsoleZ\Icons\matrix.ico" use_default_icon="0">
+		<tab title="Spencer Medical" icon="C:\ConsoleZ\Icons\1up.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\SpencerMedical\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="0" g="128" b="0"/>
 			<background type="1" r="0" g="0" b="0">
@@ -372,9 +372,9 @@
 				<color id="15" r="255" g="255" b="255"/>
 		</colors>
 		</tab>
-		<tab title="BnB Fence" icon="C:\ConsoleZ\Icons\fence.ico" use_default_icon="0">
-			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\BnbFence\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="0" r="0" g="128" b="0"/>
+		<tab title="Neighbors Tax" icon="C:\ConsoleZ\Icons\boo.ico" use_default_icon="0">
+			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\NeighborsTax" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<cursor style="0" r="255" g="128" b="0"/>
 			<background type="1" r="0" g="0" b="0">
 				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
