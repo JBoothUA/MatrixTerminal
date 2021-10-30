@@ -36,7 +36,7 @@ Inital Setup Credit:
 ## TODO
 ### Calculate Points / High Scores!
 <div>
-  The Snippets would use curl to call an API.
+  Every Snippet would use curl to call an API.
   This API could take the Command and somehow the user, and save the timestamp.
   It could then calculate scores per day.
   Example, every time you run Explore you get 100 points.
