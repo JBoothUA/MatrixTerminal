@@ -32,3 +32,14 @@ Additional Troubleshooting:
 <br />
 Inital Setup Credit:
 <a target="_blank" href="https://haacked.com/archive/2015/10/29/git-shell/">Git ConsoleZ</a>
+
+## TODO
+### Calculate Points / High Scores!
+<div>
+  The Snippets would use curl to call an API.
+  This API could take the Command and somehow the user, and save the timestamp.
+  It could then calculate scores per day.
+  Example, every time you run Explore you get 100 points.
+  Have a cool UI (maybe even video game) to track High Scores per day.
+</div>
+
