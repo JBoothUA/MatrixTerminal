@@ -188,7 +188,7 @@
 		<Code Delimiter="$">
 			<![CDATA[
 			Remove-item alias:curl
-			curl https://www.matrix.tools/api/email/matrixtools --d 'email=$email$&details=$details$'
+			curl https://www.matrix.tools/api/email/matrixtools --data 'email=$email$&details=$details$'
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
