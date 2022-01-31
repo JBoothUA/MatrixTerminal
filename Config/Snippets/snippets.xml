@@ -416,7 +416,7 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 			<Literal>
 				<ID>comment</ID>
 				<ToolTip>The commit comment.</ToolTip>
-				<Default>Save Point</Default>
+				<Default>DEV: </Default>
 			</Literal>
 		</Declarations>
 		<Code Delimiter="$">
