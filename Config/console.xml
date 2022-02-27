@@ -194,7 +194,7 @@
 		</tab>
 		<tab title="Jesse Booth" icon="C:\ConsoleZ\Icons\mario.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\JesseBoothInfo" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="0" r="0" g="128" b="255"/>
+			<cursor style="9" r="0" g="128" b="255"/>
 			<background type="1" r="0" g="0" b="0">
 				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -203,7 +203,7 @@
 		</tab>
 		<tab title="Patnaik Co." icon="C:\ConsoleZ\Icons\goomba.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\PatnaikCo" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="0" r="255" g="128" b="0"/>
+			<cursor style="9" r="255" g="128" b="0"/>
 			<background type="1" r="0" g="0" b="0">
 				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -230,7 +230,7 @@
 		</tab>
 		<tab title="Patnaik Realty" icon="C:\ConsoleZ\Icons\goomba.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\PatnaikRealty" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="0" r="0" g="128" b="0"/>
+			<cursor style="9" r="0" g="128" b="0"/>
 			<background type="1" r="0" g="0" b="0">
 				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -257,7 +257,7 @@
 		</tab>
 		<tab title="Nashville Ink" icon="C:\ConsoleZ\Icons\yinyang.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\NashvilleInk\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="0" r="128" g="0" b="128"/>
+			<cursor style="9" r="128" g="0" b="128"/>
 			<background type="1" r="0" g="0" b="0">
 				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -284,7 +284,7 @@
 		</tab>
 		<tab title="Rainbow Balloon" icon="C:\ConsoleZ\Icons\rainbow.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\RainbowBalloon\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="0" r="255" g="128" b="255"/>
+			<cursor style="9" r="255" g="128" b="255"/>
 			<background type="1" r="0" g="0" b="0">
 				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -311,7 +311,7 @@
 		</tab>
 		<tab title="EzMotion Band" icon="C:\ConsoleZ\Icons\ezmotion.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\EzMotionBand\calendar-app" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="0" r="255" g="255" b="0"/>
+			<cursor style="9" r="255" g="255" b="0"/>
 			<background type="1" r="0" g="0" b="0">
 				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -338,7 +338,7 @@
 		</tab>
 		<tab title="Spencer Medical" icon="C:\ConsoleZ\Icons\1up.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\SpencerMedical\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="0" r="0" g="128" b="0"/>
+			<cursor style="9" r="0" g="128" b="0"/>
 			<background type="1" r="0" g="0" b="0">
 				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -365,7 +365,7 @@
 		</tab>
 		<tab title="Neighbors Tax" icon="C:\ConsoleZ\Icons\boo.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\NeighborsTax" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="0" r="255" g="128" b="0"/>
+			<cursor style="9" r="255" g="128" b="0"/>
 			<background type="1" r="0" g="0" b="0">
 				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
