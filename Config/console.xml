@@ -35,7 +35,7 @@
 			<selection_color r="255" g="255" b="255"/>
 			<highlight_color r="191" g="191" b="191"/></styles>
 		<position x="-1" y="-1" save_position="0" w="-1" h="-1" save_size="0" z_order="0" dock="-1" snap="-1" save_state="0" state="-1"/>
-		<transparency type="1" active_alpha="205" inactive_alpha="155" r="0" g="0" b="0" active="1"/></appearance>
+		<transparency type="1" active_alpha="205" inactive_alpha="155" r="0" g="0" b="0" active="0"/></appearance>
 	<behavior>
 		<copy_paste copy_on_select="0" clear_on_copy="1" sensitive_copy="1" no_wrap="1" eol_spaces="1" trim_spaces="1" rtf="1" copy_newline_char="0" include_left_delimiter="0" include_right_delimiter="0" left_delimiters=" ([" right_delimiters=" )]"/>
 		<scroll page_scroll_rows="0"/>
@@ -185,23 +185,14 @@
 	<tabs>
 		<tab title="Matrix Tools" icon="C:\ConsoleZ\Icons\seo.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\MatrixTools\Website\ClientApp" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="0" r="0" g="128" b="0"/>
+			<cursor style="9" r="255" g="255" b="255"/>
 			<background type="1" r="0" g="0" b="0">
 				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
 		</tab>
-		<tab title="Red Yoshi" icon="C:\ConsoleZ\Icons\redyoshi.ico" use_default_icon="0">
-			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\RedYoshi\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="0" r="255" g="0" b="0"/>
-			<background type="1" r="0" g="0" b="0">
-				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
-					<tint opacity="0" r="0" g="0" b="0"/>
-				</image>
-			</background>
-		</tab>
-		<tab title="Jesse Booth Info" icon="C:\ConsoleZ\Icons\mario.ico" use_default_icon="0">
+		<tab title="Jesse Booth" icon="C:\ConsoleZ\Icons\mario.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\JesseBoothInfo" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="0" r="0" g="128" b="255"/>
 			<background type="1" r="0" g="0" b="0">
