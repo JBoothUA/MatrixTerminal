@@ -450,7 +450,10 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 			</ShellTypes>
 		</Header>
 		<Code>
-			<![CDATA[copy -R -force C:\Users\jb\AppData\Roaming\Console\* C:\Users\JB\Documents\GitHub\mario-shell\Config
+			<![CDATA[$posh = New-Object -ComObject WScript.Shell
+			$posh.SendKeys('^{Insert}')
+			Sleep 1
+			copy -R -force C:\Users\jb\AppData\Roaming\Console\* C:\Users\JB\Documents\GitHub\mario-shell\Config
 			cd C:\Users\JB\Documents\GitHub\mario-shell\Config
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
