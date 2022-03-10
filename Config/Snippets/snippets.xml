@@ -8,7 +8,7 @@
 		<Header>
 			<Title>Craft</Title>
 			<Description>build</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -27,7 +27,7 @@
 		<Header>
 			<Title>Attack</Title>
 			<Description>Serve</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -41,12 +41,12 @@
 	</Snippet>
 
 
-	<!-- New Quest = new branch -->
+	<!-- Main Quest = new branch -->
 	<Snippet>
 		<Header>
-			<Title>New Quest</Title>
+			<Title>Main Quest</Title>
 			<Description>new branch</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -57,7 +57,7 @@
 			<Literal>
 				<ID>branch_name</ID>
 				<ToolTip>The branch name.</ToolTip>
-				<Default>new-branch</Default>
+				<Default>New-Quest</Default>
 			</Literal>
 		</Declarations>
 		<Code Delimiter="$">
@@ -68,12 +68,38 @@
 	</Snippet>
 
 
+	<!-- Side Quest = switch branch -->
+	<Snippet>
+		<Header>
+			<Title>Side Quest</Title>
+			<Description>switch branch</Description>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>branch_name</ID>
+				<ToolTip>The branch name.</ToolTip>
+				<Default>master</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[git checkout $branch_name$
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
 	<!-- Map = gitk -->
 	<Snippet>
 		<Header>
 			<Title>Map</Title>
 			<Description>gitk</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -92,7 +118,7 @@
 		<Header>
 			<Title>Explore</Title>
 			<Description>open explorer</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -111,7 +137,7 @@
 		<Header>
 			<Title>Cure</Title>
 			<Description>test</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -130,7 +156,7 @@
 		<Header>
 			<Title>Cure All</Title>
 			<Description>e2e test</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -149,7 +175,7 @@
 		<Header>
 			<Title>Deploy Net</Title>
 			<Description>dotnet publish</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -168,7 +194,7 @@
 		<Header>
 			<Title>Deploy Matrix</Title>
 			<Description>custom deployment script</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -187,7 +213,7 @@
 		<Header>
 			<Title>Equip</Title>
 			<Description>add package</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -213,7 +239,7 @@
 		<Header>
 			<Title>Items</Title>
 			<Description>list all of the tabs</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -228,141 +254,12 @@
 	</Snippet>
 
 
-	<!-- Clone = clone tab -->
-	<Snippet>
-		<Header>
-			<Title>Clone</Title>
-			<Description>clone tab and run ng serve</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
-			<Version>1.0</Version>
-			<ShellTypes>
-				<ShellType>cmd</ShellType>
-				<ShellType>powershell</ShellType>
-			</ShellTypes>
-		</Header>
-		<Code>
-			<![CDATA[$posh = New-Object -ComObject WScript.Shell
-			$posh.SendKeys('^{Insert}')
-			Sleep 1
-			ng serve
-]]> <!-- return of line, the command is launched after clicking OK -->
-		</Code>
-	</Snippet>
-
-
-	<!-- Connect = ping -->
-	<Snippet>
-		<Header>
-			<Title>Connect</Title>
-			<Description>ping command with variables</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
-			<Version>1.0</Version>
-			<ShellTypes>
-				<ShellType>cmd</ShellType>
-				<ShellType>powershell</ShellType>
-			</ShellTypes>
-		</Header>
-		<Declarations>
-			<Literal>
-				<ID>target_name</ID>
-				<ToolTip>The target name.</ToolTip>
-				<Default>www.matrix.tools</Default>
-			</Literal>
-			<Literal>
-				<ID>count</ID>
-				<ToolTip>Number of echo requests to send.</ToolTip>
-				<Default>4</Default>
-			</Literal>
-			<Literal>
-				<ID>timeout</ID>
-				<ToolTip>Timeout in milliseconds to wait for each reply.</ToolTip>
-				<Default>500</Default>
-			</Literal>
-		</Declarations>
-		<Code Delimiter="$">
-			<![CDATA[ping.exe -4 -n "$count$" -w "$timeout$" "$target_name$"
-]]> <!-- return of line, the command is launched after clicking OK -->
-		</Code>
-	</Snippet>
-
-
-	<!-- Contact = matrix tools email -->
-	<Snippet>
-		<Header>
-			<Title>Contact</Title>
-			<Description>matrix tools email</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
-			<Version>1.0</Version>
-			<ShellTypes>
-				<ShellType>cmd</ShellType>
-				<ShellType>powershell</ShellType>
-			</ShellTypes>
-		</Header>
-		<Declarations>
-			<Literal>
-				<ID>email</ID>
-				<ToolTip>The email address.</ToolTip>
-				<Default>matrixtoolsllc@gmail.com</Default>
-			</Literal>
-			<Literal>
-				<ID>details</ID>
-				<ToolTip>The contact details.</ToolTip>
-				<Default>Mario Shell ~ Mail</Default>
-			</Literal>
-		</Declarations>
-		<Code Delimiter="$">
-			<![CDATA[
-			Remove-item alias:curl
-			curl https://www.matrix.tools/api/email/matrixtools --data 'email=$email$&details=$details$'
-]]> <!-- return of line, the command is launched after clicking OK -->
-		</Code>
-	</Snippet>
-
-
-	<!-- Colors = hello world -->
-	<Snippet>
-		<Header>
-			<Title>Colors</Title>
-			<Description>hello world</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
-			<Version>1.0</Version>
-			<ShellTypes>
-				<ShellType>powershell</ShellType>
-			</ShellTypes>
-		</Header>
-		<Code>
-			<![CDATA[Write-Host 'Hello my name is Mario and I work for Matrix Tools!' -ForegroundColor blue
-Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor magenta
-]]> <!-- return of line, the command is launched after clicking OK -->
-		</Code>
-	</Snippet>
-
-
-	<!-- Combos = edit snippets file -->
-	<Snippet>
-		<Header>
-			<Title>Combos</Title>
-			<Description>edit the snippets file</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
-			<Version>1.0</Version>
-			<ShellTypes>
-				<ShellType>cmd</ShellType>
-				<ShellType>powershell</ShellType>
-			</ShellTypes>
-		</Header>
-		<Code>
-			<![CDATA[C:\Users\jb\AppData\Roaming\Console\Snippets\snippets.xml
-]]> <!-- return of line, the command is launched after clicking OK -->
-		</Code>
-	</Snippet>
-
-
 	<!-- Special Move = open all tabs -->
 	<Snippet>
 		<Header>
 			<Title>Special Move</Title>
 			<Description>opens all of the tabs</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -399,12 +296,141 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 	</Snippet>
 
 
+	<!-- Clone = clone tab -->
+	<Snippet>
+		<Header>
+			<Title>Clone</Title>
+			<Description>clone tab and run ng serve</Description>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[$posh = New-Object -ComObject WScript.Shell
+			$posh.SendKeys('^{Insert}')
+			Sleep 1
+			ng serve
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Connect = ping -->
+	<Snippet>
+		<Header>
+			<Title>Connect</Title>
+			<Description>ping command with variables</Description>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>target_name</ID>
+				<ToolTip>The target name.</ToolTip>
+				<Default>www.matrix.tools</Default>
+			</Literal>
+			<Literal>
+				<ID>count</ID>
+				<ToolTip>Number of echo requests to send.</ToolTip>
+				<Default>4</Default>
+			</Literal>
+			<Literal>
+				<ID>timeout</ID>
+				<ToolTip>Timeout in milliseconds to wait for each reply.</ToolTip>
+				<Default>500</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[ping.exe -4 -n "$count$" -w "$timeout$" "$target_name$"
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Contact = matrix tools email -->
+	<Snippet>
+		<Header>
+			<Title>Contact</Title>
+			<Description>matrix tools email</Description>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>email</ID>
+				<ToolTip>The email address.</ToolTip>
+				<Default>matrixtoolsllc@gmail.com</Default>
+			</Literal>
+			<Literal>
+				<ID>details</ID>
+				<ToolTip>The contact details.</ToolTip>
+				<Default>Mario Shell ~ Mail</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[
+			Remove-item alias:curl
+			curl https://www.matrix.tools/api/email/matrixtools --data 'email=$email$&details=$details$'
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Colors = hello world -->
+	<Snippet>
+		<Header>
+			<Title>Colors</Title>
+			<Description>hello world</Description>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[Write-Host 'Hello my name is Mario and I work for Matrix Tools!' -ForegroundColor blue
+Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor magenta
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Combos = edit snippets file -->
+	<Snippet>
+		<Header>
+			<Title>Combos</Title>
+			<Description>edit the snippets file</Description>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Code>
+			<![CDATA[C:\Users\jb\AppData\Roaming\Console\Snippets\snippets.xml
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
 	<!-- Settings = edit settings file -->
 	<Snippet>
 		<Header>
 			<Title>Settings</Title>
 			<Description>edit the settings file</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -423,7 +449,7 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 		<Header>
 			<Title>Save Settings</Title>
 			<Description>backup config files</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
@@ -446,7 +472,7 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 		<Header>
 			<Title>Save Point</Title>
 			<Description>commit and push</Description>
-			<Author Url="https://www.matrix.tools" Email="jesseboothua@gmail.com">JBoothUA</Author>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
 			<ShellTypes>
 				<ShellType>cmd</ShellType>
