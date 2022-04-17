@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\README.md" />
+    <None Include="makefile" />
+    <None Include="console.hhc">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="console.hhk">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="console.hhp">
+      <Filter>Help Files</Filter>
+    </None>
+    <None Include="html\acknowledgements.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\copyright.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\credentials.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\gpl.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\introduction.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\language.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\menus.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\running.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_appearance.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_appearance_font.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_appearance_fullscreen.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_appearance_styles.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_appearance_transparency.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_behavior.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_behavior_more.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_console.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_hotkeys.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_mouse.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_tabs.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_tabs_background.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_tabs_colors.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_tabs_environment.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_tabs_main.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\text_formatting.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\tips_tricks.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="styles\help.css">
+      <Filter>Help Files\styles</Filter>
+    </None>
+    <None Include="html\snippets.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\settings_appearance_controls.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+    <None Include="html\workspaces.html">
+      <Filter>Help Files\html</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Help Files">
+      <UniqueIdentifier>{68a5c5b9-f7dc-44c5-9b73-e85f5a5b18a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Help Files\html">
+      <UniqueIdentifier>{6b687a02-137b-4673-8b41-049b7e727b2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Help Files\styles">
+      <UniqueIdentifier>{a93b8e96-0b75-425e-afc9-cf5dfb258028}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

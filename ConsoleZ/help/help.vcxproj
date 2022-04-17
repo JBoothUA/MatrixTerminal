@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
+    <None Include="console.hhc" />
+    <None Include="console.hhk" />
+    <None Include="console.hhp" />
+    <None Include="html\acknowledgements.html" />
+    <None Include="html\copyright.html" />
+    <None Include="html\credentials.html" />
+    <None Include="html\gpl.html" />
+    <None Include="html\introduction.html" />
+    <None Include="html\language.html" />
+    <None Include="html\menus.html" />
+    <None Include="html\running.html" />
+    <None Include="html\settings.html" />
+    <None Include="html\settings_appearance.html" />
+    <None Include="html\settings_appearance_controls.html" />
+    <None Include="html\settings_appearance_font.html" />
+    <None Include="html\settings_appearance_fullscreen.html" />
+    <None Include="html\settings_appearance_styles.html" />
+    <None Include="html\settings_appearance_transparency.html" />
+    <None Include="html\settings_behavior.html" />
+    <None Include="html\settings_behavior_more.html" />
+    <None Include="html\settings_console.html" />
+    <None Include="html\settings_hotkeys.html" />
+    <None Include="html\settings_mouse.html" />
+    <None Include="html\settings_tabs.html" />
+    <None Include="html\settings_tabs_background.html" />
+    <None Include="html\settings_tabs_colors.html" />
+    <None Include="html\settings_tabs_environment.html" />
+    <None Include="html\settings_tabs_main.html" />
+    <None Include="html\snippets.html" />
+    <None Include="html\text_formatting.html" />
+    <None Include="html\tips_tricks.html" />
+    <None Include="html\workspaces.html" />
+    <None Include="makefile" />
+    <None Include="styles\help.css" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4A84CC27-64C4-436F-AA9F-D4A4A3D4835E}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>nmake doc</NMakeBuildCommandLine>
+    <NMakeOutput>console.chm</NMakeOutput>
+    <NMakeCleanCommandLine>nmake clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>nmake doc /A</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

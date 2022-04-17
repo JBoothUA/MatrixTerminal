@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{38d62e3c-568f-46bc-83f7-e2b3b465acf7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{087b0ad6-deee-4525-a11b-2a855bd32aa5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{4489e1b3-a800-45a7-8ae5-ca49ea815733}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="Header Files\shared">
+      <UniqueIdentifier>{8c14276e-e91a-4f46-8dd5-975b3b0c355f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GUI custom">
+      <UniqueIdentifier>{fd74ff25-b1b7-4b37-ad0f-9f0c90ddc90c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DlgSettings">
+      <UniqueIdentifier>{08b0ea22-1fa7-4d3f-aaa2-a94aaa5ae297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DlgSettings">
+      <UniqueIdentifier>{f3c9c73e-daf1-47f4-9208-844b1f5e228c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cursors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCredentials.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRenameTab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JumpList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingsHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TabView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wallpaper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Snippet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsAppearance.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsBehavior.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsBehavior2.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsConsole.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsFont.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsFullScreen.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsHotkeys.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsMain.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsMouse.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsStyles.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsTabs.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsTransparency.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSettingsControls.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="PageSettingsTabs1.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="PageSettingsTabs2.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="PageSettingsTabsColors.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="PageSettingsTabsEnv.cpp">
+      <Filter>Source Files\DlgSettings</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cursors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCredentials.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgRenameTab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FastDelegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JumpList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingsHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TabView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wallpaper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Cpp11Helpers.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\SharedMemory.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\SharedMemNames.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\NamedPipe.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Structures.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\version.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Win32Exception.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="AeroTabCtrl.h">
+      <Filter>Header Files\GUI custom</Filter>
+    </ClInclude>
+    <ClInclude Include="wtlaero.h">
+      <Filter>Header Files\GUI custom</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Snippet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicSnippetDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CFileNameEdit.h">
+      <Filter>Header Files\GUI custom</Filter>
+    </ClInclude>
+    <ClInclude Include="CNegativeNumberEdit.h">
+      <Filter>Header Files\GUI custom</Filter>
+    </ClInclude>
+    <ClInclude Include="multisplit.h">
+      <Filter>Header Files\GUI custom</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsAppearance.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsBase.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsBehavior.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsBehavior2.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsConsole.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsFont.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsFullScreen.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsHotkeys.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsMain.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsMouse.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsStyles.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsTabs.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsTransparency.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSettingsControls.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSettingsTab.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSettingsTabs1.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSettingsTabs2.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSettingsTabsColors.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSettingsTabsEnv.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="HotkeyEdit.h">
+      <Filter>Header Files\DlgSettings</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Console.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\setup\config\console.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\SearchBar.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Console.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="config.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\fullscreen1_16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen1_20.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen1_24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen1_32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen2_16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen2_20.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen2_24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen2_32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\search_16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\search_20.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\search_24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\search_32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar_16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar_20.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar_24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar_32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen1_48.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen1_64.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen2_48.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen2_64.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\search_48.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\search_64.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar_48.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar_64.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen1_40.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen1_80.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen1_128.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen2_40.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen2_80.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fullscreen2_128.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\search_40.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\search_80.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\search_128.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar_40.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar_80.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar_128.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

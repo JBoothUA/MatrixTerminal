@@ -1,0 +1,8 @@
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+CONSOLE.XML             HTML                    "..\\setup\\config\\console.xml"

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ConsoleZ</id>
+    <version>1.19.0.19104</version>
+    <title>ConsoleZ</title>
+    <authors>cbucher</authors>
+    <owners>cbucher</owners>
+    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+    <projectUrl>https://github.com/cbucher/console</projectUrl>
+    <iconUrl>https://raw.github.com/wiki/cbucher/console/ConsoleZ_128.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![screenshot005](https://github.com/cbucher/console/wiki/screenshot001.png)
+
+This is a modified version of Console 2 for a better experience under Windows Vista/7/8/10 and a better visual rendering.
+
+This fork supports:
+
+* Splitting Tabs into views (horizontally and vertically)
+* Grouping views (so input sent to one goes to all of them)
+* Windows Vista aero glass theme
+* Windows 7 jump list
+* Windows 7 wallpaper positions and slideshow
+* Windows 8 wallpapers on dual screen
+* Zooming with Ctrl-Mouse
+* Quake style console animation
+* Strict monospace font rendering
+* Settable opacity of text background color
+* Full screen
+* High DPI (per monitor)
+* Localization
+* Snippets
+* Workspaces
+* and more...</description>
+    <summary>This is a modified version of Console 2 for a better experience under Windows Vista/7/8/10 and a better visual rendering.</summary>
+    <releaseNotes>! Ignore tab flashing if console view age is less than 3 seconds.
++ Named instances.
++ "-attach" command line switch.
++ Move current view into a new tab.
++ Record which tab had focus when saving workspace.
++ Clone the whole current tab.
++ Organize tabs within submenus.
+* Selection length was not refreshed in status bar.
+* Fix tab bar showing in full screen mode.
+* Fix crash when spliting then selecting another pane.
+* Tab background position was not preserved.
+* Tabs menu doesn't switch to a tab after the 10th choice.
+* If OpenClipboard fails, retry for 10 times with a 100ms delay.</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>shell console tabs split glass fullscreen</tags>
+    <projectSourceUrl>https://github.com/cbucher/console</projectSourceUrl>
+    <packageSourceUrl>https://github.com/cbucher/console/tree/master/Packaging/chocolatey</packageSourceUrl>
+    <docsUrl>https://github.com/cbucher/console/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/cbucher/console/issues</bugTrackerUrl>
+  </metadata>
+</package>

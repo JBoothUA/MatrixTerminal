@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<title>Workspaces</title>
+	<meta http-equiv="content-type" content='text/html; charset=utf-8' />
+	<link rel="stylesheet" type="text/css" href="../styles/help.css" />
+</head>
+
+<body>
+	<h1>Workspaces</h1>
+
+	<h2>Workspace (XML) file</h2>
+
+	<p>
+	Workspace's definition is stored in XML file with <i>workspace</i> file extension. A workspace contains a collection of tabs.<br />
+	By default, workspace files location is settings directory.
+	The settings directory is the directory containing your configuration file.
+	So usually workspaces are located in <i>%appdata%\Console\Snippets</i>.
+	</p>
+
+	<p>
+		XML files schema:
+	</p>
+
+	<a name="ConsoleZWorkspace_TAG"></a>
+	<p class="block-row-name">ConsoleZWorkspace</p>
+	<p class="block-row-description">
+		Contains workspace definition. Root element of XML schema. See XML file <a href="#workspace_xml">example</a>.<br /><br />
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Tab_TAG">Tab</a></td>
+				<td>Required element.<br />
+					<br />
+					Contains tab definition. You can define one or multiple <i>Tab</i> elements in <i>ConsoleZWorkspace</i> element.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Parent Elements<br />
+		None.
+	</p>
+	<br />
+
+	<a name="Tab_TAG"></a>
+	<p class="block-row-name">Tab</p>
+	<p class="block-row-description">
+		Tab definition.<br />
+		<br />
+		Attributes<br />
+		<br />
+		<table>
+			<tr><th>Attribute</th><th>Description</th></tr>
+			<tr>
+				<td>Title</td>
+				<td>
+					Required attribute.<br />
+					<br />
+					Specifies the title of the tab, defined in configuration file, containing the tab settings (background, cursor and text colors).
+				</td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>
+					Optional attribute.<br />
+					<br />
+					Specifies the displayed tab name. By default, the tab title is used.
+				</td>
+			</tr>
+			<tr>
+				<td>HasFocus</td>
+				<td>
+					Optional attribute.<br />
+					<br />
+					Specifies whether the tab has focus. By default, the tab has not focus.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Child Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#SplitView_TAG">SplitView</a></td>
+				<td>
+					Optional element.<br />
+					<br />
+					Contains two panes of a split view. There must be exactly one <i>SplitView</i> or <i>View</i> element in <i>Tab</i> element.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#View_TAG">View</a></td>
+				<td>
+					Optional element.<br />
+					<br />
+					Console view definition. There may be zero or one <i>Declarations</i> element in <i>Snippet</i> element.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#ConsoleZWorkspace_TAG">ConsoleZWorkspace</a></td>
+				<td>Root element of XML schema.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="SplitView_TAG"></a>
+	<p class="block-row-name">SplitView</p>
+	<p class="block-row-description">
+		Contains two panes of a split view.<br />
+		<br />
+		Attributes<br />
+		<br />
+		<table>
+			<tr><th>Attribute</th><th>Description</th></tr>
+			<tr>
+				<td>Type</td>
+				<td>
+					Required attribute.<br />
+					<br />
+					Specifies if the split is horizontal or vertical.
+				</td>
+			</tr>
+			<tr>
+				<td>Ratio</td>
+				<td>
+					Optional attribute.<br />
+					<br />
+					Specifies the split ratio in percent. By default, the ratio is 50%.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Child Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Pane0_TAG">Pane0</a></td>
+				<td>
+					Required element.<br />
+					<br />
+					Contains the left pane definition (if split is vertical) or the top pane definition (if split is horizontal). There must be exactly one <i>Pane0</i> element in a <i>SplitView</i> element.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#Pane1_TAG">Pane1</a></td>
+				<td>
+					Required element.<br />
+					<br />
+					Contains the right pane definition (if split is vertical) or the bottom pane definition (if split is horizontal). There must be exactly one <i>Pane1</i> element in a <i>SplitView</i> element.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Tab_TAG">Tab</a></td>
+				<td>Tab definition.</td>
+			</tr>
+			<tr>
+				<td><a href="#Pane0_TAG">Pane0</a></td>
+				<td>Contains the left pane definition (if split is vertical) or the top pane definition (if split is horizontal).</td>
+			</tr>
+			<tr>
+				<td><a href="#Pane1_TAG">Pane1</a></td>
+				<td>Contains the right pane definition (if split is vertical) or the bottom pane definition (if split is horizontal).</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="Pane0_TAG"></a>
+	<p class="block-row-name">Pane0</p>
+	<p class="block-row-description">
+		Contains the left pane definition (if split is vertical) or the top pane definition (if split is horizontal).
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#SplitView_TAG">SplitView</a></td>
+				<td>
+					Optional element.<br />
+					<br />
+					Contains two panes of a split view. There must be exactly one <i>SplitView</i> or <i>View</i> element in <i>Pane0</i> element.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#View_TAG">View</a></td>
+				<td>
+					Optional element.<br />
+					<br />
+					Console view definition. There may be zero or one <i>Declarations</i> element in <i>Pane0</i> element.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#SplitView_TAG">SplitView</a></td>
+				<td>Contains two panes of a split view.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+  
+	<a name="Pane1_TAG"></a>
+	<p class="block-row-name">Pane1</p>
+	<p class="block-row-description">
+		Contains the right pane definition (if split is vertical) or the bottom pane definition (if split is horizontal).
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#SplitView_TAG">SplitView</a></td>
+				<td>
+					Optional element.<br />
+					<br />
+					Contains two panes of a split view. There must be exactly one <i>SplitView</i> or <i>View</i> element in <i>Pane1</i> element.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#View_TAG">View</a></td>
+				<td>
+					Optional element.<br />
+					<br />
+					Console view definition. There may be zero or one <i>Declarations</i> element in <i>Pane1</i> element.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#SplitView_TAG">SplitView</a></td>
+				<td>Contains two panes of a split view.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="View_TAG"></a>
+	<p class="block-row-name">View</p>
+	<p class="block-row-description">
+		Console view definition.<br />
+		<br />
+		Attributes<br />
+		<br />
+		<table>
+			<tr><th>Attribute</th><th>Description</th></tr>
+			<tr>
+				<td>Title</td>
+				<td>
+					Required attribute.<br />
+					<br />
+					Specifies the title of the tab, defined in configuration file, containing the console settings (shell, icon and environment variables).
+				</td>
+			</tr>
+			<tr>
+				<td>CurrentDirectory</td>
+				<td>
+					Optional attribute.<br />
+					<br />
+					Specifies the console current directory. By default, the startup directory configured in tab settings is used.
+				</td>
+			</tr>
+			<tr>
+				<td>ShellArguments</td>
+				<td>
+					Optional attribute.<br />
+					<br />
+					Appends arguments to the shell command line. Do not confuse whith a command that you type in the shell! By default, empty.
+				</td>
+			</tr>
+			<tr>
+				<td>BasePriority</td>
+				<td>
+					Optional attribute.<br />
+					<br />
+					Specifies shell base priority. By default, the base priority configured in tab settings is used.
+          <b>Idle</b>: Specifies that the threads of this process run only when the
+          system is idle.<br/>
+          <b>The idle priority class is inherited by child processes.</b>
+          <br/>
+          <br/>
+          <b>BelowNormal</b>: Specifies that the process has priority above Idle
+          but below Normal.<br/>
+          <b>The below normal priority class is inherited by child processes.</b>
+          <br/>
+          <br/>
+          <b>Normal</b>: Specifies that the process has no special scheduling needs.
+          <br/>
+          <br/>
+          <b>AboveNormal</b>: Specifies that the process has priority above Normal
+          but below High.
+          <br/>
+          <br/>
+          <b>High</b>: Specifies that the process performs time-critical tasks
+          that must be executed immediately, regardless of the load on the operating
+          system. The threads of the process preempt the threads of normal or idle
+          priority class processes. <b>Use extreme care when specifying High for the
+          process's priority class, because a high priority class application can use
+          nearly all available processor time.</b>
+          <br/>
+          <br/>
+          <b>Realtime</b>: Specifies that the process has the highest possible priority.
+          <b>The threads of a process with RealTime priority preempt the threads of all
+          other processes, including operating system processes performing important tasks.
+          Thus, a RealTime priority process that executes for more than a very brief
+          interval can cause disk caches not to flush or cause the mouse to be unresponsive.</b>
+				</td>
+			</tr>
+		</table>
+		<br />
+		Child Elements<br />
+		None.<br />
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Tab_TAG">Tab</a></td>
+				<td>Tab definition.</td>
+			</tr>
+			<tr>
+				<td><a href="#Pane0_TAG">Pane0</a></td>
+				<td>Contains the left pane definition (if split is vertical) or the top pane definition (if split is horizontal).</td>
+			</tr>
+			<tr>
+				<td><a href="#Pane1_TAG">Pane1</a></td>
+				<td>Contains the right pane definition (if split is vertical) or the bottom pane definition (if split is horizontal).</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+
+	<a name="workspace_xml"></a>
+	<p>
+	Here an example of workspace file:
+
+<div style="white-space: pre; line-height: 1;"><span class="sc12">&lt;?</span><span class="sc1">xml</span><span class="sc8"> </span><span class="sc3">version</span><span class="sc8">=</span><span class="sc6">"1.0"</span><span class="sc8"> </span><span class="sc3">encoding</span><span class="sc8">=</span><span class="sc6">"utf-8"</span><span class="sc13">?&gt;</span><span class="sc0">
+<span class="sc1">&lt;ConsoleZWorkspace&gt;</span><span class="sc0">
+  </span><span class="sc1">&lt;Tab</span><span class="sc8"> </span><span class="sc3">Title</span><span class="sc8">=</span><span class="sc6">"tabA"</span><span class="sc8"> </span><span class="sc3">Name</span><span class="sc8">=</span><span class="sc6">"first"</span><span class="sc1">&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;SplitView</span><span class="sc8"> </span><span class="sc3">Type</span><span class="sc8">=</span><span class="sc6">"Horizontal"</span><span class="sc8"> </span><span class="sc3">Ratio</span><span class="sc8">=</span><span class="sc6">"30"</span><span class="sc1">&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Pane0&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;View</span><span class="sc8">  </span><span class="sc3">Title</span><span class="sc8">=</span><span class="sc6">"tabA"</span><span class="sc8"> </span><span class="sc3">CurrentDirectory</span><span class="sc8">=</span><span class="sc6">"G:\gitstuff\console.git\Console"</span><span class="sc8"> </span><span class="sc3">ShellArguments</span><span class="sc8">=</span><span class="sc6">""</span><span class="sc8"> </span><span class="sc0">
+      </span><span class="sc1">&lt;/Pane0&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Pane1&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;SplitView</span><span class="sc8"> </span><span class="sc3">Type</span><span class="sc8">=</span><span class="sc6">"Vertical"</span><span class="sc8"> </span><span class="sc3">Ratio</span><span class="sc8">=</span><span class="sc6">"50"</span><span class="sc1">&gt;</span><span class="sc0">
+          </span><span class="sc1">&lt;Pane0&gt;</span><span class="sc0">
+            </span><span class="sc1">&lt;View</span><span class="sc8"> </span><span class="sc3">Title</span><span class="sc8">=</span><span class="sc6">"tabA"</span><span class="sc8"> </span><span class="sc3">CurrentDirectory</span><span class="sc8">=</span><span class="sc6">"%AppData%\Console"</span><span class="sc8"> </span><span class="sc3">ShellArguments</span><span class="sc8">=</span><span class="sc6">""</span><span class="sc8"> </span><span class="sc0">
+          </span><span class="sc1">&lt;/Pane0&gt;</span><span class="sc0">
+          </span><span class="sc1">&lt;Pane1&gt;</span><span class="sc0">
+            </span><span class="sc1">&lt;View</span><span class="sc8"> </span><span class="sc3">Title</span><span class="sc8">=</span><span class="sc6">"tabC"</span><span class="sc8"> </span><span class="sc8"> </span><span class="sc3">ShellArguments</span><span class="sc8">=</span><span class="sc6">""</span><span class="sc8"> </span><span class="sc3">BasePriority</span><span class="sc8">=</span><span class="sc6">"BelowNormal"</span><span class="sc11">/&gt;</span><span class="sc0">
+          </span><span class="sc1">&lt;/Pane1&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;/SplitView&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;/Pane1&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/SplitView&gt;</span><span class="sc0">
+  </span><span class="sc1">&lt;/Tab&gt;</span><span class="sc0">
+  </span><span class="sc1">&lt;Tab</span><span class="sc8"> </span><span class="sc3">Title</span><span class="sc8">=</span><span class="sc6">"tabB"</span><span class="sc8"> </span><span class="sc3">Name</span><span class="sc8">=</span><span class="sc6">"second"</span><span class="sc1">&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;View</span><span class="sc8"> </span><span class="sc3">Title</span><span class="sc8">=</span><span class="sc6">"tabB"</span><span class="sc8"> </span><span class="sc3">CurrentDirectory</span><span class="sc8">=</span><span class="sc6">"G:\gitstuff\console.git\Console"</span><span class="sc8"> </span><span class="sc3">ShellArguments</span><span class="sc8">=</span><span class="sc6">""</span><span class="sc11">/&gt;</span><span class="sc0">
+  </span><span class="sc1">&lt;/Tab&gt;</span><span class="sc0">
+</span><span class="sc1">&lt;/ConsoleZWorkspace&gt;</span></div>
+
+	</p>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<title>Settings - Behavior</title>
+	<meta http-equiv="content-type" content='text/html; charset=utf-8' />
+	<link rel="stylesheet" type="text/css" href="../styles/help.css" />
+</head>
+
+<body>
+	<h1>Settings - Behavior</h1>
+
+	<p>
+	<img src="../images/settings_behavior_more.png" />
+	</p>
+
+	<h2>Focus</h2>
+
+	<p class="block-row-name">Follow mouse</p>
+	<p class="block-row-description">
+		If checked, the view, where mouse is hover, has the focus.
+	</p>
+
+	<br />
+
+	<h2>Instance(s)</h2>
+
+	<p class="block-row-name">Allow multiple instances</p>
+	<p class="block-row-description">
+		If checked, every call to ConsoleZ will correspond to a new instance.<br />
+		Otherwise only one instance of ConsoleZ will exist and the call to ConsoleZ will correspond to a new tab.
+	</p>
+
+	<br />
+
+	<h2>Split/Clone</h2>
+
+	<p class="block-row-name">Open new shell in current directory</p>
+	<p class="block-row-description">
+		If checked, new shell created by following actions will use the same current directory as the active view:<br />
+		Split the current view horizontally<br />
+		Split the current view vertically<br />
+		Clone the current view in a new tab
+	</p>
+	<br />
+
+	<h2>Run as user</h2>
+
+	<p class="block-row-name">Use credential providers</p>
+	<p class="block-row-description">
+		If checked, credential providers are used (allowing integration of additional authentication mechanisms such as biometrics and smart cards).
+	</p>
+	<br />
+
+	<h2>Close/Detach</h2>
+
+	<p class="block-row-name">Allow closing the last tab/view</p>
+	<p class="block-row-description">
+		If checked, the tab close button is available for the last tab.<br />
+		ConsoleZ cannot prevent shell termination (if you type exit for example),
+		but can disable menu close actions or close button.
+	</p>
+
+	<p class="block-row-name">Exit on closing of last tab</p>
+	<p class="block-row-description">
+		If unchecked, the application doesn't exit on closing the last tab/view.
+	</p>
+
+	<p class="block-row-name">Confirm before closing multiple tabs/views</p>
+	<p class="block-row-description">
+		If checked, a confirmation message is displayed before closing multiple tabs/views.<br />
+		<br />
+		
+	</p>
+
+	<p class="block-row-name">Save workspace on exit</p>
+	<p class="block-row-description">
+		If checked, the current opened tabs and views are automatically saved in a workspace file on exit.<br />
+		If checked, auto-saved workspace file will be automatically loaded when a new instance of ConsoleZ, <b>without any tab specified in command line</b>, starts.
+	</p>
+	<br />
+
+</body>
+
+</html>

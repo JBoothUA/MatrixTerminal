@@ -1,0 +1,6 @@
+﻿InputRC=..\..\Console\Console.rc
+LangINI=.\console.ini
+OutputRC=.\console.rc
+Copy=1
+ObsoleteItems=0
+NoSort=0

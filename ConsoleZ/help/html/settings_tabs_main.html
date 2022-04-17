@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<title>Settings - Tabs (Main)</title>
+	<meta http-equiv="content-type" content='text/html; charset=utf-8' />
+	<link rel="stylesheet" type="text/css" href="../styles/help.css" />
+</head>
+
+<body>
+	<h1>Settings - Tabs (Main)</h1>
+
+	<p>
+	<img src="../images/settings_tabs_main.png" />
+	</p>
+
+	<h2>Title &amp; icon</h2>
+
+	<p class="block-row-name">Title</p>
+	<p class="block-row-description">
+		Specifies tab title.<br />
+		You can regroup tabs settings in a submenu. Group name is delimited by '/' char.
+		Tab's definitions belonging to the same group must follow each other.<br />
+		Example:<br />
+		<img src="../images/tabs_submenu_1.png" /><br />
+		A group named 'test' has been defined.<br />
+		<img src="../images/tabs_submenu_2.png" />
+	</p>
+	<br />
+
+	<p class="block-row-name">Icon</p>
+	<p class="block-row-description">
+		Specifies tab icon. If empty, the tab will use main window icon.
+	</p>
+	<br />
+
+	<p class="block-row-name">Use shell icon</p>
+	<p class="block-row-description">
+		If checked, tab's icon is extracted from shell executable. This is the icon displayed by Windows file explorer.
+	</p>
+	<br />
+
+	<h2>Shell</h2>
+
+	<p class="block-row-name">Shell</p>
+	<p class="block-row-description">
+		Specifies tab shell command line. If empty, the tab will use ConsoleZ's default shell.<br />
+		If the selected file is a link, then icon, program's path, arguments, working directory and "run as administrator" option are extracted from the link.
+		The link path is not saved. The link can be deleted.
+	</p>
+	<br />
+
+	<p class="block-row-name">Startup dir</p>
+	<p class="block-row-description">
+		Specifies tab's shell initial directory. If empty, ConsoleZ's default
+		initial directory will be used.
+	</p>
+	<br />
+
+	<p class="block-row-name">Base priority</p>
+	<p class="block-row-description">
+		Specifies shell base priority.<br/>
+    <b>Idle</b>: Specifies that the threads of this process run only when the
+    system is idle.<br/>
+    <b>The idle priority class is inherited by child processes.</b>
+    <br/>
+    <br/>
+    <b>BelowNormal</b>: Specifies that the process has priority above Idle
+    but below Normal.<br/>
+    <b>The below normal priority class is inherited by child processes.</b>
+    <br/>
+    <br/>
+    <b>Normal</b>: Specifies that the process has no special scheduling needs.
+    <br/>
+    <br/>
+    <b>AboveNormal</b>: Specifies that the process has priority above Normal
+    but below High.
+    <br/>
+    <br/>
+    <b>High</b>: Specifies that the process performs time-critical tasks
+    that must be executed immediately, regardless of the load on the operating
+    system. The threads of the process preempt the threads of normal or idle
+    priority class processes. <b>Use extreme care when specifying High for the
+    process's priority class, because a high priority class application can use
+    nearly all available processor time.</b>
+    <br/>
+    <br/>
+    <b>Realtime</b>: Specifies that the process has the highest possible priority.
+    <b>The threads of a process with RealTime priority preempt the threads of all
+    other processes, including operating system processes performing important tasks.
+    Thus, a RealTime priority process that executes for more than a very brief
+    interval can cause disk caches not to flush or cause the mouse to be unresponsive.</b>
+	</p>
+	<br/>
+
+	<p class="block-row-name">Run as current user</p>
+	<p class="block-row-description">
+		Uses current user credentials.
+	</p>
+	<br />
+
+	<p class="block-row-name">Run as administrator</p>
+	<p class="block-row-description">
+		Run as administrator with full unrestricted elevated rights and privileges.
+		Depending on what the UAC settings are set to, an administrator user may or may not
+		be prompted first by UAC to allow or deny the program to "Run as administrator" (elevated).
+	</p>
+	<br />
+
+	<p class="block-row-name">Run as user</p>
+	<p class="block-row-description">
+		Run with different user credentials.
+		A dialog, asking for another user's credentials, will be displayed.
+		The dialog will be pre-populated with the given user name.
+		To use a domain account, enter your username in the form <i>domain</i>\<i>username</i> or <i>username</i>@<i>domain</i>.
+	</p>
+
+	<p class="block-row-name">Net only</p>
+	<p class="block-row-description">
+		If checked, this value can be used to create a process that uses a different set of credentials locally than it does remotely. This is useful in inter-domain scenarios where there is no trust relationship.
+		The system does not validate the specified credentials. Therefore, the process can start, but it may not have access to network resources.
+	</p>
+	<br />
+
+</body>
+
+</html>

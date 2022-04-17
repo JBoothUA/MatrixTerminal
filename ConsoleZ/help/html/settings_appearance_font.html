@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<title>Settings - Appearance (Font)</title>
+	<meta http-equiv="content-type" content='text/html; charset=utf-8' />
+	<link rel="stylesheet" type="text/css" href="../styles/help.css" />
+</head>
+
+<body>
+	<h1>Settings - Appearance (Font)</h1>
+
+	<p>
+	<img src="../images/settings_appearance_font.png" />
+	</p>
+
+	<h2>Font</h2>
+
+	<p class="block-row-name">Name</p>
+	<p class="block-row-description">
+		Specifies font name.
+	</p>
+	<br />
+
+	<p class="block-row-name">Size</p>
+	<p class="block-row-description">
+		Specifies font size.
+	</p>
+	<br />
+
+	<p class="block-row-name">Bold</p>
+	<p class="block-row-description">
+		If checked, font will be bold.
+	</p>
+	<br />
+
+	<p class="block-row-name">Italic</p>
+	<p class="block-row-description">
+		If checked, font will be italic.
+	</p>
+	<br />
+
+	<p class="block-row-name">Extra width</p>
+	<p class="block-row-description">
+		Specifies extra width, in pixels, added to the char width.
+	</p>
+	<br />
+
+	<p class="block-row-name">Smoothing</p>
+	<p class="block-row-description">
+		Specifies font smoothing.<br/>
+		Good documentation on font rendering can be found <a href="http://www.beatstamm.com/typography/RTRCh0.htm">here</a>.<br/>
+		<table>
+			<tr>
+				<td><b>Default</b></td>
+				<td>Use the control panel settings.</td>
+			</tr>
+			<tr>
+				<td><b>None</b></td>
+				<td>
+					Full-Pixel Bi-Level Rendering.<br/>
+					<img src="../images/font_nonantialiased_quality.png"/><br/>
+					<img src="../images/font_zoom_nonantialiased_quality.png"/>
+				</td>
+			</tr>
+			<tr>
+				<td><b>ClearType</b></td>
+				<td>
+					Asymmetric Sub-Pixel Anti-Aliasing (“Compatible” Advance Widths).<br/>
+					<img src="../images/font_cleartype_quality.png"/><br/>
+					<img src="../images/font_zoom_cleartype_quality.png"/>
+				</td>
+			</tr>
+			<tr>
+				<td><b>Natural ClearType</b></td>
+				<td>
+					Asymmetric Sub-Pixel Anti-Aliasing (“Natural” Advance Widths ).<br/>
+					<img src="../images/font_cleartype_natural_quality.png"/><br/>
+					<img src="../images/font_zoom_cleartype_natural_quality.png"/>
+				</td>
+			</tr>
+			<tr>
+				<td><b>Antialiased</b></td>
+				<td>
+					Full-Pixel Anti-Aliasing.<br/>
+					<img src="../images/font_antialiased_quality.png"/><br/>
+					<img src="../images/font_zoom_antialiased_quality.png"/>
+				</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<p class="block-row-name">Custom color</p>
+	<p class="block-row-description">
+		Allows you to specify custom font color.
+		<br />
+		<b>Note:</b> If on, all text will be shown in the selected color. 
+		Shell's syntax coloring will be ignored.
+	</p>
+	<br />
+
+	<p class="block-row-name">Display intensified colors in bold</p>
+	<p class="block-row-description">
+		If <i>Bold</i> is unchecked: chars with intensified foregroung colors (0x8 to 0xF) are displayed using bold font.<br />
+		If <i>Bold</i> is checked: chars with intensified foregroung colors (0x8 to 0xF) are displayed using non bold font.
+	</p>
+	<br />
+
+	<p class="block-row-name">Display intensified colors in italic</p>
+	<p class="block-row-description">
+		If <i>Italic</i> is unchecked: chars with intensified foregroung colors (0x8 to 0xF) are displayed using italic font.<br />
+		If <i>Italic</i> is checked: chars with intensified foregroung colors (0x8 to 0xF) are displayed using non italic font.
+	</p>
+	<br />
+
+	<p class="block-row-name">Enable typographic ligature</p>
+	<p class="block-row-description">
+		If checked, text rendering will use typographic ligatures defined in the selected font.<br />
+		Here is a monospaced font with programming ligatures: <a href="https://github.com/tonsky/FiraCode">Fira Code</a>.<br />
+		Fira Code (with ligatures):<br />
+		<img src="../images/all_ligatures.png"/><br/>
+		Compare to Fira Mono (without ligatures):<br />
+		<img src="../images/no_ligatures.png"/><br/>
+	</p>
+	<br />
+
+</body>
+
+</html>

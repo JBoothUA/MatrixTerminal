@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="FRA">
+      <UniqueIdentifier>{84f413ed-6b2c-4902-9ad0-eff267353137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RUS">
+      <UniqueIdentifier>{f8ff1951-f9e2-4965-abff-9692d4025ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEU">
+      <UniqueIdentifier>{5426a010-5084-4bdd-9de5-37adbd28f3ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JPN">
+      <UniqueIdentifier>{5c7d1c0e-5b2e-484f-82ad-68007b3a2bb1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile" />
+    <None Include="FRA\console.ini">
+      <Filter>FRA</Filter>
+    </None>
+    <None Include="RUS\console.ini">
+      <Filter>RUS</Filter>
+    </None>
+    <None Include="DEU\console.ini">
+      <Filter>DEU</Filter>
+    </None>
+    <None Include="JPN\console.ini">
+      <Filter>JPN</Filter>
+    </None>
+  </ItemGroup>
+</Project>

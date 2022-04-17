@@ -1,0 +1,44 @@
+**Warning! Don't create an issue concerning translation errors! See https://github.com/cbucher/console/wiki/How-to-localize-ConsoleZ and do a pull request.**
+
+https://github.com/cbucher/console/wiki/How-to-Report-an-Issue
+
+**Warning! Read carefully instructions and submit requested information (see end of this message), otherwise the issue will be automatically closed.**
+
+Can you reproduce this issue in the original shell without using ConsoleZ?  
+If so then it is not a ConsoleZ issue. Please contact the shell or responsible program's owner instead.
+
+Before continuing please check to see if the issue occurs in the latest version (experimental, beta, or release) available here:
+https://github.com/cbucher/console/wiki/Downloads
+
+Lastly, please search for an existing issue before opening a new one.
+
+If this is in fact a new issue in ConsoleZ then feel free to delete this message and proceed.
+
+Thank you!
+
+-----------
+
+### Expected Behavior
+What you expect to happen.
+
+### Actual Behavior
+What actually happens.
+
+### Steps to reproduce
+1. What steps consistently cause this behavior?
+2. What does someone need to do to recreate the issue?
+
+### Diagnostic Report
+When reporting a bug you **must** provide a diagnostic report.
+If you are not able to create a diagnostic report, explain why.
+Privacy is not a valid explanation! The report is human readable and private data can be masked.
+```
+From within ConsoleZ select Help > Diagnose.
+This will open a file in Notepad with useful information.
+Please paste that information here or include that file.
+```
+
+### Crash Report
+When reporting a crash you **must** provide a crash dump.
+Instructions on how to generate one can be found here:
+https://github.com/cbucher/console/wiki/How-to-Report-an-Issue

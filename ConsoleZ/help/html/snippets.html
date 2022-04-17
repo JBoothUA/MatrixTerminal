@@ -1,0 +1,717 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<title>Snippets</title>
+	<meta http-equiv="content-type" content='text/html; charset=utf-8' />
+	<link rel="stylesheet" type="text/css" href="../styles/help.css" />
+</head>
+
+<body>
+	<h1>Snippets</h1>
+
+	<h2>Dialog Box</h2>
+
+	<p>
+	<img src="../images/snippet.png" />
+	</p>
+
+	<p class="block-row-name">Cancel</p>
+	<p class="block-row-description">
+		Close the snippet dialog box.<br />
+		You can press this button or the escape key.
+	</p>
+	<br />
+
+	<p class="block-row-name">OK</p>
+	<p class="block-row-description">
+		Close the snippet dialog box and sends the snippet command into the current console view.<br />
+		You can press this button or the enter key.
+	</p>
+	<br />
+
+	<p class="block-row-name">Show snippet information</p>
+	<p class="block-row-description">
+		If checked, information on snippet (author, version, code) are visible in dialog box bottom.
+	</p>
+	<br />
+
+	<p class="block-row-name">&#x2709;</p>
+	<p class="block-row-description">
+		Opens default email application to contact author.
+	</p>
+	<br />
+
+	<p class="block-row-name">www</p>
+	<p class="block-row-description">
+		Opens author's web site in default web browser.
+	</p>
+	<br />
+
+	<p class="block-row-name">Edit</p>
+	<p class="block-row-description">
+		Opens the snippet XML file in default XML editor.<br />
+		You can configure your default text editor by creating/modifying this registry key: <i>HKEY_CURRENT_USER\SOFTWARE\Classes\SystemFileAssociations\text\shell\edit\command</i>.
+		<br />
+		<br />
+		For example:<br />
+		<code>
+		HKEY_CURRENT_USER\SOFTWARE\Classes\SystemFileAssociations\text\shell\edit\command<br />
+		(default)    REG_SZ    "C:\Program Files (x86)\Notepad++\notepad++.exe" %1
+		</code>
+	</p>
+	<br />
+
+	<h2>XML file</h2>
+
+	<p>
+	Snippet's definition is stored in XML file. Each XML file contains a collection of one or more snippets.<br />
+	By default, snippets files location is <i>Snippets</i> sub-directory of the settings directory.
+	The settings directory is the directory containing your configuration file.
+	So usually snippets are located in <i>%appdata%\Console\Snippets</i>.
+	</p>
+
+	<p>
+		XML files schema:
+	</p>
+
+	<a name="ConsoleZSnippets_TAG"></a>
+	<p class="block-row-name">ConsoleZSnippets</p>
+	<p class="block-row-description">
+		A snippets collection. Root element of XML schema. See XML file <a href="#snippet_xml">example</a>.<br /><br />
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#DownloadUrl_TAG">DownloadUrl</a></td>
+				<td>Required element.<br />
+					<br />
+					Contains download URL. There must be exactly one <i>DownloadUrl</i> element in <i>ConsoleZSnippets</i> element.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#Snippet_TAG">Snippet</a></td>
+				<td>Required element.<br />
+					<br />
+					Contains snippet definition. You can define one or multiple <i>Snippet</i> elements in <i>ConsoleZSnippets</i> element.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Parent Elements<br />
+		None.
+	</p>
+	<br />
+
+	<a name="DownloadUrl_TAG"></a>
+	<p class="block-row-name">DownloadUrl</p>
+	<p class="block-row-description">
+		Download URL.<br />
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		None.<br />
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#ConsoleZSnippets_TAG">ConsoleZSnippets</a></td>
+				<td>Root element of XML schema.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="Snippet_TAG"></a>
+	<p class="block-row-name">Snippet</p>
+	<p class="block-row-description">
+		Snippet definition. See dialog box from XML <a href="#snippet_xml_dialog">example</a>.<br />
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Header_TAG">Header</a></td>
+				<td>
+					Required element.<br />
+					<br />
+					Specifies general information about the command snippet. There must be exactly one <i>Header</i> element in <i>Snippet</i> element.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#Declarations_TAG">Declarations</a></td>
+				<td>
+					Optional element.<br />
+					<br />
+					Contains the literals of a command snippet that you can edit. There may be zero or one <i>Declarations</i> element in <i>Snippet</i> element.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#Code_TAG">Code</a></td>
+				<td>
+					Required element.<br />
+					<br />
+					Specifies the code that you want to insert. There must be exactly one <i>Code</i> element in <i>Snippet</i> element.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#ConsoleZSnippets_TAG">ConsoleZSnippets</a></td>
+				<td>Root element of XML schema.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="Header_TAG"></a>
+	<p class="block-row-name">Header</p>
+	<p class="block-row-description">
+		Specifies general information about the command snippet.<br />
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Title_TAG">Title</a></td>
+				<td>
+					Required element.<br />
+					<br />
+					The friendly name of the command snippet. There must be exactly one <i>Title</i> element in a <i>Header</i> element.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#Description_TAG">Description</a></td>
+				<td>
+					Required element.<br />
+					<br />
+					A description of the command snippet. There must be exactly one <i>Title</i> element in a <i>Header</i> element.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#Author_TAG">Author</a></td>
+				<td>
+					Required element.<br />
+					<br />
+					The name of the person or company that authored the command snippet. There must be exactly one <i>Title</i> element in a <i>Header</i> element.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#Version_TAG">Version</a></td>
+				<td>
+					Required element.<br />
+					<br />
+					The command snippet version. There must be exactly one <i>Version</i> element in a <i>Header</i> element.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#ShellTypes_TAG">ShellTypes</a></td>
+				<td>
+					Optional element.<br />
+					<br />
+					Contains shell types for which command snippet is usable. There may be zero or one <i>ShellTypes</i> element in <i>Header</i> element.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Snippet_TAG">Snippet</a></td>
+				<td>Snippet definition.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="Title_TAG"></a>
+	<p class="block-row-name">Title</p>
+	<p class="block-row-description">
+		Opens author's web site in default web browser.
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		None.<br />
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Header_TAG">Header</a></td>
+				<td>Specifies general information about the command snippet.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="Description_TAG"></a>
+	<p class="block-row-name">Description</p>
+	<p class="block-row-description">
+		A description of the command snippet.<br />
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		None.<br />
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Header_TAG">Header</a></td>
+				<td>Specifies general information about the command snippet.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="Author_TAG"></a>
+	<p class="block-row-name">Author</p>
+	<p class="block-row-description">
+		The name of the person or company that authored the command snippet.<br />
+		<br />
+		Attributes<br />
+		<br />
+		<table>
+			<tr><th>Attribute</th><th>Description</th></tr>
+			<tr>
+				<td>Url</td>
+				<td>
+					Optional attribute.<br />
+					<br />
+					Author's web site.
+				</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>
+					Optional attribute.<br />
+					<br />
+					Author's email address.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Child Elements<br />
+		None.<br />
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Header_TAG">Header</a></td>
+				<td>Specifies general information about the command snippet.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="Version_TAG"></a>
+	<p class="block-row-name">Version</p>
+	<p class="block-row-description">
+		The command snippet version.<br />
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		None.<br />
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Header_TAG">Header</a></td>
+				<td>Specifies general information about the command snippet.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="ShellTypes_TAG"></a>
+	<p class="block-row-name">ShellTypes</p>
+	<p class="block-row-description">
+		Contains shell types for which command snippet is usable.<br />
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#ShellType_TAG">ShellType</a></td>
+				<td>
+					Optional element.<br />
+					<br />
+					Specifies shell types for which command snippet is usable. There may be zero, one or multiple <i>ShellType</i> elements in <i>ShellTypes</i> element.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Header_TAG">Header</a></td>
+				<td>Specifies general information about the command snippet.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="ShellType_TAG"></a>
+	<p class="block-row-name">ShellType</p>
+	<p class="block-row-description">
+		Specifies shell types for which command snippet is usable.<br />
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		None.<br />
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#ShellTypes_TAG">ShellTypes</a></td>
+				<td>Contains shell types for which command snippet is usable.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="Declarations_TAG"></a>
+	<p class="block-row-name">Declarations</p>
+	<p class="block-row-description">
+		Contains the literals of a command snippet that you can edit.<br />
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Literal_TAG">Literal</a></td>
+				<td>
+					Optional element.<br />
+					<br />
+					Contains literals. You can define 0 to 99 Literal elements in Declarations element.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Snippet_TAG">Snippet</a></td>
+				<td>Snippet definition.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="Literal_TAG"></a>
+	<p class="block-row-name">Literal</p>
+	<p class="block-row-description">
+		Defines the literals of the command snippet that you can edit.
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#ID_TAG">ID</a></td>
+				<td>
+					Required element.<br />
+					<br />
+					Specifies a unique identifier for the literal. There must be exactly one <i>ID</i> element in a <i>Literal</i> element.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#ToolTip_TAG">ToolTip</a></td>
+				<td>
+					Required element.<br />
+					<br />
+					Contains literals. You can define 0 to 99 Literal elements in Declarations element. There must be exactly one <i>ToolTip</i> element in a <i>Literal</i> element.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="#Default_TAG">Default</a></td>
+				<td>
+					Required element.<br />
+					<br />
+					Contains literals. You can define 0 to 99 Literal elements in Declarations element. There must be exactly one <i>Default</i> element in a <i>Literal</i> element.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Declarations_TAG">Declarations</a></td>
+				<td>Contains the literals of a command snippet that you can edit.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="ID_TAG"></a>
+	<p class="block-row-name">ID</p>
+	<p class="block-row-description">
+		Specifies a unique identifier for the literal.<br />
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		None.<br />
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Literal_TAG">Literal</a></td>
+				<td>Defines the literals of the command snippet that you can edit.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="ToolTip_TAG"></a>
+	<p class="block-row-name">ToolTip</p>
+	<p class="block-row-description">
+		Describes the expected value and usage of the literal.<br />
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		None.<br />
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Literal_TAG">Literal</a></td>
+				<td>Defines the literals of the command snippet that you can edit.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="Default_TAG"></a>
+	<p class="block-row-name">Default</p>
+	<p class="block-row-description">
+		Specifies the default value of the literal.<br />
+		<br />
+		Attributes<br />
+		None.<br />
+		<br />
+		Child Elements<br />
+		None.<br />
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Literal_TAG">Literal</a></td>
+				<td>Defines the literals of the command snippet that you can edit.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="Code_TAG"></a>
+	<p class="block-row-name">Code</p>
+	<p class="block-row-description">
+		Specifies the code that you want to insert.<br />
+		<br />
+		Attributes<br />
+		<br />
+		<table>
+			<tr><th>Attribute</th><th>Description</th></tr>
+			<tr>
+				<td>Delimiter</td>
+				<td>
+					Optional attribute.<br />
+					<br />
+					Specifies the delimiter used to describe literals in the code. By default, the delimiter is $.
+				</td>
+			</tr>
+		</table>
+		<br />
+		Child Elements<br />
+		None.<br />
+		<br />
+		Parent Elements<br />
+		<br />
+		<table>
+			<tr><th>Element</th><th>Description</th></tr>
+			<tr>
+				<td><a href="#Snippet_TAG">Snippet</a></td>
+				<td>Snippet definition.</td>
+			</tr>
+		</table>
+	</p>
+	<br />
+
+	<a name="snippet_xml"></a>
+	<p>
+	Here an example of XML file:
+
+<div style="white-space: pre; line-height: 1;"><span class="sc12">&lt;?</span><span class="sc1">xml</span><span class="sc8"> </span><span class="sc3">version</span><span class="sc8">=</span><span class="sc6">"1.0"</span><span class="sc8"> </span><span class="sc3">encoding</span><span class="sc8">=</span><span class="sc6">"utf-8"</span><span class="sc13">?&gt;</span><span class="sc0">
+</span><span class="sc1">&lt;ConsoleZSnippets&gt;</span><span class="sc0">
+  </span><span class="sc1">&lt;DownloadUrl&gt;</span><span class="sc0">http://example.com/download/system.xml</span><span class="sc1">&lt;/DownloadUrl&gt;</span><span class="sc0">
+
+  </span><span class="sc9">&lt;!-- ping --&gt;</span><span class="sc0">
+  </span><span class="sc1">&lt;Snippet&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;Header&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Title&gt;</span><span class="sc0">ping</span><span class="sc1">&lt;/Title&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Description&gt;</span><span class="sc0">ping command</span><span class="sc1">&lt;/Description&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Author</span><span class="sc8"> </span><span class="sc3">Url</span><span class="sc8">=</span><span class="sc6">"http://example.com"</span><span class="sc8"> </span><span class="sc3">Email</span><span class="sc8">=</span><span class="sc6">"email@example.com"</span><span class="sc1">&gt;</span><span class="sc0">YourName</span><span class="sc1">&lt;/Author&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Version&gt;</span><span class="sc0">1.0</span><span class="sc1">&lt;/Version&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;ShellTypes&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;ShellType&gt;</span><span class="sc0">cmd</span><span class="sc1">&lt;/ShellType&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;ShellType&gt;</span><span class="sc0">powershell</span><span class="sc1">&lt;/ShellType&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;/ShellTypes&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/Header&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;Declarations&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Literal&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;ID&gt;</span><span class="sc0">target_name</span><span class="sc1">&lt;/ID&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;ToolTip&gt;</span><span class="sc0">The target name.</span><span class="sc1">&lt;/ToolTip&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;Default&gt;</span><span class="sc0">localhost</span><span class="sc1">&lt;/Default&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;/Literal&gt;</span><span class="sc0">              
+      </span><span class="sc1">&lt;Literal&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;ID&gt;</span><span class="sc0">count</span><span class="sc1">&lt;/ID&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;ToolTip&gt;</span><span class="sc0">Number of echo requests to send.</span><span class="sc1">&lt;/ToolTip&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;Default&gt;</span><span class="sc0">4</span><span class="sc1">&lt;/Default&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;/Literal&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Literal&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;ID&gt;</span><span class="sc0">timeout</span><span class="sc1">&lt;/ID&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;ToolTip&gt;</span><span class="sc0">Timeout in milliseconds to wait for each reply.</span><span class="sc1">&lt;/ToolTip&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;Default&gt;</span><span class="sc0">500</span><span class="sc1">&lt;/Default&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;/Literal&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/Declarations&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;Code</span><span class="sc8"> </span><span class="sc3">Delimiter</span><span class="sc8">=</span><span class="sc6">"$"</span><span class="sc1">&gt;</span><span class="sc0">
+      </span><span class="sc17">&lt;![CDATA[ping.exe -4 -n "$count$" -w "$timeout$" "$target_name$"
+]]&gt;</span><span class="sc9">&lt;!-- line return, the command is launched after clicking OK --&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/Code&gt;</span><span class="sc0">
+  </span><span class="sc1">&lt;/Snippet&gt;</span><span class="sc0">
+
+  </span><span class="sc9">&lt;!-- restart --&gt;</span><span class="sc0">
+  </span><span class="sc1">&lt;Snippet&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;Header&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Title&gt;</span><span class="sc0">restart</span><span class="sc1">&lt;/Title&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Description&gt;</span><span class="sc0">restart computer</span><span class="sc1">&lt;/Description&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Author</span><span class="sc8"> </span><span class="sc3">Url</span><span class="sc8">=</span><span class="sc6">"http://example.com"</span><span class="sc8"> </span><span class="sc3">Email</span><span class="sc8">=</span><span class="sc6">"email@example.com"</span><span class="sc1">&gt;</span><span class="sc0">YourName</span><span class="sc1">&lt;/Author&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Version&gt;</span><span class="sc0">1.0</span><span class="sc1">&lt;/Version&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;ShellTypes&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;ShellType&gt;</span><span class="sc0">cmd</span><span class="sc1">&lt;/ShellType&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;/ShellTypes&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/Header&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;Declarations&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Literal&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;ID&gt;</span><span class="sc0">comment</span><span class="sc1">&lt;/ID&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;ToolTip&gt;</span><span class="sc0">Comment on the reason for the restart or shutdown.</span><span class="sc1">&lt;/ToolTip&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;Default&gt;</span><span class="sc0">I have a really good reason!</span><span class="sc1">&lt;/Default&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;/Literal&gt;</span><span class="sc0">              
+    </span><span class="sc1">&lt;/Declarations&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;Code</span><span class="sc8"> </span><span class="sc3">Delimiter</span><span class="sc8">=</span><span class="sc6">"$"</span><span class="sc1">&gt;</span><span class="sc0">
+      </span><span class="sc17">&lt;![CDATA[shutdown /r /t 0 /c "$comment$"]]&gt;</span><span class="sc9">&lt;!-- no line return, you must press enter after clicking OK --&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/Code&gt;</span><span class="sc0">
+  </span><span class="sc1">&lt;/Snippet&gt;</span><span class="sc0">
+
+  </span><span class="sc9">&lt;!-- hello world --&gt;</span><span class="sc0">
+  </span><span class="sc1">&lt;Snippet&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;Header&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Title&gt;</span><span class="sc0">hello world</span><span class="sc1">&lt;/Title&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Description&gt;</span><span class="sc0">The most trivial snippet!</span><span class="sc1">&lt;/Description&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Author</span><span class="sc8"> </span><span class="sc3">Url</span><span class="sc8">=</span><span class="sc6">"http://example.com"</span><span class="sc8"> </span><span class="sc3">Email</span><span class="sc8">=</span><span class="sc6">"email@example.com"</span><span class="sc1">&gt;</span><span class="sc0">YourName</span><span class="sc1">&lt;/Author&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Version&gt;</span><span class="sc0">1.0</span><span class="sc1">&lt;/Version&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;ShellTypes&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;ShellType&gt;</span><span class="sc0">cmd</span><span class="sc1">&lt;/ShellType&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;/ShellTypes&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/Header&gt;</span><span class="sc0">
+
+    </span><span class="sc1">&lt;Code&gt;</span><span class="sc0">
+      </span><span class="sc17">&lt;![CDATA[@echo hello world]]&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/Code&gt;</span><span class="sc0">
+  </span><span class="sc1">&lt;/Snippet&gt;</span><span class="sc0">
+
+  </span><span class="sc1">&lt;Snippet&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;Header&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Title&gt;</span><span class="sc0">hello world</span><span class="sc1">&lt;/Title&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Description&gt;</span><span class="sc0">The most trivial snippet!</span><span class="sc1">&lt;/Description&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Author</span><span class="sc8"> </span><span class="sc3">Url</span><span class="sc8">=</span><span class="sc6">"http://example.com"</span><span class="sc8"> </span><span class="sc3">Email</span><span class="sc8">=</span><span class="sc6">"email@example.com"</span><span class="sc1">&gt;</span><span class="sc0">YourName</span><span class="sc1">&lt;/Author&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;Version&gt;</span><span class="sc0">1.0</span><span class="sc1">&lt;/Version&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;ShellTypes&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;ShellType&gt;</span><span class="sc0">powershell</span><span class="sc1">&lt;/ShellType&gt;</span><span class="sc0">
+      </span><span class="sc1">&lt;/ShellTypes&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/Header&gt;</span><span class="sc0">
+
+    </span><span class="sc1">&lt;Code&gt;</span><span class="sc0">
+      </span><span class="sc17">&lt;![CDATA[Write-Host 'hello world' -ForegroundColor yellow]]&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/Code&gt;</span><span class="sc0">
+  </span><span class="sc1">&lt;/Snippet&gt;</span><span class="sc0">
+
+</span><span class="sc1">&lt;/ConsoleZSnippets&gt;</span></div>
+
+	</p>
+
+	<a name="snippet_xml_dialog"></a>
+	<p>
+		Here an example dialog box from XML:
+
+		<img src="../images/snippet_xml.png" />
+	</p>
+
+</body>
+
+</html>
