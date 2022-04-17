@@ -1,4 +1,4 @@
-# Hacker Console + Git PowerShell
+# Hacker Console + PowerShell + Git
 ## Customizable Command-Line Console
 ### Turns the Command Line into a Video Game
 
