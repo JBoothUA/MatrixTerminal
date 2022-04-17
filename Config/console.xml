@@ -41,12 +41,12 @@
 		<scroll page_scroll_rows="0"/>
 		<tab_highlight flashes="3" stay_highligted="1"/>
 		<environment inherit="1" sync="1"/>
-		<focus follow_mouse="0"/>
+		<focus follow_mouse="1"/>
 		<instance allow_multi="1"/>
 		<clone use_current_dir="0"/>
 		<search match_case="0" match_whole_word="0"/>
 		<runas use_credprov="1"/>
-		<close allow_closing_last_view="0" exit_on_closing_of_last_tab="1" confirm_closing_multiple_views="1" save_workspace_on_exit="0"/></behavior>
+		<close allow_closing_last_view="0" exit_on_closing_of_last_tab="1" confirm_closing_multiple_views="0" save_workspace_on_exit="0"/></behavior>
 	<hotkeys use_scroll_lock="1">
 		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="83" command="settings"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="112" command="help"/>
@@ -108,7 +108,7 @@
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="71" command="ungroupall"/>
 		<hotkey ctrl="1" shift="0" alt="1" extended="0" code="84" command="grouptab"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="84" command="ungrouptab"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="1" code="46" command="clear"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="67" command="clear"/>
 		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="88" command="copy"/>
 		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="65" command="selectall"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="clear_selection"/>
@@ -154,7 +154,7 @@
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="wspload"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="wspsave"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="fwdmouse"/>
-		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd1"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="80" command="externalcmd1"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd2"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd3"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd4"/>
@@ -164,9 +164,10 @@
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd8"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd9"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd10"/>
-		<hotkey ctrl="1" shift="0" alt="1" extended="0" code="77" command="activate" win="0"/>
+		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="32" command="activate" win="0"/>
 	</hotkeys>
 	<external_commands>
+		<external_command id="1" value="mspaint"/>
 	</external_commands>
 	<mouse>
 		<actions>
@@ -176,10 +177,10 @@
 			<action ctrl="0" shift="0" alt="0" button="3" name="paste"/>
 			<action ctrl="1" shift="0" alt="0" button="1" name="drag"/>
 			<action ctrl="0" shift="0" alt="0" button="4" name="link"/>
-			<action ctrl="0" shift="0" alt="0" button="2" name="menu"/>
-			<action ctrl="0" shift="0" alt="0" button="0" name="menu2"/>
-			<action ctrl="0" shift="0" alt="0" button="0" name="menu3"/>
-			<action ctrl="1" shift="0" alt="0" button="2" name="snippets"/>
+			<action ctrl="1" shift="0" alt="0" button="2" name="menu"/>
+			<action ctrl="0" shift="0" alt="0" button="3" name="menu2"/>
+			<action ctrl="1" shift="0" alt="0" button="3" name="menu3"/>
+			<action ctrl="0" shift="0" alt="0" button="2" name="snippets"/>
 		</actions></mouse>
 	<snippets dir=""/>
 	<tabs>
@@ -187,16 +188,16 @@
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\MatrixTools\Website\ClientApp" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="255" g="255" b="255"/>
 			<background type="1" r="0" g="0" b="0">
-				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
+				<image file="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Console\Backgrounds\Matrix.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
 		</tab>
-		<tab title="Jesse Booth" icon="C:\ConsoleZ\Icons\mario.ico" use_default_icon="0">
-			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\JesseBoothInfo" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+		<tab title="JesseBooth.com" icon="C:\ConsoleZ\Icons\mario.ico" use_default_icon="0">
+			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\JesseBooth.com" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="0" g="128" b="255"/>
 			<background type="1" r="0" g="0" b="0">
-				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
+				<image file="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Console\Backgrounds\Mario.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
@@ -205,7 +206,7 @@
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\PatnaikCo" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="255" g="128" b="0"/>
 			<background type="1" r="0" g="0" b="0">
-				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
+				<image file="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Console\Backgrounds\Matrix.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
@@ -232,7 +233,7 @@
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\PatnaikRealty" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="0" g="128" b="0"/>
 			<background type="1" r="0" g="0" b="0">
-				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
+				<image file="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Console\Backgrounds\Matrix.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
@@ -259,7 +260,7 @@
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\NashvilleInk\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="128" g="0" b="128"/>
 			<background type="1" r="0" g="0" b="0">
-				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
+				<image file="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Console\Backgrounds\Matrix.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
@@ -286,7 +287,7 @@
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\RainbowBalloon\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="255" g="128" b="255"/>
 			<background type="1" r="0" g="0" b="0">
-				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
+				<image file="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Console\Backgrounds\Matrix.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
@@ -313,7 +314,7 @@
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\EzMotionBand\calendar-app" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="255" g="255" b="0"/>
 			<background type="1" r="0" g="0" b="0">
-				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
+				<image file="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Console\Backgrounds\Matrix.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
@@ -340,7 +341,7 @@
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\SpencerMedical\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="0" g="128" b="0"/>
 			<background type="1" r="0" g="0" b="0">
-				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
+				<image file="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Console\Backgrounds\Matrix.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
@@ -367,7 +368,7 @@
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\NeighborsTax" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="255" g="0" b="0"/>
 			<background type="1" r="0" g="0" b="0">
-				<image file="C:\ConsoleZ\Background.png" relative="0" extend="0" position="0">
+				<image file="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Console\Backgrounds\Matrix.png" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>

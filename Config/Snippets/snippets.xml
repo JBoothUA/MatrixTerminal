@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ConsoleZSnippets>
-	<DownloadUrl>https://github.com/JBoothUA/hacker-console/blob/master/Config/Snippets/snippets.xml</DownloadUrl>
+	<DownloadUrl>https://github.com/JBoothUA/MatrixConsole/blob/master/Config/Snippets/snippets.xml</DownloadUrl>
 
 
 	<!-- Craft = build -->
@@ -96,32 +96,6 @@
 		</Declarations>
 		<Code Delimiter="$">
 			<![CDATA[git checkout $branch_name$
-]]> <!-- return of line, the command is launched after clicking OK -->
-		</Code>
-	</Snippet>
-
-
-	<!-- Complete Quest = create pull request -->
-	<Snippet>
-		<Header>
-			<Title>Complete Quest</Title>
-			<Description>create pull request</Description>
-			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
-			<Version>1.0</Version>
-			<ShellTypes>
-				<ShellType>cmd</ShellType>
-				<ShellType>powershell</ShellType>
-			</ShellTypes>
-		</Header>
-		<Declarations>
-			<Literal>
-				<ID>branch_name</ID>
-				<ToolTip>The branch name.</ToolTip>
-				<Default>master</Default>
-			</Literal>
-		</Declarations>
-		<Code Delimiter="$">
-			<![CDATA[az repos pr create --title "$currentBranch ➡ master" -r MatrixToolsLLC -t master -s $currentBranch --open
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
@@ -432,17 +406,17 @@
 			</ShellTypes>
 		</Header>
 		<Code>
-			<![CDATA[Write-Host 'Hello my name is Mario and I work for Matrix Tools!' -ForegroundColor blue
-Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor magenta
+			<![CDATA[Write-Host 'Matrix Console' -ForegroundColor green
+			Write-Host 'This is a Matrix Console, created for Hackers by Jesse Booth' -ForegroundColor magenta
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
 
 
-	<!-- Snippets = edit snippets file -->
+	<!-- Special Moves = edit snippets file -->
 	<Snippet>
 		<Header>
-			<Title>Snippets</Title>
+			<Title>Special Moves</Title>
 			<Description>edit the snippets file</Description>
 			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
@@ -500,10 +474,65 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 	</Snippet>
 
 
-	<!-- Save Point = commit and push -->
+	<!-- Level Up! = commit, push, and create pull request -->
+	<Snippet>
+		<Header>
+			<Title>Level Up!</Title>
+			<Description>commit, push, and create pull request</Description>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>comment</ID>
+				<ToolTip>The pull request comment.</ToolTip>
+				<Default>Save Point</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[
+			$currentBranch = git branch --show-current
+			az repos pr create --title "Save Point TEST" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r MatrixToolsCore -t master -s $currentBranch --open
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Save Point = create pull request -->
 	<Snippet>
 		<Header>
 			<Title>Save Point</Title>
+			<Description>create pull request</Description>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>comment</ID>
+				<ToolTip>The pull request comment.</ToolTip>
+				<Default>Save Point</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[$currentBranch = git branch --show-current
+			az repos pr create --title "Save Point TEST" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r MatrixToolsCore -t master -s $currentBranch --open
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Check Point = commit and push -->
+	<Snippet>
+		<Header>
+			<Title>Check Point</Title>
 			<Description>commit and push</Description>
 			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
@@ -522,7 +551,7 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 		<Code Delimiter="$">
 			<![CDATA[git add -A
 			git commit -m "$comment$"
-			git push			
+			git push		
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
