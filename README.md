@@ -1,4 +1,5 @@
-# Super Mario Git PowerShell
+# Hacker Console + Git PowerShell
+# Customizable Command-Line Console
 # Turns the Command Line into a Video Game
 
 <ol>
