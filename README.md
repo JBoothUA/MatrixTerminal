@@ -1,6 +1,5 @@
-# Hacker Console + PowerShell + Git
-## Customizable Command-Line Console
-### Turns the Command Line into a Video Game
+# Matrix Console + PowerShell + Git
+## Customizable Command-Line Console for Hackers
 
 <ol>
   <li>
