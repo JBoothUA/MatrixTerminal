@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ConsoleZSnippets>
-	<DownloadUrl>https://github.com/JBoothUA/mario-shell/blob/master/Config/Snippets/snippets.xml</DownloadUrl>
+	<DownloadUrl>https://github.com/JBoothUA/hacker-console/blob/master/Config/Snippets/snippets.xml</DownloadUrl>
 
 
 	<!-- Craft = build -->
@@ -19,7 +19,7 @@
 			<Literal>
 				<ID>mode</ID>
 				<ToolTip>The build mode.</ToolTip>
-				<Default>:dev</Default>
+				<Default></Default>
 			</Literal>
 		</Declarations>
 		<Code>
@@ -96,6 +96,32 @@
 		</Declarations>
 		<Code Delimiter="$">
 			<![CDATA[git checkout $branch_name$
+]]> <!-- return of line, the command is launched after clicking OK -->
+		</Code>
+	</Snippet>
+
+
+	<!-- Complete Quest = create pull request -->
+	<Snippet>
+		<Header>
+			<Title>Complete Quest</Title>
+			<Description>create pull request</Description>
+			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+			<Version>1.0</Version>
+			<ShellTypes>
+				<ShellType>cmd</ShellType>
+				<ShellType>powershell</ShellType>
+			</ShellTypes>
+		</Header>
+		<Declarations>
+			<Literal>
+				<ID>branch_name</ID>
+				<ToolTip>The branch name.</ToolTip>
+				<Default>master</Default>
+			</Literal>
+		</Declarations>
+		<Code Delimiter="$">
+			<![CDATA[az repos pr create --title "$currentBranch ➡ master" -r MatrixToolsLLC -t master -s $currentBranch --open
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
@@ -261,10 +287,10 @@
 	</Snippet>
 
 
-	<!-- Special Move = open all tabs -->
+	<!-- Combo = open all tabs -->
 	<Snippet>
 		<Header>
-			<Title>Special Move</Title>
+			<Title>Combo</Title>
 			<Description>opens all of the tabs</Description>
 			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
@@ -413,10 +439,10 @@ Write-Host 'This is my Mario Shell, created by Jesse Booth' -ForegroundColor mag
 	</Snippet>
 
 
-	<!-- Combos = edit snippets file -->
+	<!-- Snippets = edit snippets file -->
 	<Snippet>
 		<Header>
-			<Title>Combos</Title>
+			<Title>Snippets</Title>
 			<Description>edit the snippets file</Description>
 			<Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 			<Version>1.0</Version>
