@@ -9,18 +9,15 @@
   <li>Open the settings and snippets xml files and make adjustments based on your folder structure, etc</li>
 </ol>
 You also will need a Git PowerShell (Posh-Git).<br />
-<ol>
-  <li>Install GitHub Desktop</li>
-  <li>
-    If GitHub Desktop did not set it up, you can install it to your shell
-    <ol>
-      <li>Choco Install poshgit</li>
-      <li>Set-ExecutionPolicy RemoteSigned</li>
-      <li>Install-Module Posh-Git -Scope AllUsers</li>
-      <li>Add-PoshGitToProfile -AllHosts -Force</li>
-    </ol>
-  </li>
-</ol>
+
+Install GitHub Desktop
+  
+    If GitHub Desktop did not set it up, you can install it to your shell  
+Choco Install poshgit
+Set-ExecutionPolicy RemoteSigned
+Install-Module Posh-Git -Scope AllUsers
+Add-PoshGitToProfile -AllHosts -Force
+    
 
 ## Troubleshooting
 ### Git in PowerShell Troubleshooting:
