@@ -1,4 +1,4 @@
-# Matrix Console + PowerShell + Git
+# Hacking with PowerShell + Git
 ## Customizable Command-Line Console for Hackers
 
 <ol>
