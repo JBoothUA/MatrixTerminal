@@ -5,7 +5,7 @@
 1. Install Chocolatey: https://chocolatey.org/install
 2. From a Command Line run 
 
-    Choco Install ConsoleZ
+       Choco Install ConsoleZ
      
      
 <ol>
