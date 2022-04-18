@@ -1,7 +1,7 @@
 # Hacking Console with PowerShell + Git
 ## Customizable Command-Line Console for Hackers
 
-# Installation
+# Basic Installation
 1. Install Chocolatey: https://chocolatey.org/install
 2. From a Command Line run 
 
@@ -21,14 +21,28 @@ Choco Install poshgit
 Set-ExecutionPolicy RemoteSigned
 Install-Module Posh-Git -Scope AllUsers
 Add-PoshGitToProfile -AllHosts -Force
+
+## Advanced Installation
+If you have knowledge of C++ code you can make further customizations.
+The code C++ code is located within the /ConsoleZ directory.
+
+# Correcting ConsoleZ Compile Errors
+If you see any errors related to Boost:
+  1. 
+
+If you see any errors related to ahref:
+  1. 
+
+More information here:
+https://github.com/cbucher/console/wiki/How-to-compile
     
 
 ## Troubleshooting
 ### Git in PowerShell Troubleshooting:
 https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell
 
-### Initial ConsoleZ Credit:
-https://haacked.com/archive/2015/10/29/git-shell
+### Initial Console Credit:
+https://github.com/cbucher/console
 
 ### Initial Setup Credit:
 https://haacked.com/archive/2015/10/29/git-shell
