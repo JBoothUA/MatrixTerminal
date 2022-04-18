@@ -2,8 +2,8 @@
 ## Customizable Command-Line Console for Hackers
 
 # Installation
-Install Chocolatey: https://chocolatey.org/install
-Choco Install ConsoleZ
+1. Install Chocolatey: https://chocolatey.org/install
+2. From a Command Line run "Choco Install ConsoleZ"
 <ol>
   <li>Pull down the config files from this repo and move to -> C:\Users\{user}\AppData\Roaming\Console</li>
   <li>Open the settings and snippets xml files and make adjustments based on your folder structure, etc</li>
@@ -24,13 +24,13 @@ You also will need a Git PowerShell (Posh-Git).<br />
 
 ## Troubleshooting
 ### Git in PowerShell Troubleshooting:
-<a target="_blank" href="https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell">Git Shell</a>
+https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell
 
 ### Initial ConsoleZ Credit:
-<a target="_blank" href="https://haacked.com/archive/2015/10/29/git-shell/">Git ConsoleZ</a>
+https://haacked.com/archive/2015/10/29/git-shell
 
 ### Initial Setup Credit:
-<a target="_blank" href="https://haacked.com/archive/2015/10/29/git-shell/">Git ConsoleZ</a>
+https://haacked.com/archive/2015/10/29/git-shell
 
 ## TODO
 ### Calculate Points / High Scores!
