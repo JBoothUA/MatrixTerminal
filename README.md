@@ -1,4 +1,4 @@
-# Hacking with PowerShell + Git
+# Hacking Console with PowerShell + Git
 ## Customizable Command-Line Console for Hackers
 
 <ol>
