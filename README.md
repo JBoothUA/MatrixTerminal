@@ -3,7 +3,11 @@
 
 # Installation
 1. Install Chocolatey: https://chocolatey.org/install
-2. From a Command Line run "Choco Install ConsoleZ"
+2. From a Command Line run 
+
+    Choco Install ConsoleZ
+     
+     
 <ol>
   <li>Pull down the config files from this repo and move to -> C:\Users\{user}\AppData\Roaming\Console</li>
   <li>Open the settings and snippets xml files and make adjustments based on your folder structure, etc</li>
