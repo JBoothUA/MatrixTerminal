@@ -21,8 +21,7 @@
 
        choco install consolez
        
-4. You should now be able to run ConsoleZ, 
-    You are ready to use this repository and customize your new Console.
+4. You should now be able to run ConsoleZ, you are now ready to use this repository and customize your new Console.
 
 ### Customization
 
