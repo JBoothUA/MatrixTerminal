@@ -8,7 +8,7 @@
 1. Install Chocolatey: https://chocolatey.org/install
 
 2. Install Git for PowerShell
-       a. From a Command Line run:
+  a. From a Command Line run:
 
        choco install poshgit
        Set-ExecutionPolicy RemoteSigned
@@ -16,7 +16,7 @@
        Add-PoshGitToProfile -AllHosts -Force
       
 3. Install ConsoleZ
-       a. From a Command Line run:
+  a. From a Command Line run:
 
        choco install consolez
        
