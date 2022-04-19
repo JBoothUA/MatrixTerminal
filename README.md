@@ -1,6 +1,8 @@
 # Hacking Console
 ## Customizable PowerShell for Hackers
 
+![image](https://user-images.githubusercontent.com/6255224/163909334-c0772e71-aa74-4c23-9296-fce15ab76bc1.png)
+
 ### Prerequisites
 
 1. Install Chocolatey: https://chocolatey.org/install
