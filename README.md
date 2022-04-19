@@ -70,7 +70,8 @@ https://github.com/cbucher/console
 https://haacked.com/archive/2015/10/29/git-shell
 
 ### TODO
-#### Calculate Points / High Scores!
+
+#### Gamification: Calculate Points / High Scores!
 
 Every Snippet would use curl to call an API.
 This API could take the Command and somehow the user, and save the timestamp.
