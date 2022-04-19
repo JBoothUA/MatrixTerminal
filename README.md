@@ -37,7 +37,7 @@ The code C++ code is located within the /ConsoleZ directory.
 
 ## Troubleshooting
 
-#### Git for PowerShell Troubleshooting
+### Git for PowerShell Troubleshooting
 https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell
 
 ### Troubleshooting C++ Build
@@ -63,6 +63,7 @@ https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Po
 https://github.com/cbucher/console/wiki/How-to-compile
 
 ## Credit
+
 ### Initial Console Credit:
 https://github.com/cbucher/console
 
