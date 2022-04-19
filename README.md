@@ -38,7 +38,7 @@ The code C++ code is located within the /ConsoleZ directory.
 #### Git for PowerShell Troubleshooting:
 https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell
 
-### Troubleshooting C++ Build
+#### Troubleshooting C++ Build
 If you see any errors related to "boost":
 1. You must install Boost, there is an installer in the /ConsoleZ directory.
 2. Remember which directory that you install Boost into.
