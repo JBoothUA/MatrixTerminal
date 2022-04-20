@@ -1,6 +1,6 @@
-# Hacking Console
+# Hacking Terminal
 
-## Customizable PowerShell for Hackers
+## Customizable PowerShell Terminal for Hackers
 
 ![image](https://user-images.githubusercontent.com/6255224/163909334-c0772e71-aa74-4c23-9296-fce15ab76bc1.png)<br />
 (shown above: Final Fantasy Menu Mode / Darksaber Cursor Mode)
