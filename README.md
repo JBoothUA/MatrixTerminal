@@ -56,9 +56,6 @@ https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Po
 3. Add all C++ tools, you must also go into the "Installation details" panel and include the extra MFC library.
 4. "Visual C++ MFC for x86 and x64"
 
-#### If you see any errors related to "32":
-1. Ensure that your Solution Platform in Visual Studio is set to Win32 instead of x64.
-
 #### More information on build here:
 https://github.com/cbucher/console/wiki/How-to-compile
 
