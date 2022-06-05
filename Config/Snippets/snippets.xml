@@ -68,7 +68,9 @@
 			</Literal>
 		</Declarations>
 		<Code Delimiter="$">
-			<![CDATA[git checkout -b $branch_name$
+			<![CDATA[git checkout master
+			git pull
+			git checkout -b $branch_name$
 			git push --set-upstream origin $branch_name$
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
@@ -492,11 +494,16 @@
 				<ToolTip>The pull request comment.</ToolTip>
 				<Default>Save Point</Default>
 			</Literal>
+			<Literal>
+				<ID>repo</ID>
+				<ToolTip>The repository to update.</ToolTip>
+				<Default>MatrixToolsCore</Default>
+			</Literal>
 		</Declarations>
 		<Code Delimiter="$">
 			<![CDATA[
 			$currentBranch = git branch --show-current
-			az repos pr create --title "Save Point TEST" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r MatrixToolsCore -t master -s $currentBranch --open
+			az repos pr create --title "$comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $repo$ -t master -s $currentBranch --open
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
@@ -520,10 +527,15 @@
 				<ToolTip>The pull request comment.</ToolTip>
 				<Default>Save Point</Default>
 			</Literal>
+			<Literal>
+				<ID>repo</ID>
+				<ToolTip>The repository to update.</ToolTip>
+				<Default>MatrixToolsCore</Default>
+			</Literal>
 		</Declarations>
 		<Code Delimiter="$">
 			<![CDATA[$currentBranch = git branch --show-current
-			az repos pr create --title "Save Point TEST" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r MatrixToolsCore -t master -s $currentBranch --open
+			az repos pr create --title "$comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $repo$ -t master -s $currentBranch --open
 ]]> <!-- return of line, the command is launched after clicking OK -->
 		</Code>
 	</Snippet>
