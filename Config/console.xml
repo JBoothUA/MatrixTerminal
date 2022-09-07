@@ -35,7 +35,7 @@
 			<selection_color r="255" g="255" b="255"/>
 			<highlight_color r="191" g="191" b="191"/></styles>
 		<position x="-1" y="-1" save_position="0" w="-1" h="-1" save_size="0" z_order="0" dock="-1" snap="-1" save_state="0" state="-1"/>
-		<transparency type="1" active_alpha="205" inactive_alpha="105" r="0" g="0" b="0" active="0"/></appearance>
+		<transparency type="1" active_alpha="205" inactive_alpha="105" r="0" g="0" b="0" active="1"/></appearance>
 	<behavior>
 		<copy_paste copy_on_select="0" clear_on_copy="1" sensitive_copy="1" no_wrap="1" eol_spaces="1" trim_spaces="1" rtf="1" copy_newline_char="0" include_left_delimiter="0" include_right_delimiter="0" left_delimiters=" ([" right_delimiters=" )]"/>
 		<scroll page_scroll_rows="0"/>
@@ -313,8 +313,8 @@
 		<tab title="EzMotion Band" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\ezmotion.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\EzMotionBand\calendar-app" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="255" g="255" b="0"/>
-			<background type="1" r="0" g="0" b="0">
-				<image file="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Console\Backgrounds\Matrix.png" relative="0" extend="0" position="0">
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
@@ -340,8 +340,8 @@
 		<tab title="Spencer Medical" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\1up.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\SpencerMedical\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="0" g="128" b="0"/>
-			<background type="1" r="0" g="0" b="0">
-				<image file="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Console\Backgrounds\Matrix.png" relative="0" extend="0" position="0">
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
@@ -367,8 +367,62 @@
 		<tab title="Neighbors Tax" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\boo.ico" use_default_icon="0">
 			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\NeighborsTax" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="255" g="0" b="0"/>
-			<background type="1" r="0" g="0" b="0">
-				<image file="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Console\Backgrounds\Matrix.png" relative="0" extend="0" position="0">
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+			<colors background_text_opacity="255">
+				<color id="0" r="0" g="0" b="0"/>
+				<color id="1" r="0" g="0" b="128"/>
+				<color id="2" r="0" g="150" b="0"/>
+				<color id="3" r="0" g="150" b="150"/>
+				<color id="4" r="170" g="25" b="25"/>
+				<color id="5" r="128" g="0" b="128"/>
+				<color id="6" r="128" g="128" b="0"/>
+				<color id="7" r="192" g="192" b="192"/>
+				<color id="8" r="128" g="128" b="128"/>
+				<color id="9" r="0" g="100" b="255"/>
+				<color id="10" r="0" g="255" b="0"/>
+				<color id="11" r="0" g="255" b="255"/>
+				<color id="12" r="255" g="50" b="50"/>
+				<color id="13" r="255" g="0" b="255"/>
+				<color id="14" r="255" g="255" b="0"/>
+				<color id="15" r="255" g="255" b="255"/>
+		</colors>
+		</tab>
+		<tab title="Scrappy's Junk World" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\goomba.ico" use_default_icon="0">
+			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\ScrappysJunkWorld" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<cursor style="9" r="255" g="0" b="0"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+			<colors background_text_opacity="255">
+				<color id="0" r="0" g="0" b="0"/>
+				<color id="1" r="0" g="0" b="128"/>
+				<color id="2" r="0" g="150" b="0"/>
+				<color id="3" r="0" g="150" b="150"/>
+				<color id="4" r="170" g="25" b="25"/>
+				<color id="5" r="128" g="0" b="128"/>
+				<color id="6" r="128" g="128" b="0"/>
+				<color id="7" r="192" g="192" b="192"/>
+				<color id="8" r="128" g="128" b="128"/>
+				<color id="9" r="0" g="100" b="255"/>
+				<color id="10" r="0" g="255" b="0"/>
+				<color id="11" r="0" g="255" b="255"/>
+				<color id="12" r="255" g="50" b="50"/>
+				<color id="13" r="255" g="0" b="255"/>
+				<color id="14" r="255" g="255" b="0"/>
+				<color id="15" r="255" g="255" b="255"/>
+		</colors>
+		</tab>
+		<tab title="Sydney County" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\redyoshi.ico" use_default_icon="0">
+			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\SydneyCounty" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<cursor style="9" r="255" g="0" b="0"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
