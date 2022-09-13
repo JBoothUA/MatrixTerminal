@@ -141,18 +141,18 @@ git push --set-upstream origin $branch_name$
     </Header>
     <Declarations>
       <Literal>
-        <ID>first_commit_name</ID>
-        <ToolTip>The first commit name.</ToolTip>
+        <ID>first_branch</ID>
+        <ToolTip>The first branch/commit.</ToolTip>
         <Default>map/jb/</Default>
       </Literal>
       <Literal>
-        <ID>second_commit_name</ID>
-        <ToolTip>The second commit name.</ToolTip>
+        <ID>second_branch</ID>
+        <ToolTip>The second branch/commit.</ToolTip>
         <Default>main</Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
-      <![CDATA[git diff $first_commit_name$ $second_commit_name$
+      <![CDATA[git diff $first_branch$ $second_branch$
 ]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
