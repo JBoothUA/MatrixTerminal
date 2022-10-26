@@ -55,16 +55,16 @@
     </Header>
     <Declarations>
       <Literal>
-        <ID>branch_name</ID>
+        <ID>BranchName</ID>
         <ToolTip>The branch name.</ToolTip>
         <Default>map/jb/</Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[git checkout main
-git pull
-git checkout -b $branch_name$
-git push --set-upstream origin $branch_name$
+			git pull
+			git checkout -b $BranchName$
+			git push --set-upstream origin $BranchName$
 ]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -84,22 +84,22 @@ git push --set-upstream origin $branch_name$
     </Header>
     <Declarations>
       <Literal>
-        <ID>branch_name</ID>
+        <ID>BranchName</ID>
         <ToolTip>The branch name.</ToolTip>
         <Default>main</Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
-      <![CDATA[git checkout $branch_name$
+      <![CDATA[git checkout $BranchName$
 ]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
 
-  <!-- Load Quest = create branch from previous commit -->
+  <!-- Time Travel = create branch from previous commit -->
   <Snippet>
     <Header>
-      <Title>Load Quest</Title>
+      <Title>Time Travel</Title>
       <Description>create branch from previous commit</Description>
       <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
       <Version>1.0</Version>
@@ -110,27 +110,27 @@ git push --set-upstream origin $branch_name$
     </Header>
     <Declarations>
       <Literal>
-        <ID>commit_sha</ID>
-        <ToolTip>The commit sha.</ToolTip>
+        <ID>CommitSHA</ID>
+        <ToolTip>The SHA for a previous commit.</ToolTip>
         <Default>1d0fa4fa9ea961182114b63976482e634a8067b8</Default>
       </Literal>
       <Literal>
-        <ID>branch_name</ID>
+        <ID>BranchName</ID>
         <ToolTip>The branch name.</ToolTip>
         <Default>map/jb/</Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
-      <![CDATA[git checkout -b $branch_name$ $commit_sha$
+      <![CDATA[git checkout -b $BranchName$ $CommitSHA$
 ]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
 
-  <!-- Time Travel = diff -->
+  <!-- Compare Branches = diff -->
   <Snippet>
     <Header>
-      <Title>Time Travel</Title>
+      <Title>Compare Branches</Title>
       <Description>diff</Description>
       <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
       <Version>1.0</Version>
@@ -141,22 +141,52 @@ git push --set-upstream origin $branch_name$
     </Header>
     <Declarations>
       <Literal>
-        <ID>first_branch</ID>
+        <ID>FirstBranch</ID>
         <ToolTip>The first branch/commit.</ToolTip>
         <Default>map/jb/</Default>
       </Literal>
       <Literal>
-        <ID>second_branch</ID>
+        <ID>SecondBranch</ID>
         <ToolTip>The second branch/commit.</ToolTip>
         <Default>main</Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
-      <![CDATA[git diff $first_branch$ $second_branch$
+      <![CDATA[git diff $FirstBranch$ $SecondBranch$
 ]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
+  
+  <!-- Link = link work items to release -->
+  <Snippet>
+    <Header>
+	<Title>Link</Title>
+	<Description>link work items to release</Description>
+	<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>	
+	<Version>1.0</Version>
+	<ShellTypes>
+	  <ShellType>cmd</ShellType>
+        <ShellType>powershell</ShellType>
+      </ShellTypes>
+    </Header>
+    <Declarations>
+      <Literal>
+        <ID>ReleaseItemID</ID>
+        <ToolTip>The ID of the Release Work Item.</ToolTip>
+        <Default>46000</Default>
+      </Literal>
+      <Literal>
+        <ID>WorkItemIDs</ID>
+        <ToolTip>Comma-separated list of Work Item IDs to be released.</ToolTip>
+        <Default>46001,46002</Default>
+      </Literal>
+    </Declarations>
+    <Code>
+      <![CDATA[az boards work-item relation add --id $ReleaseItemID$ --relation-type Related --target-id $WorkItemIDs$ --output table
+]]> <!-- return of line, the command is launched after clicking OK -->
+    </Code>
+  </Snippet>
 
 
   <!-- Cure = test -->
@@ -287,13 +317,13 @@ git push --set-upstream origin $branch_name$
     </Header>
     <Declarations>
       <Literal>
-        <ID>package_name</ID>
+        <ID>PackageName</ID>
         <ToolTip>The package name.</ToolTip>
         <Default>@galileo/common-libraries</Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
-      <![CDATA[npm add $package_name$@latest --save
+      <![CDATA[npm add $PackageName$@latest --save
 ]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -397,23 +427,23 @@ git push --set-upstream origin $branch_name$
     </Header>
     <Declarations>
       <Literal>
-        <ID>target_name</ID>
+        <ID>TargetName</ID>
         <ToolTip>The target name.</ToolTip>
         <Default>www.matrix.tools</Default>
       </Literal>
       <Literal>
-        <ID>count</ID>
+        <ID>Count</ID>
         <ToolTip>Number of echo requests to send.</ToolTip>
         <Default>4</Default>
       </Literal>
       <Literal>
-        <ID>timeout</ID>
+        <ID>Timeout</ID>
         <ToolTip>Timeout in milliseconds to wait for each reply.</ToolTip>
         <Default>500</Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
-      <![CDATA[ping.exe -4 -n "$count$" -w "$timeout$" "$target_name$"
+      <![CDATA[ping.exe -4 -n "$Count$" -w "$Timeout$" "$TargetName$"
 ]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -433,12 +463,12 @@ git push --set-upstream origin $branch_name$
     </Header>
     <Declarations>
       <Literal>
-        <ID>email</ID>
+        <ID>Email</ID>
         <ToolTip>The email address.</ToolTip>
         <Default>matrixtoolsllc@gmail.com</Default>
       </Literal>
       <Literal>
-        <ID>details</ID>
+        <ID>Details</ID>
         <ToolTip>The contact details.</ToolTip>
         <Default>Mario Shell ~ Mail</Default>
       </Literal>
@@ -446,7 +476,7 @@ git push --set-upstream origin $branch_name$
     <Code Delimiter="$">
       <![CDATA[
 			Remove-item alias:curl
-			curl https://www.matrix.tools/api/email/matrixtools --data 'email=$email$&details=$details$'
+			curl https://www.matrix.tools/api/email/matrixtools --data 'email=$Email$&details=$Details$'
 ]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -546,12 +576,12 @@ git push --set-upstream origin $branch_name$
     </Header>
     <Declarations>
       <Literal>
-        <ID>comment</ID>
+        <ID>Comment</ID>
         <ToolTip>The pull request comment.</ToolTip>
         <Default>Save Point</Default>
       </Literal>
       <Literal>
-        <ID>repo</ID>
+        <ID>Repo</ID>
         <ToolTip>The repository to update.</ToolTip>
         <Default>MatrixToolsCore</Default>
       </Literal>
@@ -559,7 +589,7 @@ git push --set-upstream origin $branch_name$
     <Code Delimiter="$">
       <![CDATA[
 			$currentBranch = git branch --show-current
-			az repos pr create --title "$comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $repo$ -t master -s $currentBranch --open
+			az repos pr create --title "$Comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $Repo$ -t master -s $currentBranch --open
 ]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -579,19 +609,19 @@ git push --set-upstream origin $branch_name$
     </Header>
     <Declarations>
       <Literal>
-        <ID>comment</ID>
+        <ID>Comment</ID>
         <ToolTip>The pull request comment.</ToolTip>
         <Default>Save Point</Default>
       </Literal>
       <Literal>
-        <ID>repo</ID>
+        <ID>Repo</ID>
         <ToolTip>The repository to update.</ToolTip>
         <Default>MatrixToolsCore</Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[$currentBranch = git branch --show-current
-			az repos pr create --title "$comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $repo$ -t master -s $currentBranch --open
+			az repos pr create --title "$Comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $Repo$ -t master -s $currentBranch --open
 ]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -611,14 +641,14 @@ git push --set-upstream origin $branch_name$
     </Header>
     <Declarations>
       <Literal>
-        <ID>comment</ID>
+        <ID>Comment</ID>
         <ToolTip>The commit comment.</ToolTip>
         <Default>DEV: </Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[git add -A
-			git commit -m "$comment$"
+			git commit -m "$Comment$"
 			git push		
 ]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
