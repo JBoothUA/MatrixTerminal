@@ -8,7 +8,7 @@
     <Header>
       <Title>Attack</Title>
       <Description>serve</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -27,7 +27,7 @@
     <Header>
       <Title>Craft</Title>
       <Description>build</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -46,7 +46,7 @@
     <Header>
       <Title>New Quest</Title>
       <Description>new branch</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -75,7 +75,7 @@
     <Header>
       <Title>Side Quest</Title>
       <Description>switch branch</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -101,7 +101,7 @@
     <Header>
       <Title>Time Travel</Title>
       <Description>create branch from previous commit</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -132,7 +132,7 @@
     <Header>
       <Title>Compare Paths</Title>
       <Description>diff</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -157,13 +157,32 @@
     </Code>
   </Snippet>
 
+
+  <!-- Scan = google scanner -->
+  <Snippet>
+    <Header>
+	<Title>Scan</Title>
+	<Description>google scanner</Description>
+      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+	<Version>1.0</Version>
+	<ShellTypes>
+	  <ShellType>cmd</ShellType>
+        <ShellType>powershell</ShellType>
+      </ShellTypes>
+    </Header>
+    <Code>
+      <![CDATA[npm run google-scanner
+]]> <!-- return of line, the command is launched after clicking OK -->
+    </Code>
+  </Snippet>
+
   
   <!-- Link = link work items to release -->
   <Snippet>
     <Header>
 	<Title>Link</Title>
 	<Description>link work items to release</Description>
-	<Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>	
+      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
 	<Version>1.0</Version>
 	<ShellTypes>
 	  <ShellType>cmd</ShellType>
