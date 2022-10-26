@@ -127,10 +127,10 @@
   </Snippet>
 
 
-  <!-- Compare Branches = diff -->
+  <!-- Compare Paths = diff -->
   <Snippet>
     <Header>
-      <Title>Compare Branches</Title>
+      <Title>Compare Paths</Title>
       <Description>diff</Description>
       <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
       <Version>1.0</Version>
