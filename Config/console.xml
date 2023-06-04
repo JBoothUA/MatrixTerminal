@@ -186,7 +186,7 @@
 	<tabs>
 		<tab title="Matrix Tools" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\seo.ico" use_default_icon="0">
 			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\MatrixTools\Website\ClientApp" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="4" r="255" g="255" b="255"/>
+			<cursor style="9" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -231,7 +231,7 @@
 		</tab>
 		<tab title="Patnaik Realty" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\goomba.ico" use_default_icon="0">
 			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\PatnaikRealty" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="2" r="0" g="128" b="0"/>
+			<cursor style="11" r="0" g="128" b="0"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -285,7 +285,7 @@
 		</tab>
 		<tab title="Neighbors Tax" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\1up.ico" use_default_icon="0">
 			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\NeighborsTax" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="2" r="255" g="0" b="0"/>
+			<cursor style="11" r="255" g="0" b="0"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -339,7 +339,7 @@
 		</tab>
 		<tab title="Rainbow Balloon" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\rainbow.ico" use_default_icon="0">
 			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\RainbowBalloon\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="9" r="255" g="128" b="255"/>
+			<cursor style="1" r="255" g="128" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -366,7 +366,7 @@
 		</tab>
 		<tab title="Scrappy's Junk World" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\boo.ico" use_default_icon="0">
 			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\ScrappysJunkWorld" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="9" r="128" g="255" b="255"/>
+			<cursor style="1" r="128" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -393,7 +393,7 @@
 		</tab>
 		<tab title="Sydney County" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\redyoshi.ico" use_default_icon="0">
 			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\SydneyCounty" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="9" r="0" g="128" b="128"/>
+			<cursor style="1" r="0" g="128" b="128"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
