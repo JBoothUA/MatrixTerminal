@@ -2,13 +2,12 @@
 <ConsoleZSnippets>
   <DownloadUrl>https://github.com/JBoothUA/MatrixTerminal/blob/master/Config/Snippets/snippets.xml</DownloadUrl>
 
-
   <!-- Attack = serve -->
   <Snippet>
     <Header>
       <Title>Attack</Title>
       <Description>serve</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -27,7 +26,7 @@
     <Header>
       <Title>Craft</Title>
       <Description>build</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -46,7 +45,7 @@
     <Header>
       <Title>New Quest</Title>
       <Description>new branch</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -75,7 +74,7 @@
     <Header>
       <Title>Side Quest</Title>
       <Description>switch branch</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -96,12 +95,154 @@
   </Snippet>
 
 
+  <!-- Map = gitk -->
+  <Snippet>
+    <Header>
+      <Title>Map</Title>
+      <Description>gitk</Description>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Version>1.0</Version>
+      <ShellTypes>
+        <ShellType>cmd</ShellType>
+        <ShellType>powershell</ShellType>
+      </ShellTypes>
+    </Header>
+    <Code>
+      <![CDATA[gitk
+]]>      <!-- return of line, the command is launched after clicking OK -->
+    </Code>
+  </Snippet>
+
+
+  <!-- Cure = test -->
+  <Snippet>
+    <Header>
+      <Title>Cure</Title>
+      <Description>test</Description>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Version>1.0</Version>
+      <ShellTypes>
+        <ShellType>cmd</ShellType>
+        <ShellType>powershell</ShellType>
+      </ShellTypes>
+    </Header>
+    <Code>
+      <![CDATA[npm run test
+]]>      <!-- return of line, the command is launched after clicking OK -->
+    </Code>
+  </Snippet>
+
+
+  <!-- Cure All = e2e test -->
+  <Snippet>
+    <Header>
+      <Title>Cure All</Title>
+      <Description>e2e test</Description>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Version>1.0</Version>
+      <ShellTypes>
+        <ShellType>cmd</ShellType>
+        <ShellType>powershell</ShellType>
+      </ShellTypes>
+    </Header>
+    <Code>
+      <![CDATA[npm run e2e
+]]>      <!-- return of line, the command is launched after clicking OK -->
+    </Code>
+  </Snippet>
+
+
+  <!-- Fuse = link work items to release -->
+  <Snippet>
+    <Header>
+      <Title>Fuse</Title>
+      <Description>link work items to release</Description>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Version>1.0</Version>
+      <ShellTypes>
+        <ShellType>cmd</ShellType>
+        <ShellType>powershell</ShellType>
+      </ShellTypes>
+    </Header>
+    <Declarations>
+      <Literal>
+        <ID>ReleaseItemID</ID>
+        <ToolTip>The ID of the Release Work Item.</ToolTip>
+        <Default>46000</Default>
+      </Literal>
+      <Literal>
+        <ID>WorkItemIDs</ID>
+        <ToolTip>Comma-separated list of Work Item IDs to be released.</ToolTip>
+        <Default>46001,46002</Default>
+      </Literal>
+    </Declarations>
+    <Code>
+      <![CDATA[az boards work-item relation add --id $ReleaseItemID$ --relation-type Related --target-id $WorkItemIDs$ --output table
+]]>      <!-- return of line, the command is launched after clicking OK -->
+    </Code>
+  </Snippet>
+
+
+  <!-- Recall = undo the previous commit -->
+  <Snippet>
+    <Header>
+      <Title>Recall</Title>
+      <Description>undo the previous commit</Description>
+      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+      <Version>1.0</Version>
+      <ShellTypes>
+        <ShellType>cmd</ShellType>
+        <ShellType>powershell</ShellType>
+      </ShellTypes>
+    </Header>
+    <Code Delimiter="$">
+      <![CDATA[git reset HEAD^
+]]>      <!-- return of line, the command is launched after clicking OK -->
+    </Code>
+  </Snippet>
+
+
+  <!-- Cherry Pick = cherry pick from previous commits -->
+  <Snippet>
+    <Header>
+      <Title>Cherry Pick</Title>
+      <Description>cherry pick from previous commits</Description>
+      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+      <Version>1.0</Version>
+      <ShellTypes>
+        <ShellType>cmd</ShellType>
+        <ShellType>powershell</ShellType>
+      </ShellTypes>
+    </Header>
+    <Declarations>
+    <Literal>
+      <ID>CommitSHA</ID>
+      <ToolTip>The cherry-pick commit sha.</ToolTip>
+      <Default>1d0fa4fa9ea961182114b63976482e634a8067b8</Default>
+    </Literal>
+    <Literal>
+      <ID>BranchName</ID>
+      <ToolTip>The branch name.</ToolTip>
+      <Default>map/jb/</Default>
+    </Literal>
+    </Declarations>
+    <Code Delimiter="$">
+            <![CDATA[git checkout main
+            git pull
+            git checkout -b $BranchName$
+            git push --set-upstream origin $BranchName$
+            git cherry-pick $CommitSHA$
+    ]]>        <!-- return of line, the command is launched after clicking OK -->
+    </Code>
+  </Snippet>
+
+
   <!-- Time Travel = create branch from previous commit -->
   <Snippet>
     <Header>
       <Title>Time Travel</Title>
       <Description>create branch from previous commit</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -122,7 +263,7 @@
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[git checkout -b $BranchName$ $CommitSHA$
-]]>      <!-- return of line, the command is launched after clicking OK -->
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -130,106 +271,18 @@
   <!-- Scan = google scanner -->
   <Snippet>
     <Header>
-	<Title>Scan</Title>
-	<Description>google scanner</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
-	<Version>1.0</Version>
-	<ShellTypes>
-	  <ShellType>cmd</ShellType>
+      <Title>Scan</Title>
+      <Description>google scanner</Description>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Version>1.0</Version>
+      <ShellTypes>
+        <ShellType>cmd</ShellType>
         <ShellType>powershell</ShellType>
       </ShellTypes>
     </Header>
     <Code>
       <![CDATA[npm run google-scanner
-]]> <!-- return of line, the command is launched after clicking OK -->
-    </Code>
-  </Snippet>
-
-  
-  <!-- Link = link work items to release -->
-  <Snippet>
-    <Header>
-	<Title>Link</Title>
-	<Description>link work items to release</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
-	<Version>1.0</Version>
-	<ShellTypes>
-	  <ShellType>cmd</ShellType>
-        <ShellType>powershell</ShellType>
-      </ShellTypes>
-    </Header>
-    <Declarations>
-      <Literal>
-        <ID>ReleaseItemID</ID>
-        <ToolTip>The ID of the Release Work Item.</ToolTip>
-        <Default>46000</Default>
-      </Literal>
-      <Literal>
-        <ID>WorkItemIDs</ID>
-        <ToolTip>Comma-separated list of Work Item IDs to be released.</ToolTip>
-        <Default>46001,46002</Default>
-      </Literal>
-    </Declarations>
-    <Code>
-      <![CDATA[az boards work-item relation add --id $ReleaseItemID$ --relation-type Related --target-id $WorkItemIDs$ --output table
-]]> <!-- return of line, the command is launched after clicking OK -->
-    </Code>
-  </Snippet>
-
-
-  <!-- Cure = test -->
-  <Snippet>
-    <Header>
-      <Title>Cure</Title>
-      <Description>test</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
-      <Version>1.0</Version>
-      <ShellTypes>
-        <ShellType>cmd</ShellType>
-        <ShellType>powershell</ShellType>
-      </ShellTypes>
-    </Header>
-    <Code>
-      <![CDATA[npm run test
-]]>      <!-- return of line, the command is launched after clicking OK -->
-    </Code>
-  </Snippet>
-
-
-  <!-- Cure All = e2e test -->
-  <Snippet>
-    <Header>
-      <Title>Cure All</Title>
-      <Description>e2e test</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
-      <Version>1.0</Version>
-      <ShellTypes>
-        <ShellType>cmd</ShellType>
-        <ShellType>powershell</ShellType>
-      </ShellTypes>
-    </Header>
-    <Code>
-      <![CDATA[npm run e2e
-]]>      <!-- return of line, the command is launched after clicking OK -->
-    </Code>
-  </Snippet>
-
-
-  <!-- Map = gitk -->
-  <Snippet>
-    <Header>
-      <Title>Map</Title>
-      <Description>gitk</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
-      <Version>1.0</Version>
-      <ShellTypes>
-        <ShellType>cmd</ShellType>
-        <ShellType>powershell</ShellType>
-      </ShellTypes>
-    </Header>
-    <Code>
-      <![CDATA[gitk
-]]>      <!-- return of line, the command is launched after clicking OK -->
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -239,7 +292,7 @@
     <Header>
       <Title>Explore</Title>
       <Description>open explorer</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -248,7 +301,7 @@
     </Header>
     <Code>
       <![CDATA[explorer .
-]]>      <!-- return of line, the command is launched after clicking OK -->
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -258,7 +311,7 @@
     <Header>
       <Title>Deploy Net</Title>
       <Description>dotnet publish</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -267,7 +320,7 @@
     </Header>
     <Code Delimiter="$">
       <![CDATA[dotnet publish -c release
-]]>      <!-- return of line, the command is launched after clicking OK -->
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -277,7 +330,7 @@
     <Header>
       <Title>Deploy Matrix</Title>
       <Description>custom deployment script</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -286,7 +339,7 @@
     </Header>
     <Code Delimiter="$">
       <![CDATA[c:\users\dev\deploy.bat
-]]>      <!-- return of line, the command is launched after clicking OK -->
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -296,7 +349,7 @@
     <Header>
       <Title>Equip</Title>
       <Description>add package</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -312,7 +365,7 @@
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[npm add $PackageName$@latest --save
-]]>      <!-- return of line, the command is launched after clicking OK -->
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -322,7 +375,7 @@
     <Header>
       <Title>Items</Title>
       <Description>list all of the tabs</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -331,8 +384,8 @@
     </Header>
     <Code>
       <![CDATA[[xml]$XmlDocument = Get-Content C:\Users\jb\AppData\Roaming\Console\console.xml
-			$XmlDocument.settings.tabs.tab | Format-Table -AutoSize
-]]>      <!-- return of line, the command is launched after clicking OK -->
+      $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -342,7 +395,7 @@
     <Header>
       <Title>Compare</Title>
       <Description>diff</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -363,7 +416,7 @@
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[git diff $FirstBranch$ $SecondBranch$
-]]>      <!-- return of line, the command is launched after clicking OK -->
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -373,7 +426,7 @@
     <Header>
       <Title>Combo</Title>
       <Description>opens all of the tabs</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -382,30 +435,30 @@
     </Header>
     <Code>
       <![CDATA[$posh = New-Object -ComObject WScript.Shell
-			$posh.SendKeys('^t')
-			Sleep 1
-			$posh.SendKeys('^{F2}')
-			Sleep 1
-			$posh.SendKeys('^{F3}')
-			Sleep 1
-			$posh.SendKeys('^{F4}')
-			Sleep 1
-			$posh.SendKeys('^{F5}')
-			Sleep 1
-			$posh.SendKeys('^{F6}')
-			Sleep 1
-			$posh.SendKeys('^{F7}')
-			Sleep 1
-			$posh.SendKeys('^{F8}')
-			Sleep 1
-			$posh.SendKeys('^{F9}')
-			Sleep 1
-			$posh.SendKeys('^{F10}')
-			Sleep 1
-			$posh.SendKeys('^{F11}')
-			Sleep 1
-			$posh.SendKeys('^{F12}')
-]]>      <!-- return of line, the command is launched after clicking OK -->
+      $posh.SendKeys('^t')
+      Sleep 1
+      $posh.SendKeys('^{F2}')
+      Sleep 1
+      $posh.SendKeys('^{F3}')
+      Sleep 1
+      $posh.SendKeys('^{F4}')
+      Sleep 1
+      $posh.SendKeys('^{F5}')
+      Sleep 1
+      $posh.SendKeys('^{F6}')
+      Sleep 1
+      $posh.SendKeys('^{F7}')
+      Sleep 1
+      $posh.SendKeys('^{F8}')
+      Sleep 1
+      $posh.SendKeys('^{F9}')
+      Sleep 1
+      $posh.SendKeys('^{F10}')
+      Sleep 1
+      $posh.SendKeys('^{F11}')
+      Sleep 1
+      $posh.SendKeys('^{F12}')
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -415,7 +468,7 @@
     <Header>
       <Title>Clone</Title>
       <Description>clone tab and run ng serve</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -424,10 +477,10 @@
     </Header>
     <Code>
       <![CDATA[$posh = New-Object -ComObject WScript.Shell
-			$posh.SendKeys('^{Insert}')
-			Sleep 1
-			ng serve
-]]>      <!-- return of line, the command is launched after clicking OK -->
+    $posh.SendKeys('^{Insert}')
+    Sleep 1
+    ng serve
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -437,7 +490,7 @@
     <Header>
       <Title>Connect</Title>
       <Description>ping command with variables</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -463,7 +516,7 @@
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[ping.exe -4 -n "$Count$" -w "$Timeout$" "$TargetName$"
-]]>      <!-- return of line, the command is launched after clicking OK -->
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -473,7 +526,7 @@
     <Header>
       <Title>Contact</Title>
       <Description>matrix tools email</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -494,9 +547,9 @@
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[
-			Remove-item alias:curl
-			curl https://www.matrix.tools/api/email/matrixtools --data 'email=$Email$&details=$Details$'
-]]>      <!-- return of line, the command is launched after clicking OK -->
+    Remove-item alias:curl
+    curl https://www.jessebooth.com/api/email/matrixtools --data 'email=$Email$&details=$Details$'
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -506,7 +559,7 @@
     <Header>
       <Title>Colors</Title>
       <Description>hello world</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>powershell</ShellType>
@@ -514,18 +567,18 @@
     </Header>
     <Code>
       <![CDATA[Write-Host 'Matrix Console' -ForegroundColor green
-			Write-Host 'This is a Matrix Console, created for Hackers by Jesse Booth' -ForegroundColor magenta
-]]>      <!-- return of line, the command is launched after clicking OK -->
+    Write-Host 'This is a Matrix Console, created for Hackers by Jesse Booth' -ForegroundColor magenta
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
 
-  <!-- Special Moves = edit snippets file -->
+  <!-- Super Moves = edit snippets file -->
   <Snippet>
     <Header>
-      <Title>Special Moves</Title>
+      <Title>Super Moves</Title>
       <Description>edit the snippets file</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -534,7 +587,7 @@
     </Header>
     <Code>
       <![CDATA[C:\Users\jb\AppData\Roaming\Console\Snippets\snippets.xml
-]]>      <!-- return of line, the command is launched after clicking OK -->
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -544,7 +597,7 @@
     <Header>
       <Title>Settings</Title>
       <Description>edit the settings file</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -553,7 +606,7 @@
     </Header>
     <Code>
       <![CDATA[C:\Users\jb\AppData\Roaming\Console\console.xml
-]]>      <!-- return of line, the command is launched after clicking OK -->
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -563,7 +616,7 @@
     <Header>
       <Title>Save Settings</Title>
       <Description>backup config files</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -572,11 +625,11 @@
     </Header>
     <Code>
       <![CDATA[$posh = New-Object -ComObject WScript.Shell
-			$posh.SendKeys('^{Insert}')
-			Sleep 1
-			copy -R -force C:\Users\jb\AppData\Roaming\Console\* C:\Users\JB\Documents\GitHub\mario-shell\Config
-			cd C:\Users\JB\Documents\GitHub\mario-shell\Config
-]]>      <!-- return of line, the command is launched after clicking OK -->
+    $posh.SendKeys('^{Insert}')
+    Sleep 1
+    copy -R -force C:\Users\jb\AppData\Roaming\Console\* C:\Users\JB\Documents\GitHub\mario-shell\Config
+    cd C:\Users\JB\Documents\GitHub\mario-shell\Config
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -584,9 +637,9 @@
   <!-- Level Up! = commit, push, and create pull request -->
   <Snippet>
     <Header>
-      <Title>Level Up!</Title>
+      <Title>Level Up</Title>
       <Description>commit, push, and create pull request</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -607,9 +660,9 @@
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[
-			$currentBranch = git branch --show-current
-			az repos pr create --title "$Comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $Repo$ -t master -s $currentBranch --open
-]]>      <!-- return of line, the command is launched after clicking OK -->
+    $currentBranch = git branch --show-current
+    az repos pr create --title "$Comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $Repo$ -t master -s $currentBranch --open
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -619,7 +672,7 @@
     <Header>
       <Title>Save Point</Title>
       <Description>create pull request</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -640,8 +693,8 @@
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[$currentBranch = git branch --show-current
-			az repos pr create --title "$Comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $Repo$ -t master -s $currentBranch --open
-]]>      <!-- return of line, the command is launched after clicking OK -->
+    az repos pr create --title "$Comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $Repo$ -t master -s $currentBranch --open
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -651,7 +704,7 @@
     <Header>
       <Title>Check Point</Title>
       <Description>commit and push</Description>
-      <Author Url="https://www.matrix.tools" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -667,9 +720,9 @@
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[git add -A
-			git commit -m "$Comment$"
-			git push		
-]]>      <!-- return of line, the command is launched after clicking OK -->
+    git commit -m "$Comment$"
+    git push		
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 </ConsoleZSnippets>

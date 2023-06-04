@@ -19,12 +19,12 @@
 			<color id="14" r="255" g="255" b="0"/>
 			<color id="15" r="255" g="255" b="255"/>
 		</colors>
-		<cursor style="11" r="255" g="255" b="255"/>
+		<cursor style="10" r="255" g="255" b="255"/>
 		<background type="0" r="0" g="0" b="0">
 			<image file="" relative="0" extend="0" position="0">
 				<tint opacity="0" r="0" g="0" b="0"/></image></background></console>
 	<appearance>
-		<font name="Cascadia Code" size="14" extra_width="0" bold="0" italic="0" smoothing="0" bold_intensified="1" italic_intensified="0" ligature="0">
+		<font name="Cascadia Mono" size="12" extra_width="0" bold="0" italic="0" smoothing="0" bold_intensified="1" italic_intensified="0" ligature="1">
 			<color use="0" r="0" g="0" b="0"/></font>
 		<window title="ConsoleZ" icon="" main_title_format="?U([%u] )?N({%u} )%m?s( - %s)" tab_title_format="%n. ?U([%u] )?N({%u} )%t?s( - %s)" use_tab_icon="1" use_tab_title="1" trim_tab_titles="20" trim_tab_titles_right="0"/>
 		<fullscreen start_in_fullscreen="0" fullscreen_monitor="0">
@@ -35,7 +35,7 @@
 			<selection_color r="255" g="255" b="255"/>
 			<highlight_color r="191" g="191" b="191"/></styles>
 		<position x="-1" y="-1" save_position="0" w="-1" h="-1" save_size="0" z_order="0" dock="-1" snap="-1" save_state="0" state="-1"/>
-		<transparency type="1" active_alpha="205" inactive_alpha="105" r="0" g="0" b="0" active="1"/></appearance>
+		<transparency type="1" active_alpha="205" inactive_alpha="105" r="0" g="0" b="0" active="0"/></appearance>
 	<behavior>
 		<copy_paste copy_on_select="0" clear_on_copy="1" sensitive_copy="1" no_wrap="1" eol_spaces="1" trim_spaces="1" rtf="1" copy_newline_char="0" include_left_delimiter="0" include_right_delimiter="0" left_delimiters=" ([" right_delimiters=" )]"/>
 		<scroll page_scroll_rows="0"/>
@@ -185,7 +185,8 @@
 	<snippets dir=""/>
 	<tabs>
 		<tab title="Matrix Tools" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\seo.ico" use_default_icon="0">
-			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\MatrixTools\Website\ClientApp" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\MatrixTools\Website\ClientApp" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<cursor style="4" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -193,7 +194,7 @@
 			</background>
 		</tab>
 		<tab title="JesseBooth.com" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\mario.ico" use_default_icon="0">
-			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\JesseBooth.com" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\JesseBooth.com" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="0" g="128" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -201,9 +202,9 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Patnaik Co." icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\goomba.ico" use_default_icon="0">
-			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\PatnaikCo" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="9" r="255" g="128" b="0"/>
+		<tab title="Concierge Construction" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\goomba.ico" use_default_icon="0">
+			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\ConciergeConstruction" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<cursor style="11" r="255" g="128" b="0"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -229,7 +230,7 @@
 		</colors>
 		</tab>
 		<tab title="Patnaik Realty" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\goomba.ico" use_default_icon="0">
-			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\PatnaikRealty" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\PatnaikRealty" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="2" r="0" g="128" b="0"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -256,8 +257,8 @@
 		</colors>
 		</tab>
 		<tab title="Nashville Ink" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\yinyang.ico" use_default_icon="0">
-			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\NashvilleInk\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="9" r="128" g="0" b="128"/>
+			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\NashvilleInk\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<cursor style="1" r="128" g="0" b="128"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
@@ -283,7 +284,7 @@
 		</colors>
 		</tab>
 		<tab title="Neighbors Tax" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\1up.ico" use_default_icon="0">
-			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\NeighborsTax" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\NeighborsTax" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="2" r="255" g="0" b="0"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -310,7 +311,7 @@
 		</colors>
 		</tab>
 		<tab title="EzMotion Band" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\ezmotion.ico" use_default_icon="0">
-			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\EzMotionBand\calendar-app" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\EzMotionBand\calendar-app" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="11" r="255" g="255" b="0"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -337,7 +338,7 @@
 		</colors>
 		</tab>
 		<tab title="Rainbow Balloon" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\rainbow.ico" use_default_icon="0">
-			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\RainbowBalloon\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\RainbowBalloon\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="255" g="128" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -364,7 +365,7 @@
 		</colors>
 		</tab>
 		<tab title="Scrappy's Junk World" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\boo.ico" use_default_icon="0">
-			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\ScrappysJunkWorld" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\ScrappysJunkWorld" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="128" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -391,7 +392,7 @@
 		</colors>
 		</tab>
 		<tab title="Sydney County" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\redyoshi.ico" use_default_icon="0">
-			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\SydneyCounty" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\SydneyCounty" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="0" g="128" b="128"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
