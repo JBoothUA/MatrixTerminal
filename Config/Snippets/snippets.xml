@@ -171,6 +171,83 @@
   </Snippet>
 
 
+  <!-- Items = list all tabs -->
+  <Snippet>
+    <Header>
+      <Title>Items</Title>
+      <Description>list all of the tabs</Description>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Version>1.0</Version>
+      <ShellTypes>
+        <ShellType>cmd</ShellType>
+        <ShellType>powershell</ShellType>
+      </ShellTypes>
+    </Header>
+    <Code>
+      <![CDATA[[xml]$XmlDocument = Get-Content C:\Users\jb\AppData\Roaming\Console\console.xml
+      $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
+]]>        <!-- return of line, the command is launched after clicking OK -->
+    </Code>
+  </Snippet>
+
+
+  <!-- Compare = diff -->
+  <Snippet>
+    <Header>
+      <Title>Compare</Title>
+      <Description>diff</Description>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Version>1.0</Version>
+      <ShellTypes>
+        <ShellType>cmd</ShellType>
+        <ShellType>powershell</ShellType>
+      </ShellTypes>
+    </Header>
+    <Declarations>
+      <Literal>
+        <ID>FirstBranch</ID>
+        <ToolTip>The first branch/commit.</ToolTip>
+        <Default>map/jb/</Default>
+      </Literal>
+      <Literal>
+        <ID>SecondBranch</ID>
+        <ToolTip>The second branch/commit.</ToolTip>
+        <Default>main</Default>
+      </Literal>
+    </Declarations>
+    <Code Delimiter="$">
+      <![CDATA[git diff $FirstBranch$ $SecondBranch$
+]]>        <!-- return of line, the command is launched after clicking OK -->
+    </Code>
+  </Snippet>
+
+
+  <!-- Equip = add package -->
+  <Snippet>
+    <Header>
+      <Title>Equip</Title>
+      <Description>add package</Description>
+      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Version>1.0</Version>
+      <ShellTypes>
+        <ShellType>cmd</ShellType>
+        <ShellType>powershell</ShellType>
+      </ShellTypes>
+    </Header>
+    <Declarations>
+      <Literal>
+        <ID>PackageName</ID>
+        <ToolTip>The package name.</ToolTip>
+        <Default>@galileo/common-libraries</Default>
+      </Literal>
+    </Declarations>
+    <Code Delimiter="$">
+      <![CDATA[npm add $PackageName$@latest --save
+]]>        <!-- return of line, the command is launched after clicking OK -->
+    </Code>
+  </Snippet>
+
+
   <!-- Fuse = link work items to release -->
   <Snippet>
     <Header>
@@ -340,83 +417,6 @@
     </Header>
     <Code Delimiter="$">
       <![CDATA[c:\users\dev\deploy.bat
-]]>        <!-- return of line, the command is launched after clicking OK -->
-    </Code>
-  </Snippet>
-
-
-  <!-- Equip = add package -->
-  <Snippet>
-    <Header>
-      <Title>Equip</Title>
-      <Description>add package</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
-      <Version>1.0</Version>
-      <ShellTypes>
-        <ShellType>cmd</ShellType>
-        <ShellType>powershell</ShellType>
-      </ShellTypes>
-    </Header>
-    <Declarations>
-      <Literal>
-        <ID>PackageName</ID>
-        <ToolTip>The package name.</ToolTip>
-        <Default>@galileo/common-libraries</Default>
-      </Literal>
-    </Declarations>
-    <Code Delimiter="$">
-      <![CDATA[npm add $PackageName$@latest --save
-]]>        <!-- return of line, the command is launched after clicking OK -->
-    </Code>
-  </Snippet>
-
-
-  <!-- Items = list all tabs -->
-  <Snippet>
-    <Header>
-      <Title>Items</Title>
-      <Description>list all of the tabs</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
-      <Version>1.0</Version>
-      <ShellTypes>
-        <ShellType>cmd</ShellType>
-        <ShellType>powershell</ShellType>
-      </ShellTypes>
-    </Header>
-    <Code>
-      <![CDATA[[xml]$XmlDocument = Get-Content C:\Users\jb\AppData\Roaming\Console\console.xml
-      $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
-]]>        <!-- return of line, the command is launched after clicking OK -->
-    </Code>
-  </Snippet>
-
-
-  <!-- Compare = diff -->
-  <Snippet>
-    <Header>
-      <Title>Compare</Title>
-      <Description>diff</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
-      <Version>1.0</Version>
-      <ShellTypes>
-        <ShellType>cmd</ShellType>
-        <ShellType>powershell</ShellType>
-      </ShellTypes>
-    </Header>
-    <Declarations>
-      <Literal>
-        <ID>FirstBranch</ID>
-        <ToolTip>The first branch/commit.</ToolTip>
-        <Default>map/jb/</Default>
-      </Literal>
-      <Literal>
-        <ID>SecondBranch</ID>
-        <ToolTip>The second branch/commit.</ToolTip>
-        <Default>main</Default>
-      </Literal>
-    </Declarations>
-    <Code Delimiter="$">
-      <![CDATA[git diff $FirstBranch$ $SecondBranch$
 ]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
