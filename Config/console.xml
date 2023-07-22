@@ -187,8 +187,8 @@
 		<tab title="Matrix Tools" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\seo.ico" use_default_icon="0">
 			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\MatrixTools\Website\ClientApp" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="9" r="255" g="255" b="255"/>
-			<background type="0" r="0" g="0" b="0">
-				<image file="" relative="0" extend="0" position="0">
+			<background type="1" r="0" g="0" b="0">
+				<image file="C:\Users\JB\Dropbox\Matrix Tools, LLC\Icons\seo.gif" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
