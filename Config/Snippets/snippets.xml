@@ -61,9 +61,9 @@
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[git checkout main
-			git pull
-			git checkout -b $BranchName$
-			git push --set-upstream origin $BranchName$
+git pull
+git checkout -b $BranchName$
+git push --set-upstream origin $BranchName$
 ]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -185,7 +185,7 @@
     </Header>
     <Code>
       <![CDATA[[xml]$XmlDocument = Get-Content C:\Users\jb\AppData\Roaming\Console\console.xml
-      $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
+$XmlDocument.settings.tabs.tab | Format-Table -AutoSize
 ]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -324,12 +324,12 @@
     </Literal>
     </Declarations>
     <Code Delimiter="$">
-            <![CDATA[git checkout main
-            git pull
-            git checkout -b $BranchName$
-            git push --set-upstream origin $BranchName$
-            git cherry-pick $CommitSHA$
-    ]]>        <!-- return of line, the command is launched after clicking OK -->
+      <![CDATA[git checkout main
+git pull
+git checkout -b $BranchName$
+git push --set-upstream origin $BranchName$
+git cherry-pick $CommitSHA$
+]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -436,29 +436,29 @@
     </Header>
     <Code>
       <![CDATA[$posh = New-Object -ComObject WScript.Shell
-      $posh.SendKeys('^t')
-      Sleep 1
-      $posh.SendKeys('^{F2}')
-      Sleep 1
-      $posh.SendKeys('^{F3}')
-      Sleep 1
-      $posh.SendKeys('^{F4}')
-      Sleep 1
-      $posh.SendKeys('^{F5}')
-      Sleep 1
-      $posh.SendKeys('^{F6}')
-      Sleep 1
-      $posh.SendKeys('^{F7}')
-      Sleep 1
-      $posh.SendKeys('^{F8}')
-      Sleep 1
-      $posh.SendKeys('^{F9}')
-      Sleep 1
-      $posh.SendKeys('^{F10}')
-      Sleep 1
-      $posh.SendKeys('^{F11}')
-      Sleep 1
-      $posh.SendKeys('^{F12}')
+$posh.SendKeys('^t')
+Sleep 1
+$posh.SendKeys('^{F2}')
+Sleep 1
+$posh.SendKeys('^{F3}')
+Sleep 1
+$posh.SendKeys('^{F4}')
+Sleep 1
+$posh.SendKeys('^{F5}')
+Sleep 1
+$posh.SendKeys('^{F6}')
+Sleep 1
+$posh.SendKeys('^{F7}')
+Sleep 1
+$posh.SendKeys('^{F8}')
+Sleep 1
+$posh.SendKeys('^{F9}')
+Sleep 1
+$posh.SendKeys('^{F10}')
+Sleep 1
+$posh.SendKeys('^{F11}')
+Sleep 1
+$posh.SendKeys('^{F12}')
 ]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -478,9 +478,9 @@
     </Header>
     <Code>
       <![CDATA[$posh = New-Object -ComObject WScript.Shell
-    $posh.SendKeys('^{Insert}')
-    Sleep 1
-    ng serve
+$posh.SendKeys('^{Insert}')
+Sleep 1
+ng serve
 ]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -547,9 +547,8 @@
       </Literal>
     </Declarations>
     <Code Delimiter="$">
-      <![CDATA[
-    Remove-item alias:curl
-    curl https://www.jessebooth.com/api/email/matrixtools --data 'email=$Email$&details=$Details$'
+      <![CDATA[Remove-item alias:curl
+curl https://www.jessebooth.com/api/email/matrixtools --data 'email=$Email$&details=$Details$'
 ]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -568,7 +567,7 @@
     </Header>
     <Code>
       <![CDATA[Write-Host 'Matrix Console' -ForegroundColor green
-    Write-Host 'This is a Matrix Console, created for Hackers by Jesse Booth' -ForegroundColor magenta
+Write-Host 'This is a Matrix Console, created for Hackers by Jesse Booth' -ForegroundColor magenta
 ]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -626,10 +625,10 @@
     </Header>
     <Code>
       <![CDATA[$posh = New-Object -ComObject WScript.Shell
-    $posh.SendKeys('^{Insert}')
-    Sleep 1
-    copy -R -force C:\Users\jb\AppData\Roaming\Console\* C:\Users\JB\Documents\GitHub\mario-shell\Config
-    cd C:\Users\JB\Documents\GitHub\mario-shell\Config
+$posh.SendKeys('^{Insert}')
+Sleep 1
+copy -R -force C:\Users\jb\AppData\Roaming\Console\* C:\Users\JB\Documents\GitHub\mario-shell\Config
+cd C:\Users\JB\Documents\GitHub\mario-shell\Config
 ]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -660,9 +659,8 @@
       </Literal>
     </Declarations>
     <Code Delimiter="$">
-      <![CDATA[
-    $currentBranch = git branch --show-current
-    az repos pr create --title "$Comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $Repo$ -t master -s $currentBranch --open
+      <![CDATA[$currentBranch = git branch --show-current
+az repos pr create --title "$Comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $Repo$ -t master -s $currentBranch --open
 ]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -694,7 +692,7 @@
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[$currentBranch = git branch --show-current
-    az repos pr create --title "$Comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $Repo$ -t master -s $currentBranch --open
+az repos pr create --title "$Comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $Repo$ -t master -s $currentBranch --open
 ]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -721,8 +719,8 @@
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[git add -A
-    git commit -m "$Comment$"
-    git push		
+git commit -m "$Comment$"
+git push		
 ]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
