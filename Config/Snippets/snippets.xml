@@ -295,7 +295,7 @@ $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
       <![CDATA[git reset HEAD^
 ]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
-    
+
   </Snippet>
 
 
@@ -312,16 +312,16 @@ $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
       </ShellTypes>
     </Header>
     <Declarations>
-    <Literal>
-      <ID>CommitSHA</ID>
-      <ToolTip>The cherry-pick commit sha.</ToolTip>
-      <Default>1d0fa4fa9ea961182114b63976482e634a8067b8</Default>
-    </Literal>
-    <Literal>
-      <ID>BranchName</ID>
-      <ToolTip>The branch name.</ToolTip>
-      <Default>map/jb/</Default>
-    </Literal>
+      <Literal>
+        <ID>CommitSHA</ID>
+        <ToolTip>The cherry-pick commit sha.</ToolTip>
+        <Default>1d0fa4fa9ea961182114b63976482e634a8067b8</Default>
+      </Literal>
+      <Literal>
+        <ID>BranchName</ID>
+        <ToolTip>The branch name.</ToolTip>
+        <Default>map/jb/</Default>
+      </Literal>
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[git checkout main
@@ -634,12 +634,12 @@ cd C:\Users\JB\Documents\GitHub\mario-shell\Config
   </Snippet>
 
 
-  <!-- Level Up! = commit, push, and create pull request -->
+  <!-- Level Up = commit, push, and create pull request -->
   <Snippet>
     <Header>
       <Title>Level Up</Title>
       <Description>commit, push, and create pull request</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -650,18 +650,26 @@ cd C:\Users\JB\Documents\GitHub\mario-shell\Config
       <Literal>
         <ID>Comment</ID>
         <ToolTip>The pull request comment.</ToolTip>
-        <Default>Save Point</Default>
+        <Default>Level Up</Default>
       </Literal>
       <Literal>
         <ID>Repo</ID>
         <ToolTip>The repository to update.</ToolTip>
-        <Default>MatrixToolsCore</Default>
+        <Default>MultiAssessmentPlatform</Default>
+      </Literal>
+      <Literal>
+        <ID>TargetBranch</ID>
+        <ToolTip>The branch to target.</ToolTip>
+        <Default>main</Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
-      <![CDATA[$currentBranch = git branch --show-current
-az repos pr create --title "$Comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $Repo$ -t master -s $currentBranch --open
-]]>        <!-- return of line, the command is launched after clicking OK -->
+      <![CDATA[git add -A
+			git commit -m "$Comment$ - $Repo$ - $TargetBranch"
+			git push
+			$currentBranch = git branch --show-current
+			az repos pr create --title "$Comment$ - $Repo$ - $TargetBranch" -r $Repo$ -t $TargetBranch -s $currentBranch --reviewers mhighland@foodchainid.com asanchez@foodchainid.com --open
+]]> <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
@@ -671,7 +679,7 @@ az repos pr create --title "$Comment$" --organization https://dev.azure.com/Matr
     <Header>
       <Title>Save Point</Title>
       <Description>create pull request</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -687,16 +695,21 @@ az repos pr create --title "$Comment$" --organization https://dev.azure.com/Matr
       <Literal>
         <ID>Repo</ID>
         <ToolTip>The repository to update.</ToolTip>
-        <Default>MatrixToolsCore</Default>
+        <Default>MultiAssessmentPlatform</Default>
+      </Literal>
+      <Literal>
+        <ID>TargetBranch</ID>
+        <ToolTip>The branch to target.</ToolTip>
+        <Default>main</Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[$currentBranch = git branch --show-current
-az repos pr create --title "$Comment$" --organization https://dev.azure.com/MatrixTools --project MatrixTools -r $Repo$ -t master -s $currentBranch --open
-]]>        <!-- return of line, the command is launched after clicking OK -->
+			az repos pr create --title "$Comment$ - $Repo$ - $TargetBranch" -r $Repo$ -t $TargetBranch -s $currentBranch --reviewers mhighland@foodchainid.com asanchez@foodchainid.com --open
+]]> <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
-
+  
 
   <!-- Check Point = commit and push -->
   <Snippet>
