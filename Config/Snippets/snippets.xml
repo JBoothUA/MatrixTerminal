@@ -665,10 +665,10 @@ cd C:\Users\JB\Documents\GitHub\mario-shell\Config
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[git add -A
-			git commit -m "$Comment$ - $Repo$ - $TargetBranch"
+			git commit -m "$Comment$ - $Repo$ - $TargetBranch$"
 			git push
 			$currentBranch = git branch --show-current
-			az repos pr create --title "$Comment$ - $Repo$ - $TargetBranch" -r $Repo$ -t $TargetBranch -s $currentBranch --reviewers mhighland@foodchainid.com asanchez@foodchainid.com --open
+			az repos pr create --title "$Comment$ - $Repo$ - $TargetBranch$" -r $Repo$ -t $TargetBranch$ -s $currentBranch --reviewers mhighland@foodchainid.com asanchez@foodchainid.com --open
 ]]> <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -705,7 +705,7 @@ cd C:\Users\JB\Documents\GitHub\mario-shell\Config
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[$currentBranch = git branch --show-current
-			az repos pr create --title "$Comment$ - $Repo$ - $TargetBranch" -r $Repo$ -t $TargetBranch -s $currentBranch --reviewers mhighland@foodchainid.com asanchez@foodchainid.com --open
+			az repos pr create --title "$Comment$ - $Repo$ - $TargetBranch$" -r $Repo$ -t $TargetBranch$ -s $currentBranch --reviewers mhighland@foodchainid.com asanchez@foodchainid.com --open
 ]]> <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
