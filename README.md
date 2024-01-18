@@ -26,7 +26,7 @@
 
 ## Customization
 
-1. Locate the files within the /Config directory of this repo and copy them to -> C:\Users\{user}\AppData\Roaming\Console
+1. Locate the files within the /Config directory of this repo and copy them to -> C:\Users\\{user}\AppData\Roaming\Console
 
 2. Open the settings and snippets xml files and make adjustments based on your folder structure, etc.
 
