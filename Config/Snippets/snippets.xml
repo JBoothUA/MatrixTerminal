@@ -7,7 +7,7 @@
     <Header>
       <Title>Attack</Title>
       <Description>serve</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -26,7 +26,7 @@
     <Header>
       <Title>Craft</Title>
       <Description>build</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -45,7 +45,7 @@
     <Header>
       <Title>New Quest</Title>
       <Description>new branch</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -74,7 +74,7 @@ git push --set-upstream origin $BranchName$
     <Header>
       <Title>Side Quest</Title>
       <Description>switch branch</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -100,7 +100,7 @@ git push --set-upstream origin $BranchName$
     <Header>
       <Title>Map</Title>
       <Description>gitk</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -119,7 +119,7 @@ git push --set-upstream origin $BranchName$
     <Header>
       <Title>Explore</Title>
       <Description>open explorer</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -138,7 +138,7 @@ git push --set-upstream origin $BranchName$
     <Header>
       <Title>Cure</Title>
       <Description>test</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -157,7 +157,7 @@ git push --set-upstream origin $BranchName$
     <Header>
       <Title>Cure All</Title>
       <Description>e2e test</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -171,12 +171,31 @@ git push --set-upstream origin $BranchName$
   </Snippet>
 
 
+  <!-- Heal = dotnet test -->
+  <Snippet>
+    <Header>
+      <Title>Heal</Title>
+      <Description>dotnet test</Description>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Version>1.0</Version>
+      <ShellTypes>
+        <ShellType>cmd</ShellType>
+        <ShellType>powershell</ShellType>
+      </ShellTypes>
+    </Header>
+    <Code>
+      <![CDATA[dotnet test
+]]>      <!-- return of line, the command is launched after clicking OK -->
+    </Code>
+  </Snippet>
+
+
   <!-- Items = list all tabs -->
   <Snippet>
     <Header>
       <Title>Items</Title>
       <Description>list all of the tabs</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -196,7 +215,7 @@ $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
     <Header>
       <Title>Compare</Title>
       <Description>diff</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -227,7 +246,7 @@ $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
     <Header>
       <Title>Equip</Title>
       <Description>add package</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -253,7 +272,7 @@ $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
     <Header>
       <Title>Fuse</Title>
       <Description>link work items to release</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -284,7 +303,7 @@ $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
     <Header>
       <Title>Recall</Title>
       <Description>undo the previous commit</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+      <Author Url="https://jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -304,7 +323,7 @@ $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
     <Header>
       <Title>Cherry Pick</Title>
       <Description>cherry pick from previous commits</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+      <Author Url="https://jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -339,7 +358,7 @@ git cherry-pick $CommitSHA$
     <Header>
       <Title>Time Travel</Title>
       <Description>create branch from previous commit</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -370,7 +389,7 @@ git cherry-pick $CommitSHA$
     <Header>
       <Title>Scan</Title>
       <Description>google scanner</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -389,7 +408,7 @@ git cherry-pick $CommitSHA$
     <Header>
       <Title>Deploy Net</Title>
       <Description>dotnet publish</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -408,7 +427,7 @@ git cherry-pick $CommitSHA$
     <Header>
       <Title>Deploy Matrix</Title>
       <Description>custom deployment script</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -427,7 +446,7 @@ git cherry-pick $CommitSHA$
     <Header>
       <Title>Combo</Title>
       <Description>opens all of the tabs</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -469,7 +488,7 @@ $posh.SendKeys('^{F12}')
     <Header>
       <Title>Clone</Title>
       <Description>clone tab and run ng serve</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -491,7 +510,7 @@ ng serve
     <Header>
       <Title>Connect</Title>
       <Description>ping command with variables</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -527,7 +546,7 @@ ng serve
     <Header>
       <Title>Contact</Title>
       <Description>matrix tools email</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -548,7 +567,7 @@ ng serve
     </Declarations>
     <Code Delimiter="$">
       <![CDATA[Remove-item alias:curl
-curl https://www.jessebooth.com/api/email/matrixtools --data 'email=$Email$&details=$Details$'
+curl https://jessebooth.com/api/email/matrixtools --data 'email=$Email$&details=$Details$'
 ]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
@@ -559,7 +578,7 @@ curl https://www.jessebooth.com/api/email/matrixtools --data 'email=$Email$&deta
     <Header>
       <Title>Colors</Title>
       <Description>hello world</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>powershell</ShellType>
@@ -578,7 +597,7 @@ Write-Host 'This is a Matrix Console, created for Hackers by Jesse Booth' -Foreg
     <Header>
       <Title>Super Moves</Title>
       <Description>edit the snippets file</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -597,7 +616,7 @@ Write-Host 'This is a Matrix Console, created for Hackers by Jesse Booth' -Foreg
     <Header>
       <Title>Settings</Title>
       <Description>edit the settings file</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -616,7 +635,7 @@ Write-Host 'This is a Matrix Console, created for Hackers by Jesse Booth' -Foreg
     <Header>
       <Title>Save Settings</Title>
       <Description>backup config files</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -639,7 +658,7 @@ cd C:\Users\JB\Documents\GitHub\mario-shell\Config
     <Header>
       <Title>Level Up</Title>
       <Description>commit, push, and create pull request</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+      <Author Url="https://jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -679,7 +698,7 @@ cd C:\Users\JB\Documents\GitHub\mario-shell\Config
     <Header>
       <Title>Save Point</Title>
       <Description>create pull request</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
+      <Author Url="https://jessebooth.com" Email="jesseboothua@gmail.com">JBoothUA</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
@@ -716,7 +735,7 @@ cd C:\Users\JB\Documents\GitHub\mario-shell\Config
     <Header>
       <Title>Check Point</Title>
       <Description>commit and push</Description>
-      <Author Url="https://www.jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
       <ShellTypes>
         <ShellType>cmd</ShellType>
