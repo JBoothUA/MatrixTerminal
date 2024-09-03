@@ -35,7 +35,7 @@
 			<selection_color r="255" g="255" b="255"/>
 			<highlight_color r="191" g="191" b="191"/></styles>
 		<position x="-1" y="-1" save_position="0" w="-1" h="-1" save_size="0" z_order="0" dock="-1" snap="-1" save_state="0" state="-1"/>
-		<transparency type="1" active_alpha="205" inactive_alpha="105" r="0" g="0" b="0" active="1"/></appearance>
+		<transparency type="1" active_alpha="205" inactive_alpha="105" r="0" g="0" b="0" active="0"/></appearance>
 	<behavior>
 		<copy_paste copy_on_select="0" clear_on_copy="1" sensitive_copy="1" no_wrap="1" eol_spaces="1" trim_spaces="1" rtf="1" copy_newline_char="0" include_left_delimiter="0" include_right_delimiter="0" left_delimiters=" ([" right_delimiters=" )]"/>
 		<scroll page_scroll_rows="0"/>
@@ -337,6 +337,11 @@
 				<color id="15" r="255" g="255" b="255"/>
 		</colors>
 		</tab>
+		<tab title="Sequoia Band" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\ezmotion.ico" use_default_icon="0">
+			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\SequoiaBand" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<cursor style="11" r="255" g="70" b="70"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
 		<tab title="Rainbow Balloon" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\rainbow.ico" use_default_icon="0">
 			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\RainbowBalloon\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
 			<cursor style="1" r="255" g="128" b="255"/>
@@ -364,9 +369,9 @@
 				<color id="15" r="255" g="255" b="255"/>
 		</colors>
 		</tab>
-		<tab title="Scrappy's Junk World" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\boo.ico" use_default_icon="0">
-			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\ScrappysJunkWorld" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
-			<cursor style="1" r="128" g="255" b="255"/>
+		<tab title="Rainbow Balloon" icon="C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Icons\rainbow.ico" use_default_icon="0">
+			<console shell="C:\Program Files\PowerShell\7\powershell.exe" init_dir="C:\inetpub\wwwroot\Clients\RainbowBalloon\Website" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<cursor style="1" r="255" g="128" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>

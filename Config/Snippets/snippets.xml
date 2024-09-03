@@ -592,10 +592,10 @@ Write-Host 'This is a Matrix Console, created for Hackers by Jesse Booth' -Foreg
   </Snippet>
 
 
-  <!-- Special Moves = edit snippets file -->
+  <!-- Edit Special Moves = edit snippets file -->
   <Snippet>
     <Header>
-      <Title>Special Moves</Title>
+      <Title>Edit Special Moves</Title>
       <Description>edit the snippets file</Description>
       <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
@@ -611,10 +611,10 @@ Write-Host 'This is a Matrix Console, created for Hackers by Jesse Booth' -Foreg
   </Snippet>
 
 
-  <!-- Settings = edit settings file -->
+  <!-- Edit Settings = edit settings file -->
   <Snippet>
     <Header>
-      <Title>Settings</Title>
+      <Title>Edit Settings</Title>
       <Description>edit the settings file</Description>
       <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
@@ -646,8 +646,8 @@ Write-Host 'This is a Matrix Console, created for Hackers by Jesse Booth' -Foreg
       <![CDATA[$posh = New-Object -ComObject WScript.Shell
 $posh.SendKeys('^{Insert}')
 Sleep 1
-copy -R -force C:\Users\jb\AppData\Roaming\Console\* C:\Users\JB\Documents\GitHub\mario-shell\Config
-cd C:\Users\JB\Documents\GitHub\mario-shell\Config
+copy -R -force C:\Users\jb\AppData\Roaming\Console\* "C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Config"
+cd "C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Config"
 ]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>

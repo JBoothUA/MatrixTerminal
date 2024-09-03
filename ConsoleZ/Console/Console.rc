@@ -90,7 +90,7 @@ END
 
 IDD_SETTINGS_MAIN DIALOGEX 0, 0, 354, 321
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "ConsoleZ Settings"
+CAPTION "Matrix Terminal Settings"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     CONTROL         "",IDC_TREE_SECTIONS,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | TVS_NOSCROLL | WS_BORDER | WS_TABSTOP,7,7,98,265
@@ -754,7 +754,7 @@ BEGIN
         MENUITEM "&Help",                       ID_HELP
         MENUITEM "Diagnose",                    ID_DIAGNOSE
         MENUITEM SEPARATOR
-        MENUITEM "&About ConsoleZ...",          ID_APP_ABOUT
+        MENUITEM "&About Matrix Terminal...",          ID_APP_ABOUT
     END
 END
 
@@ -1033,7 +1033,7 @@ BEGIN
 
     MSG_TABVIEW_RUNAS       "Run as different user"
 
-    MSG_ABOUT               "\nConsoleZ\n%1%\n\nCopyright (c) 2011-2021\nChristophe Bucher\n\na modified version of\nConsole 2 from\nMarko Bozikovic"
+    MSG_ABOUT               "\nMatrix Terminal\n%1%\n\nCopyright (c) 2022\nJesse Booth\n\na modified version of\nConsoleZ from\nChristophe Bucher"
 END
 
 STRINGTABLE
@@ -1041,7 +1041,7 @@ BEGIN
     IDS_EDIT_SETTINGS        "Settings dialog"
     IDS_HELP                 "Help"
 
-    IDS_APP_EXIT             "Exit ConsoleZ"
+    IDS_APP_EXIT             "Exit Terminal"
 
     IDS_NEW_TAB_1            "New Tab 1"
     IDS_NEW_TAB_2            "New Tab 2"
@@ -1155,7 +1155,7 @@ IDS_EXTERNAL_COMMAND_8   "External command 8"
 IDS_EXTERNAL_COMMAND_9   "External command 9"
 IDS_EXTERNAL_COMMAND_10  "External command 10"
 
-IDS_GLOBAL_ACTIVATE      "Activate ConsoleZ (global)"
+IDS_GLOBAL_ACTIVATE      "Activate Terminal (global)"
 
 ID_TEXT_SELECTION_LEFT_KEY        "Text selection left key"
 ID_TEXT_SELECTION_RIGHT_KEY       "Text selection right key"

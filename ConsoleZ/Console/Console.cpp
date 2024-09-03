@@ -2,9 +2,7 @@
 //
 
 #include "stdafx.h"
-
 #include "resource.h"
-
 #include "ConsoleView.h"
 #include "aboutdlg.h"
 #include "MainFrame.h"
