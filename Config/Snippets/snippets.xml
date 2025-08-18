@@ -56,7 +56,7 @@
       <Literal>
         <ID>BranchName</ID>
         <ToolTip>The branch name.</ToolTip>
-        <Default>map/jb/</Default>
+        <Default>SEO-</Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
@@ -226,7 +226,7 @@ $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
       <Literal>
         <ID>FirstBranch</ID>
         <ToolTip>The first branch/commit.</ToolTip>
-        <Default>map/jb/</Default>
+        <Default>SEO-/</Default>
       </Literal>
       <Literal>
         <ID>SecondBranch</ID>
@@ -339,7 +339,7 @@ $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
       <Literal>
         <ID>BranchName</ID>
         <ToolTip>The branch name.</ToolTip>
-        <Default>map/jb/</Default>
+        <Default>SEO-</Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
@@ -374,7 +374,7 @@ git cherry-pick $CommitSHA$
       <Literal>
         <ID>BranchName</ID>
         <ToolTip>The branch name.</ToolTip>
-        <Default>map/jb/</Default>
+        <Default>SEO-</Default>
       </Literal>
     </Declarations>
     <Code Delimiter="$">
@@ -649,6 +649,32 @@ Sleep 1
 copy -R -force C:\Users\jb\AppData\Roaming\Console\* "C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Config"
 cd "C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Config"
 ]]>        <!-- return of line, the command is launched after clicking OK -->
+    </Code>
+  </Snippet>
+
+
+  <!-- Squish = rebase squash -->
+  <Snippet>
+    <Header>
+      <Title>Squish</Title>
+      <Description>rebase squash</Description>
+      <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
+      <Version>1.0</Version>
+      <ShellTypes>
+        <ShellType>cmd</ShellType>
+        <ShellType>powershell</ShellType>
+      </ShellTypes>
+    </Header>
+    <Declarations>
+      <Literal>
+        <ID>Commits</ID>
+        <ToolTip>How many commits to squash?</ToolTip>
+        <Default>2</Default>
+      </Literal>
+    </Declarations>
+    <Code Delimiter="$">
+      <![CDATA[git rebase -i HEAD~$Commits$
+]]>      <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
 
