@@ -347,7 +347,7 @@ $XmlDocument.settings.tabs.tab | Format-Table -AutoSize
 git pull
 git checkout -b $BranchName$
 git push --set-upstream origin $BranchName$
-git cherry-pick $CommitSHA$
+git cherry-pick $CommitSHA$ -m 1
 ]]>        <!-- return of line, the command is launched after clicking OK -->
     </Code>
   </Snippet>
