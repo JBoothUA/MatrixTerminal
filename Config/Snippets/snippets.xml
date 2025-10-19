@@ -653,10 +653,10 @@ cd "C:\Users\JB\Desktop\Matrix Tools, LLC\Matrix Terminal\Config"
   </Snippet>
 
 
-  <!-- Squish = rebase squash -->
+  <!-- Squoosh = rebase squash -->
   <Snippet>
     <Header>
-      <Title>Squish</Title>
+      <Title>Squoosh</Title>
       <Description>rebase squash</Description>
       <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>
