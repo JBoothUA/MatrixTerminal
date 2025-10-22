@@ -592,10 +592,10 @@ Write-Host 'This is a Matrix Console, created for Hackers by Jesse Booth' -Foreg
   </Snippet>
 
 
-  <!-- Edit Special Moves = edit snippets file -->
+  <!-- Edit Super Moves = edit snippets file -->
   <Snippet>
     <Header>
-      <Title>Edit Special Moves</Title>
+      <Title>Edit Super Moves</Title>
       <Description>edit the snippets file</Description>
       <Author Url="https://jessebooth.com" Email="jesse@matrix.tools">JB</Author>
       <Version>1.0</Version>

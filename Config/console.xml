@@ -35,7 +35,7 @@
 			<selection_color r="255" g="255" b="255"/>
 			<highlight_color r="191" g="191" b="191"/></styles>
 		<position x="-1" y="-1" save_position="0" w="-1" h="-1" save_size="0" z_order="0" dock="-1" snap="-1" save_state="0" state="-1"/>
-		<transparency type="1" active_alpha="205" inactive_alpha="105" r="0" g="0" b="0" active="1"/></appearance>
+		<transparency type="1" active_alpha="205" inactive_alpha="105" r="0" g="0" b="0" active="0"/></appearance>
 	<behavior>
 		<copy_paste copy_on_select="0" clear_on_copy="1" sensitive_copy="1" no_wrap="1" eol_spaces="1" trim_spaces="1" rtf="1" copy_newline_char="0" include_left_delimiter="0" include_right_delimiter="0" left_delimiters=" ([" right_delimiters=" )]"/>
 		<scroll page_scroll_rows="0"/>
